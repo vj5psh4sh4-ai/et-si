@@ -142,7 +142,7 @@ export function createDemoNotebook(): SavedNotebook {
       'Quelles sont les conditions d’admission exactes selon mon parcours au secondaire II ?',
       'Quand ont lieu les prochaines séances d’information ou portes ouvertes ?',
     ],
-    nextAction: 'En parler avec un·e proche ou un·e conseiller·ère d’orientation.',
+    nextAction: 'Parler d’une piste avec un·e proche ou un·e enseignant·e',
     updatedAt: new Date().toISOString(),
   };
 }
