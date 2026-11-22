@@ -132,7 +132,7 @@ export const PanelScreen: React.FC<{ app: AppApi }> = ({ app }) => {
   return (
     <section className="page panel-page">
       {header}
-      <p className="page-lead panel-lead">{t('panel.lead')}</p>
+      <p className="page-lead panel-lead">{t(panel.trio.length === 3 ? 'panel.lead' : 'panel.lead.other')}</p>
 
       <div className="panel-layout">
         <div className="signpost-col">
