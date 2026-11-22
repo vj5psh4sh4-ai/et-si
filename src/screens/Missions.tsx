@@ -1,10 +1,12 @@
 import React from 'react';
 import { ArrowLeft, ArrowRight, Check, Map, RefreshCw, Signpost, Sparkles } from 'lucide-react';
 import type { AppApi, MissionStep } from '../appApi';
+import { FrenchOnlyNote } from '../components/Chrome';
 import { MicroActivityWidget } from '../components/MicroActivityWidget';
 import { MISSION_ACCENTS, MissionScene } from '../components/Illustrations';
 import { getInitialPreferredTags } from '../engine/recommendation';
 import { FEEDBACK_OPTIONS, FEEDBACK_SHORT, TAG_LABELS } from '../data/ui';
+import { useI18n } from '../i18n';
 import type { Mission } from '../types';
 
 function triedChoiceIds(app: AppApi, missionId: string) {
@@ -16,8 +18,10 @@ function triedChoiceIds(app: AppApi, missionId: string) {
 export const MissionHub: React.FC<{ app: AppApi }> = ({ app }) => {
   const p = app.notebook.profile;
   const hasPrefs = getInitialPreferredTags(p).length > 0;
+  const { lang, t } = useI18n();
   return (
-    <section className="page">
+    <section className="page" lang="fr">
+      <FrenchOnlyNote k="note.frenchOnly.missions" />
       <header className="page-head">
         <p className="eyebrow">Carte des missions</p>
         <h1 className="page-title">Choisis un projet à rejoindre</h1>
@@ -49,8 +53,8 @@ export const MissionHub: React.FC<{ app: AppApi }> = ({ app }) => {
           <p>
             Tu as déjà essayé <strong>{app.notebook.feedbacks.length}</strong> rôle{app.notebook.feedbacks.length > 1 ? 's' : ''}.
           </p>
-          <button type="button" className="btn btn-secondary" onClick={() => app.go('pathways')}>
-            <Signpost size={18} aria-hidden="true" /> Voir mes chemins
+          <button type="button" className="btn btn-secondary" lang={lang} onClick={() => app.go('panel')}>
+            <Signpost size={18} aria-hidden="true" /> {t('missions.toPanel')}
           </button>
         </div>
       )}
@@ -114,9 +118,11 @@ export const MissionPlay: React.FC<{ app: AppApi }> = ({ app }) => {
       el.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
     }
   }, [app.missionStep, app.activeChoice?.id]);
+  const { lang, t } = useI18n();
 
   return (
-    <section className="page mission-page" style={{ ['--m-accent' as string]: accent }}>
+    <section className="page mission-page" lang="fr" style={{ ['--m-accent' as string]: accent }}>
+      <FrenchOnlyNote k="note.frenchOnly.missions" />
       <button type="button" className="back-link" onClick={() => app.go('hub')}>
         <ArrowLeft size={18} aria-hidden="true" /> Toutes les missions
       </button>
@@ -241,8 +247,7 @@ export const MissionPlay: React.FC<{ app: AppApi }> = ({ app }) => {
             <div className="stage-body">
               {app.feedbackGiven && (
                 <p className="saved-note" role="status">
-                  <Check size={16} strokeWidth={3} aria-hidden="true" /> Noté dans ton carnet : « {app.activeChoice.activityLabel} » —{' '}
-                  {FEEDBACK_SHORT[app.feedbackGiven]}
+                  <Check size={16} strokeWidth={3} aria-hidden="true" /> Noté dans ton carnet : « {app.activeChoice.activityLabel} », {FEEDBACK_SHORT[app.feedbackGiven].toLowerCase()}.
                 </p>
               )}
               <h2 className="stage-title">Et maintenant, quel chemin prends-tu ?</h2>
@@ -261,14 +266,10 @@ export const MissionPlay: React.FC<{ app: AppApi }> = ({ app }) => {
                   <strong>Changer de mission</strong>
                   <span>Rejoindre un autre projet avec d’autres situations.</span>
                 </button>
-                <button type="button" className="fork-card fork-card-sign" onClick={() => app.go('pathways')}>
+                <button type="button" className="fork-card fork-card-sign" lang={lang} onClick={() => app.go('panel')}>
                   <Signpost size={24} aria-hidden="true" />
-                  <strong>Voir mes chemins</strong>
-                  <span>
-                    {app.proposedTracks.length > 0
-                      ? `${app.proposedTracks.length} piste${app.proposedTracks.length > 1 ? 's' : ''} à regarder de plus près.`
-                      : 'Pour l’instant, aucune piste ne ressort. C’est normal.'}
-                  </span>
+                  <strong>{t('missions.toPanel')}</strong>
+                  <span>{t('missions.toPanel.text')}</span>
                 </button>
               </div>
             </div>

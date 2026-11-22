@@ -1,0 +1,15 @@
+{
+  "mapping": "0.1.0",
+  "profileMapping": "0.1.0",
+  "generatedAt": "2026-11-22",
+  "syncedAt": "2026-11-22",
+  "sha256": {
+    "data/mapping.json": "8e7309fdd12c49e5",
+    "data/profile-mapping.json": "27d4de31642467d8",
+    "engine/pathfinder.mjs": "a5f27331bf95d90a",
+    "engine/pathfinder.d.mts": "9f48ba55dd27b9e4",
+    "engine/matching.mjs": "855ab8e753e7aebc",
+    "engine/matching.d.mts": "3c3181a710358e65",
+    "engine/types.ts": "ceab31a58982c2aa"
+  }
+}

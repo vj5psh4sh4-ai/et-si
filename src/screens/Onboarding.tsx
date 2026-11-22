@@ -18,7 +18,7 @@ import {
 } from 'lucide-react';
 import type { AppApi } from '../appApi';
 import { AVATAR_OPTIONS, AvatarIcon, COLOR_OPTIONS } from '../components/Avatars';
-import { OnboardingStepper } from '../components/Chrome';
+import { FrenchOnlyNote, OnboardingStepper } from '../components/Chrome';
 import { DISCOVERY_CARDS, IDEA_ANGLES, OBJECTIVE_OPTIONS } from '../data/missions';
 import { REFLECTION_LABELS, SITUATION_LABELS } from '../data/tracks';
 import { ENTRY_GATES } from '../data/ui';
@@ -58,7 +58,8 @@ const SITUATION_CHOICE_LABEL: Record<SituationId, string> = {
 export const CharacterScreen: React.FC<{ app: AppApi }> = ({ app }) => {
   const p = app.notebook.profile;
   return (
-    <section className="page onb">
+    <section className="page onb" lang="fr">
+      <FrenchOnlyNote k="note.frenchOnly.missions" />
       <OnboardingStepper step={1} />
       <div className="onb-grid">
         <aside className="traveller-card" style={{ ['--player' as string]: p.color }}>
@@ -156,7 +157,8 @@ const REFLECTION_TO_GATE: Record<ReflectionState, EntryMode> = {
 export const StartScreen: React.FC<{ app: AppApi }> = ({ app }) => {
   const p = app.notebook.profile;
   return (
-    <section className="page onb">
+    <section className="page onb" lang="fr">
+      <FrenchOnlyNote k="note.frenchOnly.missions" />
       <OnboardingStepper step={2} />
       <h1 className="page-title">Où en es-tu aujourd’hui ?</h1>
       <p className="page-lead">Deux questions indépendantes. On peut être au collège et avoir une idée très précise, ou en apprentissage et encore hésiter.</p>
@@ -237,7 +239,8 @@ export const EntryScreen: React.FC<{ app: AppApi }> = ({ app }) => {
   };
 
   return (
-    <section className="page onb">
+    <section className="page onb" lang="fr">
+      <FrenchOnlyNote k="note.frenchOnly.missions" />
       <OnboardingStepper step={3} />
       <h1 className="page-title">Par quelle porte veux-tu entrer ?</h1>
       <p className="page-lead">Les trois portes mènent aux mêmes missions. Elles changent seulement l’ordre dans lequel on te les propose.</p>

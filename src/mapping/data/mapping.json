@@ -1,0 +1,6818 @@
+{
+ "meta": {
+  "version": "0.1.0",
+  "generatedAt": "2026-11-22",
+  "scope": "HEIA-FR, HEG-FR, HEdS-FR, HETS-FR (HES-SO Fribourg) ; admissions 2026-2027",
+  "disclaimer": "Données d'orientation indicatives. Les conditions officielles des écoles font foi."
+ },
+ "sources": [
+  {
+   "id": "fr_voies",
+   "title": "État de Fribourg, Après la scolarité obligatoire (2025)",
+   "url": "https://www.fr.ch/sites/default/files/2025-08/apres-la-scolarite-obligatoire.pdf",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "fr_co",
+   "title": "État de Fribourg, Cycle d'orientation, informations aux parents (2026)",
+   "url": "https://www.fr.ch/sites/default/files/2026-11/cycle-d-orientation-co--informations-a-destination-des-parents.pdf?v=1793625660",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "fr_os",
+   "title": "Kanton Freiburg, Die deutschsprachigen Orientierungsschulen (2026)",
+   "url": "https://www.fr.ch/sites/default/files/2026-08/deutschsprachige-orientierungsschulen-des-kantons-freiburg.pdf?v=1787216448",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "fr_mp",
+   "title": "État de Fribourg, Maturités professionnelles (2025)",
+   "url": "https://www.fr.ch/sites/default/files/2025-10/sfpmaturites-professionnelles.pdf?v=1760515526",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "fr_ecg",
+   "title": "État de Fribourg, Brochure École de culture générale (2025)",
+   "url": "https://www.fr.ch/sites/default/files/2025-10/brochure-ecole-de-culture-generale.pdf?v=1761560462",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "fr_dubs",
+   "title": "État de Fribourg, Passerelle maturité professionnelle / spécialisée vers hautes écoles universitaires",
+   "url": "https://www.fr.ch/formation-et-ecoles/ecoles-secondaires-superieures/passerelle-maturite-professionnelle-maturite-specialisee-hautes-ecoles-universitaires-informations-et-inscription",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "ecgf_ipop",
+   "title": "ECGF, Accès aux ES et HES par certificat",
+   "url": "https://www.ecgffr.ch/fr/services-eleves/ip-op/",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "ecgf_mssa",
+   "title": "ECGF, Maturité spécialisée santé (MSSA)",
+   "url": "https://www.ecgffr.ch/fr/formations/mssa/",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "ecgf_msts",
+   "title": "ECGF, Maturité spécialisée travail social (MSTS)",
+   "url": "https://www.ecgffr.ch/fr/formations/msts/",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "hesso_adm",
+   "title": "HES-SO, Admissions en Bachelor",
+   "url": "https://www.hes-so.ch/la-hes-so/etudier-a-la-hes-so/admissions/admissions-en-bachelor",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "heia_ba",
+   "title": "HEIA-FR, Formations Bachelor",
+   "url": "https://www.heia-fr.ch/fr/formation/bachelor/",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "heia_faq",
+   "title": "HEIA-FR, FAQ admission",
+   "url": "https://www.heia-fr.ch/en/education/future-students/faq/",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "heia_adm_chimie",
+   "title": "HEIA-FR, Chimie, conditions d'admission",
+   "url": "https://www.heia-fr.ch/fr/formation/bachelor/chimie/admission/",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "heia_adm_archi",
+   "title": "HEIA-FR, Architecture, conditions d'admission",
+   "url": "https://www.heia-fr.ch/fr/formation/bachelor/architecture/admission/",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "heia_pibs",
+   "title": "HEIA-FR, PiBS",
+   "url": "https://www.heia-fr.ch/fr/formation/pibs/",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "heia_master",
+   "title": "HEIA-FR, Formations Master",
+   "url": "https://www.heia-fr.ch/fr/formation/master/",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "heia_appr",
+   "title": "HEIA-FR, Apprentissages et stages",
+   "url": "https://www.heia-fr.ch/fr/formation/apprentissages-et-stages",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "cfc_ge",
+   "title": "HEIA-FR, Liste des CFC Génie électrique (09.2026)",
+   "url": "https://www.heia-fr.ch/media/d0wndtew/ge_cfc_092026_f.pdf",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "cfc_gc",
+   "title": "HEIA-FR, Liste des CFC Génie civil (09.2026)",
+   "url": "https://www.heia-fr.ch/media/us0gh5qs/gc_cfc_092026_f.pdf",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "cfc_gm",
+   "title": "HEIA-FR, Liste des CFC Génie mécanique (09.2026)",
+   "url": "https://www.heia-fr.ch/media/nrtlfsp3/gm_cfc_092026_f.pdf",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "cfc_isc",
+   "title": "HEIA-FR, Liste des CFC ISC (09.2026)",
+   "url": "https://www.heia-fr.ch/media/mwth05lb/isc_f_20260902.pdf",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "cfc_chimie",
+   "title": "HEIA-FR, Liste des CFC Chimie (2024)",
+   "url": "https://www.heia-fr.ch/media/wixhw2ig/cfc_chimie_fr_2024.pdf",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "cfc_archi",
+   "title": "HEIA-FR, Liste des CFC Architecture (2024)",
+   "url": "https://www.heia-fr.ch/media/ta2pg1vp/cfc_architecture_2024.pdf",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "heg_ba",
+   "title": "HEG-FR, Bachelor Économie d'entreprise",
+   "url": "https://www.heg-fr.ch/fr/etudes/bachelor/economie-d-entreprise/",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "heg_adm",
+   "title": "HEG-FR, Conditions d'admission Bachelor",
+   "url": "https://www.heg-fr.ch/fr/etudes/bachelor/economie-d-entreprise/conditions-d-admission-et-inscription/",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "heg_ma",
+   "title": "HEG-FR, MSc Business Administration, Major Entrepreneurship",
+   "url": "https://www.heg-fr.ch/en/studies/master/business-administration-major-in-entrepreneurship/",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "heds_si",
+   "title": "HEdS-FR, Bachelor Soins infirmiers",
+   "url": "https://www.heds-fr.ch/fr/formations/soins-infirmiers/bachelor/",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "heds_si_info",
+   "title": "HEdS-FR, Information aux candidat·es Soins infirmiers",
+   "url": "https://www.heds-fr.ch/media/rxkkjobq/soins-infirmiers-bachelor-of-science-hes-so-en-soins-infirmiers-information-aux-candidat-es-aux-formations-bachelor.pdf",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "heds_osteo",
+   "title": "HEdS-FR, Bachelor Ostéopathie",
+   "url": "https://www.heds-fr.ch/fr/formations/osteopathie-bilingue-et-francophone/bachelor/",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "heds_mc",
+   "title": "HEdS-FR, Modules complémentaires santé",
+   "url": "https://www.heds-fr.ch/formations/maturite-specialisee-et-modules-complementaires-ms-mc/modules-complementaires/",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "hets_ba",
+   "title": "HETS-FR, Bachelor Travail social",
+   "url": "https://www.hets-fr.ch/fr/bachelor/bachelor/",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "hets_adm",
+   "title": "HETS-FR, Admission Bachelor",
+   "url": "https://hets-fr.ch/fr/bachelor/admission/",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "hets_faq",
+   "title": "HETS-FR, FAQ admission",
+   "url": "https://hets-fr.ch/fr/bachelor/admission/faq-admission/",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "hesso_ts",
+   "title": "HES-SO, Bachelor Travail social",
+   "url": "https://www.hes-so.ch/en/schools-and-fields-of-study/social-work/bachelor/travail-social",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "m_mse",
+   "title": "HES-SO, MSc in Engineering (MSE)",
+   "url": "https://www.hes-so.ch/master/hes-so-master/formations/engineering",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "m_mls",
+   "title": "HES-SO, MSc in Life Sciences",
+   "url": "https://www.hes-so.ch/master/hes-so-master/formations/life-sciences",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "m_jma",
+   "title": "Joint Master of Architecture BFH/HES-SO",
+   "url": "https://www.jointmaster.ch/en/",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "m_innokick",
+   "title": "HES-SO, MSc Innokick",
+   "url": "https://www.hes-so.ch/master/hes-so-master/formations/innokick",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "m_mscsi",
+   "title": "HES-SO, Master conjoint UNIL/HES-SO en sciences infirmières",
+   "url": "https://www.hes-so.ch/master/hes-so-master/formations/sciences-infirmieres",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "heds_osteo_m",
+   "title": "HEdS-FR, Master Ostéopathie",
+   "url": "https://www.heds-fr.ch/fr/formations/osteopathie-bilingue-et-francophone/master/",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "m_mats",
+   "title": "HES-SO, Master en Travail social",
+   "url": "https://www.hes-so.ch/master/hes-so-master/formations/travail-social",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "o_archi",
+   "title": "orientation.ch, Architecte HES",
+   "url": "https://www.orientation.ch/web_file/getbb?id=28290&mime=application/pdf&original_name=Architecte_HES_527.pdf",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "o_chimie",
+   "title": "orientation.ch, Ingénieur HES en chimie",
+   "url": "https://www.orientation.ch/web_file/getbb?id=28534&mime=application/pdf&original_name=Ingenieur_HES_en_chimie_698.pdf",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "o_gc",
+   "title": "orientation.ch, Ingénieur HES en génie civil",
+   "url": "https://www.orientation.ch/web_file/getbb?id=28536&mime=application/pdf&original_name=Ingenieur_HES_en_genie_civil_699.pdf",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "o_ge",
+   "title": "orientation.ch, Ingénieur HES en génie électrique",
+   "url": "https://www.orientation.ch/web_file/getbb?id=28532&mime=application/pdf&original_name=Ingenieur_HES_en_genie_electrique_696.pdf",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "o_gm",
+   "title": "orientation.ch, Ingénieur HES en génie mécanique",
+   "url": "https://www.orientation.ch/web_file/getbb?id=28545&mime=application/pdf&original_name=Ingenieur_HES_en_genie_mecanique_704.pdf",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "o_isc",
+   "title": "orientation.ch, Ingénieur HES en informatique et systèmes de communication",
+   "url": "https://www.orientation.ch/web_file/getbb?id=29265&mime=application/pdf&original_name=Ingenieur_HES_en_informatique_et_systemes_de_communication_1670.pdf",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "o_eco",
+   "title": "orientation.ch, Économiste d'entreprise HES",
+   "url": "https://www.orientation.ch/web_file/getbb?id=28423&mime=application/pdf&original_name=Economiste_d_entreprise_HES_624.pdf",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "o_inf",
+   "title": "orientation.ch, Infirmier HES",
+   "url": "https://www.orientation.ch/web_file/getbb?id=28504&mime=application/pdf&original_name=Infirmier_HES_677.pdf",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "o_osteo",
+   "title": "orientation.ch, Ostéopathe",
+   "url": "https://www.orientation.ch/fr/professions/osteopathe",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "o_es",
+   "title": "orientation.ch, Éducateur social HES",
+   "url": "https://www.orientation.ch/web_file/getbb?id=28429&mime=application/pdf&original_name=Educateur_social_HES_629.pdf",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "o_as",
+   "title": "orientation.ch, Assistant social HES",
+   "url": "https://media.sdbb.ch/asset/0302f14b-ccfc-4e16-bd77-287d1c27488a/Assistant-social-assistante-sociale-HES.pdf",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "o_asc",
+   "title": "orientation.ch, Animateur socioculturel HES",
+   "url": "https://www.orientation.ch/web_file/getbb?id=28280&mime=application/pdf&original_name=Animateur_socioculturel_HES_522.pdf",
+   "consultedAt": "2026-11-22"
+  }
+ ],
+ "stages": [
+  {
+   "id": "co_eb",
+   "label": "CO, classe EB (exigences de base)",
+   "lang": "fr",
+   "sourceIds": [
+    "fr_co",
+    "fr_voies"
+   ]
+  },
+  {
+   "id": "co_g",
+   "label": "CO, classe G (générale)",
+   "lang": "fr",
+   "sourceIds": [
+    "fr_co",
+    "fr_voies"
+   ]
+  },
+  {
+   "id": "co_pg",
+   "label": "CO, classe PG (prégymnasiale, PGL ou PGS dès la 10H)",
+   "lang": "fr",
+   "sourceIds": [
+    "fr_co",
+    "fr_voies"
+   ]
+  },
+  {
+   "id": "os_real",
+   "label": "OS, Realklasse",
+   "lang": "de",
+   "sourceIds": [
+    "fr_os"
+   ]
+  },
+  {
+   "id": "os_sek",
+   "label": "OS, Sekundarklasse",
+   "lang": "de",
+   "sourceIds": [
+    "fr_os"
+   ]
+  },
+  {
+   "id": "os_progym",
+   "label": "OS, Progymnasialklasse",
+   "lang": "de",
+   "sourceIds": [
+    "fr_os"
+   ]
+  },
+  {
+   "id": "os_foerder",
+   "label": "OS, Förderklasse (classe de soutien)",
+   "lang": "de",
+   "sourceIds": [
+    "fr_os"
+   ]
+  },
+  {
+   "id": "adulte_25",
+   "label": "Adulte de 25 ans ou plus sans titre d'accès",
+   "lang": "fr",
+   "sourceIds": [
+    "hesso_adm"
+   ]
+  }
+ ],
+ "credentials": [
+  {
+   "id": "cr_afp",
+   "label": "Attestation fédérale de formation professionnelle (AFP)",
+   "level": "secondaire_II"
+  },
+  {
+   "id": "cr_cfc",
+   "label": "CFC sans maturité",
+   "level": "secondaire_II"
+  },
+  {
+   "id": "cr_cfc_mp",
+   "label": "CFC + maturité professionnelle (MP)",
+   "level": "secondaire_II"
+  },
+  {
+   "id": "cr_ecg_sante",
+   "label": "Certificat ECG, domaine santé / sciences expérimentales",
+   "level": "secondaire_II"
+  },
+  {
+   "id": "cr_ecg_ts",
+   "label": "Certificat ECG, domaine travail social",
+   "level": "secondaire_II"
+  },
+  {
+   "id": "cr_ecg_ped",
+   "label": "Certificat ECG, domaine pédagogie",
+   "level": "secondaire_II"
+  },
+  {
+   "id": "cr_ms_sante",
+   "label": "Maturité spécialisée santé (MSSA)",
+   "level": "secondaire_II"
+  },
+  {
+   "id": "cr_ms_scexp",
+   "label": "Maturité spécialisée sciences expérimentales (projet pilote)",
+   "level": "secondaire_II"
+  },
+  {
+   "id": "cr_ms_ts",
+   "label": "Maturité spécialisée travail social (MSTS)",
+   "level": "secondaire_II"
+  },
+  {
+   "id": "cr_ms_ped",
+   "label": "Maturité spécialisée pédagogie (MSPE)",
+   "level": "secondaire_II"
+  },
+  {
+   "id": "cr_ecg_cfc",
+   "label": "Certificat ECG + CFC",
+   "level": "secondaire_II"
+  },
+  {
+   "id": "cr_mat_gym",
+   "label": "Maturité gymnasiale",
+   "level": "secondaire_II"
+  },
+  {
+   "id": "cr_es",
+   "label": "Diplôme d'école supérieure (ES)",
+   "level": "tertiaire_B"
+  },
+  {
+   "id": "cr_mc_sante",
+   "label": "Attestation de réussite des modules complémentaires santé",
+   "level": "passerelle"
+  },
+  {
+   "id": "cr_dubs",
+   "label": "Attestation passerelle Dubs (accès universités et EPF)",
+   "level": "passerelle"
+  },
+  {
+   "id": "cr_asd",
+   "label": "Recevabilité de l'admission sur dossier (25 ans)",
+   "level": "passerelle"
+  }
+ ],
+ "trainings": [
+  {
+   "id": "tr_afp",
+   "label": "Formation professionnelle initiale AFP (2 ans)",
+   "entryFrom": [
+    {
+     "from": "co_eb"
+    },
+    {
+     "from": "os_real"
+    },
+    {
+     "from": "os_foerder"
+    }
+   ],
+   "credentialIds": [
+    "cr_afp"
+   ],
+   "durationYears": {
+    "min": 2,
+    "max": 2
+   },
+   "schools": [],
+   "note": null,
+   "sourceIds": [
+    "fr_voies",
+    "fr_os"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22",
+   "grantsQualifiers": [],
+   "fixedCfc": false
+  },
+  {
+   "id": "tr_afp_cfc",
+   "label": "Complément AFP vers CFC",
+   "entryFrom": [
+    {
+     "from": "cr_afp"
+    }
+   ],
+   "credentialIds": [
+    "cr_cfc"
+   ],
+   "durationYears": {
+    "min": 2,
+    "max": 3
+   },
+   "schools": [],
+   "note": "Durée non précisée par la source, estimation à valider.",
+   "sourceIds": [
+    "fr_voies"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22",
+   "grantsQualifiers": [],
+   "fixedCfc": false
+  },
+  {
+   "id": "tr_cfc",
+   "label": "Apprentissage CFC en entreprise (3 ou 4 ans)",
+   "entryFrom": [
+    {
+     "from": "co_eb"
+    },
+    {
+     "from": "co_g"
+    },
+    {
+     "from": "co_pg"
+    },
+    {
+     "from": "os_real"
+    },
+    {
+     "from": "os_sek"
+    },
+    {
+     "from": "os_progym"
+    },
+    {
+     "from": "os_foerder"
+    }
+   ],
+   "credentialIds": [
+    "cr_cfc"
+   ],
+   "durationYears": {
+    "min": 3,
+    "max": 4
+   },
+   "schools": [],
+   "note": null,
+   "sourceIds": [
+    "fr_voies",
+    "fr_os"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22",
+   "grantsQualifiers": [],
+   "fixedCfc": false
+  },
+  {
+   "id": "tr_cfc_mp1",
+   "label": "Apprentissage CFC avec MP intégrée (MP1)",
+   "entryFrom": [
+    {
+     "from": "co_eb",
+     "condition": "Selon résultats et examen d'admission MP"
+    },
+    {
+     "from": "co_g"
+    },
+    {
+     "from": "co_pg"
+    },
+    {
+     "from": "os_sek"
+    },
+    {
+     "from": "os_progym"
+    }
+   ],
+   "credentialIds": [
+    "cr_cfc_mp"
+   ],
+   "durationYears": {
+    "min": 3,
+    "max": 4
+   },
+   "schools": [
+    "EPC",
+    "EPAC",
+    "EPAI",
+    "EMF",
+    "eikon"
+   ],
+   "note": null,
+   "sourceIds": [
+    "fr_voies",
+    "fr_mp"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22",
+   "grantsQualifiers": [],
+   "fixedCfc": false
+  },
+  {
+   "id": "tr_mp2",
+   "label": "MP2 après le CFC (1 an plein temps, 2 ans en emploi)",
+   "entryFrom": [
+    {
+     "from": "cr_cfc"
+    }
+   ],
+   "credentialIds": [
+    "cr_cfc_mp"
+   ],
+   "durationYears": {
+    "min": 1,
+    "max": 2
+   },
+   "schools": [],
+   "note": null,
+   "sourceIds": [
+    "fr_mp"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22",
+   "grantsQualifiers": [],
+   "fixedCfc": false
+  },
+  {
+   "id": "tr_ec",
+   "label": "École de commerce (CFC employé·e de commerce + MP économie et services, 4 ans)",
+   "entryFrom": [
+    {
+     "from": "co_pg"
+    },
+    {
+     "from": "co_g",
+     "condition": "20 points sans note inférieure à 4,5, sinon examen"
+    }
+   ],
+   "credentialIds": [
+    "cr_cfc_mp"
+   ],
+   "durationYears": {
+    "min": 4,
+    "max": 4
+   },
+   "schools": [],
+   "note": null,
+   "sourceIds": [
+    "fr_voies"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22",
+   "grantsQualifiers": [
+    "mp_economie_services",
+    "cfc_liste_filiere:ba_heg_ee"
+   ],
+   "fixedCfc": true
+  },
+  {
+   "id": "tr_emf",
+   "label": "École des métiers de Fribourg (automaticien, électronicien, polymécanicien, informaticien + MP TASV, 4 ans)",
+   "entryFrom": [
+    {
+     "from": "co_g"
+    },
+    {
+     "from": "co_pg"
+    }
+   ],
+   "credentialIds": [
+    "cr_cfc_mp"
+   ],
+   "durationYears": {
+    "min": 4,
+    "max": 4
+   },
+   "schools": [
+    "EMF"
+   ],
+   "note": null,
+   "sourceIds": [
+    "fr_voies"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22",
+   "grantsQualifiers": [
+    "cfc_liste_filiere:ba_heia_ge",
+    "cfc_liste_filiere:ba_heia_gm",
+    "cfc_liste_filiere:ba_heia_isc"
+   ],
+   "fixedCfc": true
+  },
+  {
+   "id": "tr_essg",
+   "label": "ESSG (CFC ASSC + MP santé-social)",
+   "entryFrom": [
+    {
+     "from": "co_g"
+    },
+    {
+     "from": "co_pg"
+    }
+   ],
+   "credentialIds": [
+    "cr_cfc_mp"
+   ],
+   "durationYears": {
+    "min": 3,
+    "max": 3
+   },
+   "schools": [
+    "ESSG"
+   ],
+   "note": null,
+   "sourceIds": [
+    "fr_voies"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22",
+   "grantsQualifiers": [
+    "cfc_sante_mp_sante_social",
+    "cfc_liste_filiere:ba_heds_si"
+   ],
+   "fixedCfc": true
+  },
+  {
+   "id": "tr_eikon",
+   "label": "eikon (CFC Interactive Media Designer, MP arts visuels possible)",
+   "entryFrom": [
+    {
+     "from": "co_g"
+    },
+    {
+     "from": "co_pg"
+    }
+   ],
+   "credentialIds": [
+    "cr_cfc",
+    "cr_cfc_mp"
+   ],
+   "durationYears": {
+    "min": 4,
+    "max": 4
+   },
+   "schools": [
+    "eikon"
+   ],
+   "note": null,
+   "sourceIds": [
+    "fr_voies"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22",
+   "grantsQualifiers": [
+    "cfc_liste_filiere:ba_heia_isc"
+   ],
+   "fixedCfc": true
+  },
+  {
+   "id": "tr_ecg",
+   "label": "École de culture générale (3 ans)",
+   "entryFrom": [
+    {
+     "from": "co_pg"
+    },
+    {
+     "from": "co_g",
+     "condition": "19 points sans note inférieure à 4, sinon examen"
+    },
+    {
+     "from": "os_sek",
+     "condition": "Résultats appropriés (FMS)"
+    },
+    {
+     "from": "os_progym"
+    }
+   ],
+   "credentialIds": [
+    "cr_ecg_sante",
+    "cr_ecg_ts",
+    "cr_ecg_ped"
+   ],
+   "durationYears": {
+    "min": 3,
+    "max": 3
+   },
+   "schools": [],
+   "note": null,
+   "sourceIds": [
+    "fr_voies",
+    "fr_ecg",
+    "fr_os"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22",
+   "grantsQualifiers": [],
+   "fixedCfc": false
+  },
+  {
+   "id": "tr_ms_sante",
+   "label": "Maturité spécialisée santé (1 an)",
+   "entryFrom": [
+    {
+     "from": "cr_ecg_sante"
+    }
+   ],
+   "credentialIds": [
+    "cr_ms_sante"
+   ],
+   "durationYears": {
+    "min": 1,
+    "max": 1
+   },
+   "schools": [],
+   "note": null,
+   "sourceIds": [
+    "fr_ecg",
+    "ecgf_mssa"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22",
+   "grantsQualifiers": [],
+   "fixedCfc": false
+  },
+  {
+   "id": "tr_ms_scexp",
+   "label": "Maturité spécialisée sciences expérimentales (1 an, pilote dès 2026/27)",
+   "entryFrom": [
+    {
+     "from": "cr_ecg_sante"
+    }
+   ],
+   "credentialIds": [
+    "cr_ms_scexp"
+   ],
+   "durationYears": {
+    "min": 1,
+    "max": 1
+   },
+   "schools": [],
+   "note": null,
+   "sourceIds": [
+    "fr_ecg",
+    "heia_faq"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22",
+   "grantsQualifiers": [],
+   "fixedCfc": false
+  },
+  {
+   "id": "tr_ms_ts",
+   "label": "Maturité spécialisée travail social (1 an, 40 semaines de pratique)",
+   "entryFrom": [
+    {
+     "from": "cr_ecg_ts"
+    }
+   ],
+   "credentialIds": [
+    "cr_ms_ts"
+   ],
+   "durationYears": {
+    "min": 1,
+    "max": 1
+   },
+   "schools": [],
+   "note": null,
+   "sourceIds": [
+    "fr_ecg",
+    "ecgf_msts"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22",
+   "grantsQualifiers": [],
+   "fixedCfc": false
+  },
+  {
+   "id": "tr_ms_ped",
+   "label": "Maturité spécialisée pédagogie (1 an, Université de Fribourg)",
+   "entryFrom": [
+    {
+     "from": "cr_ecg_ped"
+    }
+   ],
+   "credentialIds": [
+    "cr_ms_ped"
+   ],
+   "durationYears": {
+    "min": 1,
+    "max": 1
+   },
+   "schools": [],
+   "note": null,
+   "sourceIds": [
+    "fr_ecg"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22",
+   "grantsQualifiers": [],
+   "fixedCfc": false
+  },
+  {
+   "id": "tr_ecg_cfc",
+   "label": "CFC après le certificat ECG",
+   "entryFrom": [
+    {
+     "from": "cr_ecg_sante"
+    },
+    {
+     "from": "cr_ecg_ts"
+    },
+    {
+     "from": "cr_ecg_ped"
+    }
+   ],
+   "credentialIds": [
+    "cr_ecg_cfc"
+   ],
+   "durationYears": {
+    "min": 2,
+    "max": 4
+   },
+   "schools": [],
+   "note": "Durée selon CFC, raccourcissement possible à valider.",
+   "sourceIds": [
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22",
+   "grantsQualifiers": [],
+   "fixedCfc": false
+  },
+  {
+   "id": "tr_gym",
+   "label": "Gymnase / collège (4 ans)",
+   "entryFrom": [
+    {
+     "from": "co_pg"
+    },
+    {
+     "from": "co_g",
+     "condition": "20 points sans note inférieure à 4,5"
+    },
+    {
+     "from": "os_progym"
+    },
+    {
+     "from": "os_sek",
+     "condition": "Résultats appropriés et conditions cantonales"
+    }
+   ],
+   "credentialIds": [
+    "cr_mat_gym"
+   ],
+   "durationYears": {
+    "min": 4,
+    "max": 4
+   },
+   "schools": [],
+   "note": "Depuis la 10H PG : passage anticipé avec 22 points sans note inférieure à 5 (durée totale inchangée).",
+   "sourceIds": [
+    "fr_voies",
+    "fr_co",
+    "fr_os"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22",
+   "grantsQualifiers": [],
+   "fixedCfc": false
+  },
+  {
+   "id": "tr_es",
+   "label": "École supérieure (ES)",
+   "entryFrom": [
+    {
+     "from": "cr_cfc"
+    },
+    {
+     "from": "cr_cfc_mp"
+    },
+    {
+     "from": "cr_ecg_sante"
+    },
+    {
+     "from": "cr_ecg_ts"
+    },
+    {
+     "from": "cr_mat_gym"
+    }
+   ],
+   "credentialIds": [
+    "cr_es"
+   ],
+   "durationYears": {
+    "min": 2,
+    "max": 3
+   },
+   "schools": [],
+   "note": "Durées et conditions variables selon l'ES, à valider.",
+   "sourceIds": [
+    "hesso_adm",
+    "ecgf_ipop"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22",
+   "grantsQualifiers": [],
+   "fixedCfc": false
+  },
+  {
+   "id": "tr_mc_sante",
+   "label": "Modules complémentaires santé (1 an, HEdS-FR)",
+   "entryFrom": [
+    {
+     "from": "cr_mat_gym"
+    },
+    {
+     "from": "cr_cfc_mp",
+     "condition": "MP d'un autre domaine"
+    },
+    {
+     "from": "cr_ms_ts"
+    },
+    {
+     "from": "cr_ms_ped"
+    },
+    {
+     "from": "cr_ms_scexp"
+    }
+   ],
+   "credentialIds": [
+    "cr_mc_sante"
+   ],
+   "durationYears": {
+    "min": 1,
+    "max": 1
+   },
+   "schools": [],
+   "note": null,
+   "sourceIds": [
+    "heds_mc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22",
+   "grantsQualifiers": [],
+   "fixedCfc": false
+  },
+  {
+   "id": "tr_dubs",
+   "label": "Passerelle Dubs (1 an, Collège St-Michel)",
+   "entryFrom": [
+    {
+     "from": "cr_cfc_mp"
+    },
+    {
+     "from": "cr_ms_sante"
+    },
+    {
+     "from": "cr_ms_ts"
+    },
+    {
+     "from": "cr_ms_ped"
+    }
+   ],
+   "credentialIds": [
+    "cr_dubs"
+   ],
+   "durationYears": {
+    "min": 1,
+    "max": 1
+   },
+   "schools": [],
+   "note": "Ouvre les universités et EPF, hors périmètre HES.",
+   "sourceIds": [
+    "fr_dubs"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22",
+   "grantsQualifiers": [],
+   "fixedCfc": false
+  },
+  {
+   "id": "tr_asd",
+   "label": "Constitution d'un dossier ASD (25 ans révolus)",
+   "entryFrom": [
+    {
+     "from": "adulte_25"
+    }
+   ],
+   "credentialIds": [
+    "cr_asd"
+   ],
+   "durationYears": {
+    "min": 0,
+    "max": 1
+   },
+   "schools": [],
+   "note": null,
+   "sourceIds": [
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22",
+   "grantsQualifiers": [],
+   "fixedCfc": false
+  }
+ ],
+ "requirements": [
+  {
+   "id": "EMT_1AN",
+   "label": "Une année d'expérience du monde du travail dans le domaine (stage en Suisse, emploi ou CFC accéléré)",
+   "addsYearsBeforeEntry": 1,
+   "addsYearsToStudies": 0,
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm"
+   ]
+  },
+  {
+   "id": "ANNEE_PASSERELLE",
+   "label": "Année passerelle HEIA-FR (Chimie, ISC ; GE avec l'EMF)",
+   "addsYearsBeforeEntry": 1,
+   "addsYearsToStudies": 0,
+   "sourceIds": [
+    "heia_faq"
+   ]
+  },
+  {
+   "id": "PIBS",
+   "label": "Bachelor intégré à la pratique (PiBS) : 4 ans, contrat de stage ≥ 40 % avec une entreprise partenaire",
+   "addsYearsBeforeEntry": 0,
+   "addsYearsToStudies": 1,
+   "sourceIds": [
+    "heia_pibs"
+   ]
+  },
+  {
+   "id": "STAGE_ARCHI",
+   "label": "Une année de stage en bureau d'architecture reconnu, ou CFC accéléré",
+   "addsYearsBeforeEntry": 1,
+   "addsYearsToStudies": 0,
+   "sourceIds": [
+    "heia_adm_archi"
+   ]
+  },
+  {
+   "id": "COMPL_MATH_PHYS",
+   "label": "Compléments en mathématiques et physique (pilote MS sciences expérimentales vers Chimie, dès 2027)",
+   "addsYearsBeforeEntry": 0,
+   "addsYearsToStudies": 0,
+   "sourceIds": [
+    "heia_faq"
+   ]
+  },
+  {
+   "id": "PRATIQUE_ECO_1AN",
+   "label": "Une année de pratique professionnelle à 100 % dans le domaine de l'économie",
+   "addsYearsBeforeEntry": 1,
+   "addsYearsToStudies": 0,
+   "sourceIds": [
+    "heg_adm"
+   ]
+  },
+  {
+   "id": "EMPLOI_50",
+   "label": "Pour la voie en emploi : activité d'au moins 50 % dans le domaine",
+   "addsYearsBeforeEntry": 0,
+   "addsYearsToStudies": 1,
+   "sourceIds": [
+    "heg_ba"
+   ]
+  },
+  {
+   "id": "EXP_SOCIAL_20",
+   "label": "20 semaines (800 heures) d'expérience spécifique dans le travail social",
+   "addsYearsBeforeEntry": 0.5,
+   "addsYearsToStudies": 0,
+   "sourceIds": [
+    "hets_faq"
+   ]
+  },
+  {
+   "id": "EXP_40_DONT_20",
+   "label": "40 semaines d'expérience, dont 20 spécifiques au travail social",
+   "addsYearsBeforeEntry": 1,
+   "addsYearsToStudies": 0,
+   "sourceIds": [
+    "hets_faq",
+    "hets_adm"
+   ]
+  },
+  {
+   "id": "REGULATION",
+   "label": "Procédure de régulation (nombre de places limité)",
+   "addsYearsBeforeEntry": 0,
+   "addsYearsToStudies": 0,
+   "sourceIds": [
+    "hesso_adm",
+    "heds_osteo",
+    "hets_adm"
+   ]
+  },
+  {
+   "id": "B2_FR",
+   "label": "Français niveau B2",
+   "addsYearsBeforeEntry": 0,
+   "addsYearsToStudies": 0,
+   "sourceIds": [
+    "hets_adm"
+   ]
+  },
+  {
+   "id": "ASD_25",
+   "label": "Admission sur dossier : 25 ans révolus et parcours équivalent",
+   "addsYearsBeforeEntry": 0,
+   "addsYearsToStudies": 0,
+   "sourceIds": [
+    "hesso_adm",
+    "heia_adm_chimie"
+   ]
+  },
+  {
+   "id": "EXAMEN_ADMISSION",
+   "label": "Examen d'admission",
+   "addsYearsBeforeEntry": 0,
+   "addsYearsToStudies": 0,
+   "sourceIds": [
+    "heia_adm_chimie",
+    "heia_adm_archi"
+   ]
+  },
+  {
+   "id": "SELECTION_DOSSIER",
+   "label": "Admission sur dossier dans la limite des places",
+   "addsYearsBeforeEntry": 0,
+   "addsYearsToStudies": 0,
+   "sourceIds": [
+    "m_mse",
+    "m_innokick"
+   ]
+  },
+  {
+   "id": "ANGLAIS_B2",
+   "label": "Anglais niveau B2",
+   "addsYearsBeforeEntry": 0,
+   "addsYearsToStudies": 0,
+   "sourceIds": [
+    "m_mls",
+    "heg_ma"
+   ]
+  },
+  {
+   "id": "STAGE_8_SEM",
+   "label": "Stage de 8 semaines (titulaires de 60 ECTS en médecine ou pharmacie)",
+   "addsYearsBeforeEntry": 0,
+   "addsYearsToStudies": 0,
+   "sourceIds": [
+    "heds_osteo"
+   ]
+  },
+  {
+   "id": "EMPLOI_SOINS_40_60",
+   "label": "Voie en emploi : activité de 40 à 60 % en institution de soins conventionnée",
+   "addsYearsBeforeEntry": 0,
+   "addsYearsToStudies": 1,
+   "sourceIds": [
+    "heds_si_info"
+   ]
+  }
+ ],
+ "programmes": [
+  {
+   "id": "ba_heia_archi",
+   "school": "heia",
+   "degree": "bachelor",
+   "title": "Bachelor of Arts HES-SO en Architecture",
+   "durationYears": 3,
+   "languages": [
+    "fr",
+    "fr-de"
+   ],
+   "modes": [
+    "plein_temps"
+   ],
+   "orientations": [],
+   "regulated": false,
+   "location": "Fribourg",
+   "nextProgrammeIds": [
+    "ma_jma"
+   ],
+   "activityTags": [
+    "concevoir",
+    "construire",
+    "coordonner"
+   ],
+   "activityTagsStatus": "to_review",
+   "note": null,
+   "sourceIds": [
+    "heia_ba",
+    "o_archi"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "ba_heia_chimie",
+   "school": "heia",
+   "degree": "bachelor",
+   "title": "Bachelor of Science HES-SO en Chimie",
+   "durationYears": 3,
+   "languages": [
+    "fr",
+    "fr-de"
+   ],
+   "modes": [
+    "plein_temps"
+   ],
+   "orientations": [],
+   "regulated": false,
+   "location": "Fribourg",
+   "nextProgrammeIds": [
+    "ma_mls",
+    "ma_innokick"
+   ],
+   "activityTags": [
+    "analyser",
+    "concevoir"
+   ],
+   "activityTagsStatus": "to_review",
+   "note": null,
+   "sourceIds": [
+    "heia_ba",
+    "o_chimie"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "ba_heia_gc",
+   "school": "heia",
+   "degree": "bachelor",
+   "title": "Bachelor of Science HES-SO en Génie civil",
+   "durationYears": 3,
+   "languages": [
+    "fr",
+    "fr-de"
+   ],
+   "modes": [
+    "plein_temps",
+    "temps_partiel",
+    "pibs"
+   ],
+   "orientations": [],
+   "regulated": false,
+   "location": "Fribourg",
+   "nextProgrammeIds": [
+    "ma_mse",
+    "ma_innokick"
+   ],
+   "activityTags": [
+    "construire",
+    "concevoir",
+    "coordonner"
+   ],
+   "activityTagsStatus": "to_review",
+   "note": null,
+   "sourceIds": [
+    "heia_ba",
+    "o_gc"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "ba_heia_ge",
+   "school": "heia",
+   "degree": "bachelor",
+   "title": "Bachelor of Science HES-SO en Génie électrique",
+   "durationYears": 3,
+   "languages": [
+    "fr",
+    "fr-de"
+   ],
+   "modes": [
+    "plein_temps",
+    "pibs"
+   ],
+   "orientations": [
+    "Électronique embarquée et signaux",
+    "Systèmes énergétiques"
+   ],
+   "regulated": false,
+   "location": "Fribourg",
+   "nextProgrammeIds": [
+    "ma_mse",
+    "ma_innokick"
+   ],
+   "activityTags": [
+    "concevoir",
+    "analyser",
+    "construire"
+   ],
+   "activityTagsStatus": "to_review",
+   "note": null,
+   "sourceIds": [
+    "heia_ba",
+    "o_ge"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "ba_heia_gm",
+   "school": "heia",
+   "degree": "bachelor",
+   "title": "Bachelor of Science HES-SO en Génie mécanique",
+   "durationYears": 3,
+   "languages": [
+    "fr",
+    "fr-de"
+   ],
+   "modes": [
+    "plein_temps",
+    "pibs"
+   ],
+   "orientations": [
+    "Intégration énergétique",
+    "Plasturgie et structures légères",
+    "Motorisation et technique d'entraînement"
+   ],
+   "regulated": false,
+   "location": "Fribourg",
+   "nextProgrammeIds": [
+    "ma_mse",
+    "ma_innokick"
+   ],
+   "activityTags": [
+    "concevoir",
+    "construire",
+    "analyser"
+   ],
+   "activityTagsStatus": "to_review",
+   "note": null,
+   "sourceIds": [
+    "heia_ba",
+    "o_gm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "ba_heia_isc",
+   "school": "heia",
+   "degree": "bachelor",
+   "title": "Bachelor of Science HES-SO en Informatique et systèmes de communication",
+   "durationYears": 3,
+   "languages": [
+    "fr",
+    "fr-de"
+   ],
+   "modes": [
+    "plein_temps",
+    "temps_partiel",
+    "pibs"
+   ],
+   "orientations": [
+    "Informatique logicielle",
+    "Réseaux et systèmes",
+    "Ingénierie des données"
+   ],
+   "regulated": false,
+   "location": "Fribourg",
+   "nextProgrammeIds": [
+    "ma_mse",
+    "ma_innokick"
+   ],
+   "activityTags": [
+    "concevoir",
+    "analyser",
+    "organiser"
+   ],
+   "activityTagsStatus": "to_review",
+   "note": null,
+   "sourceIds": [
+    "heia_ba",
+    "o_isc"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "ba_heg_ee",
+   "school": "heg",
+   "degree": "bachelor",
+   "title": "Bachelor of Science HES-SO en Économie d'entreprise",
+   "durationYears": 3,
+   "languages": [
+    "fr",
+    "fr-de",
+    "fr-de-en"
+   ],
+   "modes": [
+    "plein_temps",
+    "en_emploi",
+    "temps_partiel"
+   ],
+   "orientations": [
+    "Management durable",
+    "Digital Business"
+   ],
+   "regulated": false,
+   "location": "Fribourg",
+   "nextProgrammeIds": [
+    "ma_heg_entre",
+    "ma_innokick"
+   ],
+   "activityTags": [
+    "organiser",
+    "coordonner",
+    "analyser"
+   ],
+   "activityTagsStatus": "to_review",
+   "note": "Options : Leadership & HR, Marketing & Strategy, Banking & Finance, Finance & Accounting, Global Challenges / SMEs & Impact Entrepreneurship, Competitivity & Sustainability.",
+   "sourceIds": [
+    "heg_ba",
+    "o_eco"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "ba_heds_si",
+   "school": "heds",
+   "degree": "bachelor",
+   "title": "Bachelor of Science HES-SO en Soins infirmiers",
+   "durationYears": 3,
+   "languages": [
+    "fr",
+    "fr-de"
+   ],
+   "modes": [
+    "plein_temps",
+    "en_emploi"
+   ],
+   "orientations": [],
+   "regulated": false,
+   "location": "Fribourg",
+   "nextProgrammeIds": [
+    "ma_mscsi"
+   ],
+   "activityTags": [
+    "soigner",
+    "accompagner",
+    "ecouter"
+   ],
+   "activityTagsStatus": "to_review",
+   "note": null,
+   "sourceIds": [
+    "heds_si",
+    "o_inf"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "ba_heds_osteo",
+   "school": "heds",
+   "degree": "bachelor",
+   "title": "Bachelor of Science HES-SO en Ostéopathie",
+   "durationYears": 3,
+   "languages": [
+    "fr",
+    "fr-de"
+   ],
+   "modes": [
+    "plein_temps"
+   ],
+   "orientations": [],
+   "regulated": true,
+   "location": "Fribourg",
+   "nextProgrammeIds": [
+    "ma_heds_osteo"
+   ],
+   "activityTags": [
+    "soigner",
+    "ecouter",
+    "analyser"
+   ],
+   "activityTagsStatus": "to_review",
+   "note": "55 places (30 bilingues, 25 francophones). Le Bachelor ne donne pas de titre professionnel : le Master est requis pour pratiquer.",
+   "sourceIds": [
+    "heds_osteo",
+    "o_osteo"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "ba_hets_ts",
+   "school": "hets",
+   "degree": "bachelor",
+   "title": "Bachelor of Arts HES-SO en Travail social",
+   "durationYears": 3,
+   "languages": [
+    "fr",
+    "fr-de"
+   ],
+   "modes": [
+    "plein_temps",
+    "en_emploi",
+    "temps_partiel"
+   ],
+   "orientations": [
+    "Éducation sociale",
+    "Service social",
+    "Animation socioculturelle"
+   ],
+   "regulated": true,
+   "location": "Fribourg",
+   "nextProgrammeIds": [
+    "ma_mats"
+   ],
+   "activityTags": [
+    "accompagner",
+    "ecouter",
+    "coordonner"
+   ],
+   "activityTagsStatus": "to_review",
+   "note": "Option animation socioculturelle listée par la HETS-FR mais indiquée comme non proposée à Fribourg par orientation.ch : à confirmer.",
+   "sourceIds": [
+    "hets_ba",
+    "hesso_ts"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "ma_mse",
+   "school": "heia",
+   "degree": "master",
+   "title": "Master of Science HES-SO in Engineering (MSE)",
+   "durationYears": 1.5,
+   "languages": [
+    "fr",
+    "en"
+   ],
+   "modes": [
+    "plein_temps",
+    "temps_partiel"
+   ],
+   "orientations": [
+    "Civil engineering",
+    "Computer science",
+    "Data science",
+    "Electrical engineering",
+    "Information and cyber security",
+    "Energy and environment",
+    "Mechanical engineering",
+    "Microengineering"
+   ],
+   "regulated": false,
+   "location": "Réseau HES-SO, dont Fribourg",
+   "nextProgrammeIds": [],
+   "activityTags": [
+    "concevoir",
+    "analyser",
+    "coordonner"
+   ],
+   "activityTagsStatus": "to_review",
+   "note": "Orientations proposées à Fribourg non précisées par la source.",
+   "sourceIds": [
+    "m_mse",
+    "heia_master"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "ma_mls",
+   "school": "heia",
+   "degree": "master",
+   "title": "Master of Science HES-SO in Life Sciences, orientation Chemical Development & Production",
+   "durationYears": 1.5,
+   "languages": [
+    "en"
+   ],
+   "modes": [
+    "plein_temps",
+    "temps_partiel"
+   ],
+   "orientations": [
+    "Chemical Development & Production"
+   ],
+   "regulated": false,
+   "location": "Fribourg",
+   "nextProgrammeIds": [],
+   "activityTags": [
+    "analyser",
+    "concevoir"
+   ],
+   "activityTagsStatus": "to_review",
+   "note": null,
+   "sourceIds": [
+    "m_mls"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "ma_jma",
+   "school": "heia",
+   "degree": "master",
+   "title": "Joint Master of Architecture BFH/HES-SO",
+   "durationYears": 2,
+   "languages": [
+    "fr",
+    "de"
+   ],
+   "modes": [
+    "plein_temps"
+   ],
+   "orientations": [],
+   "regulated": false,
+   "location": "Fribourg, Berne, Genève",
+   "nextProgrammeIds": [],
+   "activityTags": [
+    "concevoir",
+    "construire"
+   ],
+   "activityTagsStatus": "to_review",
+   "note": null,
+   "sourceIds": [
+    "m_jma"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "ma_innokick",
+   "school": "heia",
+   "degree": "master",
+   "title": "MSc HES-SO Integrated Innovation for Product and Business Development (Innokick)",
+   "durationYears": 1.5,
+   "languages": [
+    "fr",
+    "en"
+   ],
+   "modes": [
+    "plein_temps"
+   ],
+   "orientations": [],
+   "regulated": false,
+   "location": "Renens",
+   "nextProgrammeIds": [],
+   "activityTags": [
+    "concevoir",
+    "coordonner",
+    "organiser"
+   ],
+   "activityTagsStatus": "to_review",
+   "note": null,
+   "sourceIds": [
+    "m_innokick",
+    "heia_master"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "ma_heg_entre",
+   "school": "heg",
+   "degree": "master",
+   "title": "MSc HES-SO in Business Administration, Major Entrepreneurship",
+   "durationYears": 2,
+   "languages": [
+    "en"
+   ],
+   "modes": [
+    "temps_partiel"
+   ],
+   "orientations": [
+    "Innovation and Growth"
+   ],
+   "regulated": false,
+   "location": "Fribourg",
+   "nextProgrammeIds": [],
+   "activityTags": [
+    "organiser",
+    "coordonner",
+    "concevoir"
+   ],
+   "activityTagsStatus": "to_review",
+   "note": null,
+   "sourceIds": [
+    "heg_ma"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "ma_heds_osteo",
+   "school": "heds",
+   "degree": "master",
+   "title": "Master of Science HES-SO en Ostéopathie",
+   "durationYears": 2,
+   "languages": [
+    "fr",
+    "fr-de"
+   ],
+   "modes": [
+    "plein_temps"
+   ],
+   "orientations": [],
+   "regulated": false,
+   "location": "Fribourg",
+   "nextProgrammeIds": [],
+   "activityTags": [
+    "soigner",
+    "ecouter",
+    "analyser"
+   ],
+   "activityTagsStatus": "to_review",
+   "note": "Réservé aux diplômé·es du Bachelor HES-SO en Ostéopathie. Durée à confirmer.",
+   "sourceIds": [
+    "heds_osteo_m",
+    "o_osteo"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "ma_mscsi",
+   "school": "heds",
+   "degree": "master",
+   "title": "Master conjoint ès sciences infirmières UNIL/HES-SO (MScSI)",
+   "durationYears": 2,
+   "languages": [
+    "fr"
+   ],
+   "modes": [
+    "plein_temps"
+   ],
+   "orientations": [],
+   "regulated": false,
+   "location": "Lausanne",
+   "nextProgrammeIds": [],
+   "activityTags": [
+    "soigner",
+    "analyser",
+    "accompagner"
+   ],
+   "activityTagsStatus": "to_review",
+   "note": "4 semestres, français et anglais. Conditions d'admission à confirmer.",
+   "sourceIds": [
+    "m_mscsi"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "ma_mats",
+   "school": "hets",
+   "degree": "master",
+   "title": "Master of Arts HES-SO en Travail social (MATS)",
+   "durationYears": 1.5,
+   "languages": [
+    "fr"
+   ],
+   "modes": [
+    "plein_temps"
+   ],
+   "orientations": [],
+   "regulated": false,
+   "location": "Réseau HES-SO (HETS-FR partenaire)",
+   "nextProgrammeIds": [],
+   "activityTags": [
+    "accompagner",
+    "analyser",
+    "coordonner"
+   ],
+   "activityTagsStatus": "to_review",
+   "note": "Durée à confirmer.",
+   "sourceIds": [
+    "m_mats"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  }
+ ],
+ "cfcLists": {
+  "ba_heia_chimie": {
+   "sourceId": "cfc_chimie",
+   "cfc": [
+    "Céramiste industriel·le",
+    "Droguiste",
+    "Laborantin·e",
+    "Laborantin·e en physique",
+    "Technologue en production chimique et pharmaceutique"
+   ],
+   "complete": true
+  },
+  "ba_heia_archi": {
+   "sourceId": "cfc_archi",
+   "cfc": [
+    "Dessinateur·trice (architecture, génie civil, architecture d'intérieur, architecture paysagère, planification du territoire)",
+    "Géomaticien·ne"
+   ],
+   "complete": true,
+   "note": "Accès direct recommandé sans année d'expérience uniquement pour l'orientation architecture."
+  },
+  "ba_heg_ee": {
+   "sourceId": "heg_adm",
+   "cfc": [
+    "Employé·e de commerce",
+    "Gestionnaire du commerce de détail",
+    "Gestionnaire de vente",
+    "Médiamaticien·ne",
+    "Logisticien·ne",
+    "Droguiste",
+    "Agent·e relation client",
+    "Assistant·e en pharmacie",
+    "Agent·e de transports publics",
+    "Agent·e en information documentaire",
+    "Libraire",
+    "Spécialiste en communication hôtelière",
+    "Opticien·ne",
+    "Assistant·e médical·e",
+    "Développeur·se de business numérique"
+   ],
+   "complete": false,
+   "note": "Liste reprise de la page HEG-FR, à contrôler intitulé par intitulé."
+  },
+  "ba_heia_ge": {
+   "sourceId": "cfc_ge",
+   "cfc": [
+    "Automaticien / Automaticienne",
+    "Constructeur / Constructrice d'appareils industriels",
+    "Constructeur / Constructrice d'installations de ventilation",
+    "Dessinateur / Dessinatrice en construction microtechnique (à partir de la rentrée académique 2020-2021)",
+    "Electricien / Electricienne de montage",
+    "Electricien / Electricienne de réseau",
+    "Electronicien / Electronicienne",
+    "Electronicien / Electronicienne en multimédia",
+    "Informaticien / Informaticienne",
+    "Informaticien / Informaticienne d’entreprise",
+    "Informaticien / Informaticienne du bâtiment",
+    "Installateur / Installatrice en chauffage",
+    "Installateur-électricien / Installatrice-électricienne",
+    "Interactive Media Designer",
+    "Laborantin / Laborantine en physique",
+    "Mécanicien / Mécanicienne de production",
+    "Mécatronicien / Mécatronicienne d'automobiles",
+    "Mécatronicien / Mécatronicienne de remontées mécaniques",
+    "Médiamaticien / Médiamaticienne",
+    "Micromécanicien / Micromécanicienne (à partir de la rentrée académique 2020-2021)",
+    "Monteur / Monteuse automaticien",
+    "Monteur / Monteuse frigoriste",
+    "Opérateur / Opératrice de machines automatisées",
+    "Opérateur / Opératrice en informatique",
+    "Planificateur-électricien / Planificatrice-électricienne",
+    "Polymécanicien / Polymécanicienne",
+    "Projeteur / Projeteuse frigoriste",
+    "Qualiticien / Qualiticienne en microtechnique",
+    "Techniscéniste",
+    "Télématicien / Télématicienne"
+   ],
+   "complete": true,
+   "note": "30 CFC, intitulés repris du PDF officiel (rentrée 2026)."
+  },
+  "ba_heia_gc": {
+   "sourceId": "cfc_gc",
+   "cfc": [
+    "Calorifugeur-tôlier / Calorifugeuse-tôlière",
+    "Carreleur / Carreleuse",
+    "Charpentier / Charpentière",
+    "Constructeur / Constructrice de fondations",
+    "Constructeur / Constructrice de routes",
+    "Constructeur / Constructrice de sols industriels et de chapes",
+    "Constructeur / Constructrice de voies ferrées",
+    "Constructeur / Constructrice d'éléments en béton préfabriqués",
+    "Constructeur / Constructrice d'installations de ventilation",
+    "Constructeur / Constructrice métallique",
+    "Couvreur / Couvreuse",
+    "Dessinateur / Dessinatrice",
+    "Dessinateur-constructeur / Dessinatrice-constructrice sur métal",
+    "Dessinateur-constructeur industriel / Dessinatrice-constructrice industrielle",
+    "Ebéniste/Menuisier / Ebéniste/Menuisière",
+    "Echafaudeur / Echafaudeuse",
+    "Electricien / Electricienne de montage",
+    "Etancheur / Etancheuse",
+    "Façadier / Façadière",
+    "Ferblantier / Ferblantière",
+    "Géomaticien / Géomaticienne",
+    "Installateur / Installatrice en chauffage",
+    "Installateur / Installatrice sanitaire",
+    "Installateur / Installatrice solaire",
+    "Installateur-électricien / Installatrice-électricienne",
+    "Maçon / Maçonne",
+    "Marbrier / Marbrière",
+    "Marbrier / Marbrière du bâtiment",
+    "Opérateur / Opératrice de sciage d'édifice",
+    "Paveur / Paveuse",
+    "Peintre",
+    "Peintre en bâtiment",
+    "Planificateur-électricien / Planificatrice-électricienne",
+    "Plâtrier / Plâtrière",
+    "Plâtrier constructeur à sec / Plâtrière constructrice à sec",
+    "Plâtrier-peintre / Plâtrière-peintre",
+    "Poêlier-fumiste / Poêlière-fumiste",
+    "Polybâtisseur / Polybâtisseuse",
+    "Poseur / Poseuse de sol – parquet",
+    "Projeteur / Projeteuse en technique du bâtiment chauffage",
+    "Projeteur / Projeteuse en technique du bâtiment sanitaire",
+    "Projeteur / Projeteuse en technique du bâtiment ventilation",
+    "Storiste",
+    "Tailleur / Tailleuse de pierre",
+    "Technologue en assainissement",
+    "Vitrier / Vitrière"
+   ],
+   "complete": true,
+   "note": "46 CFC, intitulés repris du PDF officiel (rentrée 2026)."
+  },
+  "ba_heia_gm": {
+   "sourceId": "cfc_gm",
+   "cfc": [
+    "Agent / Agente d'entretien de bateaux",
+    "Agent / Agente technique des matières synthétiques",
+    "Armurier / Armurière",
+    "Artisan / Artisane du cuir et du textile",
+    "Automaticien / Automaticienne",
+    "Bottier-orthopédiste / Bottière-orthopédiste",
+    "Carrossier réparateur / Carrossière réparatrice",
+    "Carrossier-peintre / Carrossière-peintre (jusqu'à 2017)",
+    "Carrossier-tôlier / Carrossière-tôlière (jusqu'à 2017)",
+    "Céramiste industriel / Céramiste industrielle",
+    "Charron / Charronne",
+    "Constructeur / Constructrice d'appareils industriels",
+    "Constructeur / Constructrice de bateaux",
+    "Constructeur / Constructrice de skis (LU)",
+    "Constructeur / Constructrice d'installations de ventilation",
+    "Constructeur / Constructrice métallique",
+    "Cordonnier / Cordonnière",
+    "Coutelier / Coutelière",
+    "Dessinateur / Dessinatrice en construction microtechnique (à partir de la rentrée académique 2020-2021)",
+    "Dessinateur-constructeur / Dessinatrice-constructrice sur métal",
+    "Dessinateur-constructeur industriel / Dessinatrice-constructrice industrielle",
+    "Ebéniste/Menuisier / Ebéniste/Menuisière",
+    "Electricien / Electricienne de montage",
+    "Electricien / Electricienne de réseau",
+    "Electronicien / Electronicienne",
+    "Electronicien / Electronicienne en multimédia",
+    "Electroplaste",
+    "Gainier / Gainière",
+    "Graveur / Graveuse",
+    "Horloger (Rhabilleur) / Horlogère (Rhabilleuse)",
+    "Horloger / Horlogère",
+    "Horloger / Horlogère dans le domaine professionnel de l'industrie",
+    "Horloger / Horlogère dans le domaine professionnel du rhabillage",
+    "Horloger / Horlogère de production",
+    "Horloger-praticien / Horlogère-praticienne",
+    "Imprimeur / Imprimeuse d’emballage",
+    "Installateur / Installatrice en chauffage",
+    "Installateur-électricien / Installatrice-électricienne",
+    "Laborantin / Laborantine",
+    "Laborantin / Laborantine en physique",
+    "Maréchal-ferrant / Maréchale-ferrante",
+    "Mécanicien / Mécanicienne d'appareils à moteur",
+    "Mécanicien / Mécanicienne de production",
+    "Mécanicien / Mécanicienne en cycles",
+    "Mécanicien / Mécanicienne en machines agricoles",
+    "Mécanicien / Mécanicienne en machines de chantier",
+    "Mécanicien / Mécanicienne en maintenance d'automobiles",
+    "Mécanicien / Mécanicienne en motocycles",
+    "Mécanicien / Mécanicienne en motocycles de petite cylindrée et cycles",
+    "Mécatronicien / Mécatronicienne d'automobiles",
+    "Mécatronicien / Mécatronicienne de remontées mécaniques",
+    "Micromécanicien / Micromécanicienne (à partir de la rentrée académique 2020-2021)",
+    "Monteur / Monteuse frigoriste",
+    "Monteur automaticien / Monteuse automaticienne",
+    "Mouleur / Mouleuse",
+    "Mouleur / Mouleuse de fonderie",
+    "Opérateur / Opératrice de machines automatisées",
+    "Opticien / Opticienne en instruments de précision",
+    "Papetier / Papetière",
+    "Planificateur-électricien / Planificatrice-électricienne",
+    "Polymécanicien / Polymécanicienne",
+    "Projeteur / Projeteuse frigoriste",
+    "Qualiticien / Qualiticienne en microtechnique",
+    "Recycleur / Recycleuse",
+    "Repousseur-emboutisseur / Repousseuse-emboutisseuse",
+    "Scieur / Scieuse de l'industrie du bois",
+    "Serrurier / Serrurière sur véhicules",
+    "Souffleur / Souffleuse de verre pour appareils scientifiques",
+    "Technologue de fonderie",
+    "Technologue en emballage",
+    "Technologue en matières plastiques (à partir de la rentrée académique 2022-2023)",
+    "Technologue en production chimique et pharmaceutique",
+    "Télématicien / Télématicienne",
+    "Termineur / Termineuse en habillage horloger",
+    "Tonnelier / Tonnelière",
+    "Vernisseur industriel / Vernisseuse industrielle"
+   ],
+   "complete": true,
+   "note": "76 CFC, intitulés repris du PDF officiel (rentrée 2026)."
+  },
+  "ba_heia_isc": {
+   "sourceId": "cfc_isc",
+   "cfc": [
+    "Acousticien / Acousticienne en systèmes auditifs",
+    "Automaticien / Automaticienne",
+    "Dessinateur / Dessinatrice",
+    "Dessinateur / Dessinatrice en construction microtechnique",
+    "Dessinateur-constructeur industriel/Dessinatrice-constructrice industrielle",
+    "Dessinateur-constructeur / Dessinatrice-constructrice sur métal",
+    "Développeur / Développeuse de business numérique",
+    "Electricien / Electricienne de montage",
+    "Electricien / Electricienne de réseau",
+    "Electronicien / Electronicienne",
+    "Electronicien / Electronicienne en multimédia",
+    "Géomaticien / Géomaticienne",
+    "Graphiste",
+    "Informaticien / Informaticienne",
+    "Informaticien / Informaticienne d’entreprise",
+    "Informaticien / Informaticienne du bâtiment",
+    "Installateur / Installatrice en chauffage",
+    "Installateur / Installatrice sanitaire",
+    "Installateur / Installatrice solaire",
+    "Installateur-électricien/Installatrice-électricienne",
+    "Interactive Media Designer",
+    "Laborantin / Laborantine",
+    "Laborantin / Laborantine en physique",
+    "Logisticien / Logisticienne",
+    "Mécanicien / Mécanicienne d'appareils à moteur",
+    "Mécanicien / Mécanicienne de production",
+    "Mécanicien / Mécanicienne en cycles",
+    "Mécanicien / Mécanicienne en machines agricoles",
+    "Mécanicien / Mécanicienne en machines de chantier",
+    "Mécanicien / Mécanicienne en maintenance d'automobiles",
+    "Mécanicien / Mécanicienne en motocycles",
+    "Mécanicien / Mécanicienne en motocycles de petite cylindrée et cycles",
+    "Mécatronicien / Mécatronicienne d'automobiles",
+    "Mécatronicien / Mécatronicienne de remontées mécaniques",
+    "Médiamaticien / Médiamaticienne",
+    "Micromécanicien / Micromécanicienne",
+    "Monteur automaticien / Monteuse automaticienne",
+    "Opérateur / Opératrice de machines automatisées",
+    "Opérateur / Opératrice de médias imprimés",
+    "Opérateur / Opératrice en informatique",
+    "Opticien / Opticienne",
+    "Opticien / Opticienne en instruments de précision",
+    "Orthopédiste",
+    "Planificateur-électricien / Planificatrice-électricienne",
+    "Polybâtisseur / Polybâtisseuse",
+    "Polydesigner 3D",
+    "Polygraphe",
+    "Polymécanicien / Polymécanicienne",
+    "Projeteur / Projeteuse en technique du bâtiment chauffage",
+    "Projeteur / Projeteuse en technique du bâtiment sanitaire",
+    "Projeteur / Projeteuse en technique du bâtiment ventilation",
+    "Projeteur / Projeteuse frigoriste",
+    "Qualiticien / Qualiticienne en microtechnique",
+    "Technologue en dispositifs médicaux",
+    "Technologue en impression",
+    "Technologue en médias",
+    "Technologue en production chimique et pharmaceutique",
+    "Télématicien / Télématicienne"
+   ],
+   "complete": true,
+   "note": "58 CFC, intitulés repris du PDF officiel (rentrée 2026)."
+  },
+  "ba_heds_si": {
+   "sourceId": "heds_si_info",
+   "cfc": [
+    "Assistant·e en soins et santé communautaire (ASSC)"
+   ],
+   "complete": false,
+   "note": "Autres CFC apparentés santé à confirmer avec la HEdS-FR."
+  },
+  "ba_hets_ts": {
+   "sourceId": "hets_adm",
+   "cfc": [
+    "Assistant·e socio-éducatif·ve (ASE)"
+   ],
+   "complete": true
+  }
+ },
+ "admissionRules": [
+  {
+   "id": "r001",
+   "programmeId": "ba_heia_chimie",
+   "credentialId": "cr_cfc_mp",
+   "qualifier": "cfc_liste_filiere",
+   "access": "direct",
+   "requirementIds": [],
+   "note": null,
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_adm_chimie",
+    "cfc_chimie"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r002",
+   "programmeId": "ba_heia_chimie",
+   "credentialId": "cr_cfc_mp",
+   "qualifier": "cfc_hors_liste",
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "Alternative à EMT_1AN : ANNEE_PASSERELLE",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_adm_chimie"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r003",
+   "programmeId": "ba_heia_chimie",
+   "credentialId": "cr_mat_gym",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "Alternative à EMT_1AN : ANNEE_PASSERELLE",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_adm_chimie"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r004",
+   "programmeId": "ba_heia_chimie",
+   "credentialId": "cr_ms_sante",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "La MS ne donne pas d'accès direct en ingénierie.",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_adm_chimie"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r005",
+   "programmeId": "ba_heia_chimie",
+   "credentialId": "cr_ms_ts",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "La MS ne donne pas d'accès direct en ingénierie.",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_adm_chimie"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r006",
+   "programmeId": "ba_heia_chimie",
+   "credentialId": "cr_ms_ped",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "La MS ne donne pas d'accès direct en ingénierie.",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_adm_chimie"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r007",
+   "programmeId": "ba_heia_chimie",
+   "credentialId": "cr_ms_scexp",
+   "qualifier": null,
+   "access": "direct",
+   "requirementIds": [
+    "COMPL_MATH_PHYS"
+   ],
+   "note": "Projet pilote, dès la rentrée 2027.",
+   "sourceIds": [
+    "heia_faq",
+    "fr_ecg"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r008",
+   "programmeId": "ba_heia_chimie",
+   "credentialId": "cr_ecg_cfc",
+   "qualifier": "cfc_liste_filiere",
+   "access": "direct",
+   "requirementIds": [],
+   "note": "Certificat ECG + CFC équivalent à une MP.",
+   "sourceIds": [
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r009",
+   "programmeId": "ba_heia_chimie",
+   "credentialId": "cr_ecg_cfc",
+   "qualifier": "cfc_hors_liste",
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": null,
+   "sourceIds": [
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r010",
+   "programmeId": "ba_heia_chimie",
+   "credentialId": "cr_es",
+   "qualifier": "es_domaine",
+   "access": "direct",
+   "requirementIds": [],
+   "note": null,
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_adm_chimie"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r011",
+   "programmeId": "ba_heia_chimie",
+   "credentialId": "cr_es",
+   "qualifier": "es_autre_domaine",
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_adm_chimie"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r012",
+   "programmeId": "ba_heia_chimie",
+   "credentialId": "cr_asd",
+   "qualifier": null,
+   "access": "sur_dossier",
+   "requirementIds": [
+    "ASD_25",
+    "EMT_1AN",
+    "EXAMEN_ADMISSION"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heia_adm_chimie",
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r013",
+   "programmeId": "ba_heia_chimie",
+   "credentialId": "cr_cfc",
+   "qualifier": null,
+   "access": "non_admis",
+   "requirementIds": [],
+   "note": "Une maturité (professionnelle, spécialisée ou gymnasiale) est requise.",
+   "sourceIds": [
+    "cfc_chimie"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r014",
+   "programmeId": "ba_heia_gc",
+   "credentialId": "cr_cfc_mp",
+   "qualifier": "cfc_liste_filiere",
+   "access": "direct",
+   "requirementIds": [],
+   "note": null,
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba",
+    "cfc_gc"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r015",
+   "programmeId": "ba_heia_gc",
+   "credentialId": "cr_cfc_mp",
+   "qualifier": "cfc_hors_liste",
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "Alternative à EMT_1AN : PIBS",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r016",
+   "programmeId": "ba_heia_gc",
+   "credentialId": "cr_mat_gym",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "Alternative à EMT_1AN : PIBS",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r017",
+   "programmeId": "ba_heia_gc",
+   "credentialId": "cr_mat_gym",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "PIBS"
+   ],
+   "note": "PiBS : l'expérience pratique est intégrée aux études (4 ans).",
+   "sourceIds": [
+    "heia_pibs"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r018",
+   "programmeId": "ba_heia_gc",
+   "credentialId": "cr_cfc_mp",
+   "qualifier": "cfc_hors_liste",
+   "access": "conditionnel",
+   "requirementIds": [
+    "PIBS"
+   ],
+   "note": "PiBS : l'expérience pratique est intégrée aux études (4 ans).",
+   "sourceIds": [
+    "heia_pibs"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r019",
+   "programmeId": "ba_heia_gc",
+   "credentialId": "cr_ms_sante",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "La MS ne donne pas d'accès direct en ingénierie.",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r020",
+   "programmeId": "ba_heia_gc",
+   "credentialId": "cr_ms_ts",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "La MS ne donne pas d'accès direct en ingénierie.",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r021",
+   "programmeId": "ba_heia_gc",
+   "credentialId": "cr_ms_ped",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "La MS ne donne pas d'accès direct en ingénierie.",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r022",
+   "programmeId": "ba_heia_gc",
+   "credentialId": "cr_ms_scexp",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r023",
+   "programmeId": "ba_heia_gc",
+   "credentialId": "cr_ecg_cfc",
+   "qualifier": "cfc_liste_filiere",
+   "access": "direct",
+   "requirementIds": [],
+   "note": "Certificat ECG + CFC équivalent à une MP.",
+   "sourceIds": [
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r024",
+   "programmeId": "ba_heia_gc",
+   "credentialId": "cr_ecg_cfc",
+   "qualifier": "cfc_hors_liste",
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": null,
+   "sourceIds": [
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r025",
+   "programmeId": "ba_heia_gc",
+   "credentialId": "cr_es",
+   "qualifier": "es_domaine",
+   "access": "direct",
+   "requirementIds": [],
+   "note": null,
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r026",
+   "programmeId": "ba_heia_gc",
+   "credentialId": "cr_es",
+   "qualifier": "es_autre_domaine",
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r027",
+   "programmeId": "ba_heia_gc",
+   "credentialId": "cr_asd",
+   "qualifier": null,
+   "access": "sur_dossier",
+   "requirementIds": [
+    "ASD_25",
+    "EMT_1AN",
+    "EXAMEN_ADMISSION"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heia_adm_chimie",
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r028",
+   "programmeId": "ba_heia_gc",
+   "credentialId": "cr_cfc",
+   "qualifier": null,
+   "access": "non_admis",
+   "requirementIds": [],
+   "note": "Une maturité (professionnelle, spécialisée ou gymnasiale) est requise.",
+   "sourceIds": [
+    "cfc_gc"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r029",
+   "programmeId": "ba_heia_ge",
+   "credentialId": "cr_cfc_mp",
+   "qualifier": "cfc_liste_filiere",
+   "access": "direct",
+   "requirementIds": [],
+   "note": null,
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba",
+    "cfc_ge"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r030",
+   "programmeId": "ba_heia_ge",
+   "credentialId": "cr_cfc_mp",
+   "qualifier": "cfc_hors_liste",
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "Alternative à EMT_1AN : ANNEE_PASSERELLE, PIBS",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r031",
+   "programmeId": "ba_heia_ge",
+   "credentialId": "cr_mat_gym",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "Alternative à EMT_1AN : ANNEE_PASSERELLE, PIBS",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r032",
+   "programmeId": "ba_heia_ge",
+   "credentialId": "cr_mat_gym",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "PIBS"
+   ],
+   "note": "PiBS : l'expérience pratique est intégrée aux études (4 ans).",
+   "sourceIds": [
+    "heia_pibs"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r033",
+   "programmeId": "ba_heia_ge",
+   "credentialId": "cr_cfc_mp",
+   "qualifier": "cfc_hors_liste",
+   "access": "conditionnel",
+   "requirementIds": [
+    "PIBS"
+   ],
+   "note": "PiBS : l'expérience pratique est intégrée aux études (4 ans).",
+   "sourceIds": [
+    "heia_pibs"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r034",
+   "programmeId": "ba_heia_ge",
+   "credentialId": "cr_ms_sante",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "La MS ne donne pas d'accès direct en ingénierie.",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r035",
+   "programmeId": "ba_heia_ge",
+   "credentialId": "cr_ms_ts",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "La MS ne donne pas d'accès direct en ingénierie.",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r036",
+   "programmeId": "ba_heia_ge",
+   "credentialId": "cr_ms_ped",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "La MS ne donne pas d'accès direct en ingénierie.",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r037",
+   "programmeId": "ba_heia_ge",
+   "credentialId": "cr_ms_scexp",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r038",
+   "programmeId": "ba_heia_ge",
+   "credentialId": "cr_ecg_cfc",
+   "qualifier": "cfc_liste_filiere",
+   "access": "direct",
+   "requirementIds": [],
+   "note": "Certificat ECG + CFC équivalent à une MP.",
+   "sourceIds": [
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r039",
+   "programmeId": "ba_heia_ge",
+   "credentialId": "cr_ecg_cfc",
+   "qualifier": "cfc_hors_liste",
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": null,
+   "sourceIds": [
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r040",
+   "programmeId": "ba_heia_ge",
+   "credentialId": "cr_es",
+   "qualifier": "es_domaine",
+   "access": "direct",
+   "requirementIds": [],
+   "note": null,
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r041",
+   "programmeId": "ba_heia_ge",
+   "credentialId": "cr_es",
+   "qualifier": "es_autre_domaine",
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r042",
+   "programmeId": "ba_heia_ge",
+   "credentialId": "cr_asd",
+   "qualifier": null,
+   "access": "sur_dossier",
+   "requirementIds": [
+    "ASD_25",
+    "EMT_1AN",
+    "EXAMEN_ADMISSION"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heia_adm_chimie",
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r043",
+   "programmeId": "ba_heia_ge",
+   "credentialId": "cr_cfc",
+   "qualifier": null,
+   "access": "non_admis",
+   "requirementIds": [],
+   "note": "Une maturité (professionnelle, spécialisée ou gymnasiale) est requise.",
+   "sourceIds": [
+    "cfc_ge"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r044",
+   "programmeId": "ba_heia_gm",
+   "credentialId": "cr_cfc_mp",
+   "qualifier": "cfc_liste_filiere",
+   "access": "direct",
+   "requirementIds": [],
+   "note": null,
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba",
+    "cfc_gm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r045",
+   "programmeId": "ba_heia_gm",
+   "credentialId": "cr_cfc_mp",
+   "qualifier": "cfc_hors_liste",
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "Alternative à EMT_1AN : PIBS",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r046",
+   "programmeId": "ba_heia_gm",
+   "credentialId": "cr_mat_gym",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "Alternative à EMT_1AN : PIBS",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r047",
+   "programmeId": "ba_heia_gm",
+   "credentialId": "cr_mat_gym",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "PIBS"
+   ],
+   "note": "PiBS : l'expérience pratique est intégrée aux études (4 ans).",
+   "sourceIds": [
+    "heia_pibs"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r048",
+   "programmeId": "ba_heia_gm",
+   "credentialId": "cr_cfc_mp",
+   "qualifier": "cfc_hors_liste",
+   "access": "conditionnel",
+   "requirementIds": [
+    "PIBS"
+   ],
+   "note": "PiBS : l'expérience pratique est intégrée aux études (4 ans).",
+   "sourceIds": [
+    "heia_pibs"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r049",
+   "programmeId": "ba_heia_gm",
+   "credentialId": "cr_ms_sante",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "La MS ne donne pas d'accès direct en ingénierie.",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r050",
+   "programmeId": "ba_heia_gm",
+   "credentialId": "cr_ms_ts",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "La MS ne donne pas d'accès direct en ingénierie.",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r051",
+   "programmeId": "ba_heia_gm",
+   "credentialId": "cr_ms_ped",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "La MS ne donne pas d'accès direct en ingénierie.",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r052",
+   "programmeId": "ba_heia_gm",
+   "credentialId": "cr_ms_scexp",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r053",
+   "programmeId": "ba_heia_gm",
+   "credentialId": "cr_ecg_cfc",
+   "qualifier": "cfc_liste_filiere",
+   "access": "direct",
+   "requirementIds": [],
+   "note": "Certificat ECG + CFC équivalent à une MP.",
+   "sourceIds": [
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r054",
+   "programmeId": "ba_heia_gm",
+   "credentialId": "cr_ecg_cfc",
+   "qualifier": "cfc_hors_liste",
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": null,
+   "sourceIds": [
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r055",
+   "programmeId": "ba_heia_gm",
+   "credentialId": "cr_es",
+   "qualifier": "es_domaine",
+   "access": "direct",
+   "requirementIds": [],
+   "note": null,
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r056",
+   "programmeId": "ba_heia_gm",
+   "credentialId": "cr_es",
+   "qualifier": "es_autre_domaine",
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r057",
+   "programmeId": "ba_heia_gm",
+   "credentialId": "cr_asd",
+   "qualifier": null,
+   "access": "sur_dossier",
+   "requirementIds": [
+    "ASD_25",
+    "EMT_1AN",
+    "EXAMEN_ADMISSION"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heia_adm_chimie",
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r058",
+   "programmeId": "ba_heia_gm",
+   "credentialId": "cr_cfc",
+   "qualifier": null,
+   "access": "non_admis",
+   "requirementIds": [],
+   "note": "Une maturité (professionnelle, spécialisée ou gymnasiale) est requise.",
+   "sourceIds": [
+    "cfc_gm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r059",
+   "programmeId": "ba_heia_isc",
+   "credentialId": "cr_cfc_mp",
+   "qualifier": "cfc_liste_filiere",
+   "access": "direct",
+   "requirementIds": [],
+   "note": null,
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba",
+    "cfc_isc"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r060",
+   "programmeId": "ba_heia_isc",
+   "credentialId": "cr_cfc_mp",
+   "qualifier": "cfc_hors_liste",
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "Alternative à EMT_1AN : ANNEE_PASSERELLE, PIBS",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r061",
+   "programmeId": "ba_heia_isc",
+   "credentialId": "cr_mat_gym",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "Alternative à EMT_1AN : ANNEE_PASSERELLE, PIBS",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r062",
+   "programmeId": "ba_heia_isc",
+   "credentialId": "cr_mat_gym",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "PIBS"
+   ],
+   "note": "PiBS : l'expérience pratique est intégrée aux études (4 ans).",
+   "sourceIds": [
+    "heia_pibs"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r063",
+   "programmeId": "ba_heia_isc",
+   "credentialId": "cr_cfc_mp",
+   "qualifier": "cfc_hors_liste",
+   "access": "conditionnel",
+   "requirementIds": [
+    "PIBS"
+   ],
+   "note": "PiBS : l'expérience pratique est intégrée aux études (4 ans).",
+   "sourceIds": [
+    "heia_pibs"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r064",
+   "programmeId": "ba_heia_isc",
+   "credentialId": "cr_ms_sante",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "La MS ne donne pas d'accès direct en ingénierie.",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r065",
+   "programmeId": "ba_heia_isc",
+   "credentialId": "cr_ms_ts",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "La MS ne donne pas d'accès direct en ingénierie.",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r066",
+   "programmeId": "ba_heia_isc",
+   "credentialId": "cr_ms_ped",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": "La MS ne donne pas d'accès direct en ingénierie.",
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r067",
+   "programmeId": "ba_heia_isc",
+   "credentialId": "cr_ms_scexp",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r068",
+   "programmeId": "ba_heia_isc",
+   "credentialId": "cr_ecg_cfc",
+   "qualifier": "cfc_liste_filiere",
+   "access": "direct",
+   "requirementIds": [],
+   "note": "Certificat ECG + CFC équivalent à une MP.",
+   "sourceIds": [
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r069",
+   "programmeId": "ba_heia_isc",
+   "credentialId": "cr_ecg_cfc",
+   "qualifier": "cfc_hors_liste",
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": null,
+   "sourceIds": [
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r070",
+   "programmeId": "ba_heia_isc",
+   "credentialId": "cr_es",
+   "qualifier": "es_domaine",
+   "access": "direct",
+   "requirementIds": [],
+   "note": null,
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r071",
+   "programmeId": "ba_heia_isc",
+   "credentialId": "cr_es",
+   "qualifier": "es_autre_domaine",
+   "access": "conditionnel",
+   "requirementIds": [
+    "EMT_1AN"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heia_faq",
+    "hesso_adm",
+    "heia_ba"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r072",
+   "programmeId": "ba_heia_isc",
+   "credentialId": "cr_asd",
+   "qualifier": null,
+   "access": "sur_dossier",
+   "requirementIds": [
+    "ASD_25",
+    "EMT_1AN",
+    "EXAMEN_ADMISSION"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heia_adm_chimie",
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r073",
+   "programmeId": "ba_heia_isc",
+   "credentialId": "cr_cfc",
+   "qualifier": null,
+   "access": "non_admis",
+   "requirementIds": [],
+   "note": "Une maturité (professionnelle, spécialisée ou gymnasiale) est requise.",
+   "sourceIds": [
+    "cfc_isc"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r074",
+   "programmeId": "ba_heia_archi",
+   "credentialId": "cr_cfc_mp",
+   "qualifier": "cfc_liste_filiere",
+   "access": "direct",
+   "requirementIds": [],
+   "note": "Dessinateur·trice orientation architecture ; pour les autres CFC de la liste, une année d'expérience reste vivement recommandée.",
+   "sourceIds": [
+    "heia_adm_archi",
+    "cfc_archi"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r075",
+   "programmeId": "ba_heia_archi",
+   "credentialId": "cr_cfc_mp",
+   "qualifier": "cfc_hors_liste",
+   "access": "conditionnel",
+   "requirementIds": [
+    "STAGE_ARCHI"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heia_adm_archi"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r076",
+   "programmeId": "ba_heia_archi",
+   "credentialId": "cr_mat_gym",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "STAGE_ARCHI"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heia_adm_archi"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r077",
+   "programmeId": "ba_heia_archi",
+   "credentialId": "cr_ms_sante",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "STAGE_ARCHI"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heia_adm_archi"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r078",
+   "programmeId": "ba_heia_archi",
+   "credentialId": "cr_ms_ts",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "STAGE_ARCHI"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heia_adm_archi"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r079",
+   "programmeId": "ba_heia_archi",
+   "credentialId": "cr_ms_ped",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "STAGE_ARCHI"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heia_adm_archi"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r080",
+   "programmeId": "ba_heia_archi",
+   "credentialId": "cr_ms_scexp",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "STAGE_ARCHI"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heia_adm_archi"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r081",
+   "programmeId": "ba_heia_archi",
+   "credentialId": "cr_ecg_cfc",
+   "qualifier": "cfc_liste_filiere",
+   "access": "direct",
+   "requirementIds": [],
+   "note": "CFC dessinateur·trice orientation architecture.",
+   "sourceIds": [
+    "heia_adm_archi"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r082",
+   "programmeId": "ba_heia_archi",
+   "credentialId": "cr_ecg_cfc",
+   "qualifier": "cfc_hors_liste",
+   "access": "conditionnel",
+   "requirementIds": [
+    "STAGE_ARCHI"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heia_adm_archi"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r083",
+   "programmeId": "ba_heia_archi",
+   "credentialId": "cr_es",
+   "qualifier": "es_domaine",
+   "access": "direct",
+   "requirementIds": [],
+   "note": null,
+   "sourceIds": [
+    "heia_adm_archi"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r084",
+   "programmeId": "ba_heia_archi",
+   "credentialId": "cr_es",
+   "qualifier": "es_autre_domaine",
+   "access": "conditionnel",
+   "requirementIds": [
+    "STAGE_ARCHI"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heia_adm_archi"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r085",
+   "programmeId": "ba_heia_archi",
+   "credentialId": "cr_asd",
+   "qualifier": null,
+   "access": "sur_dossier",
+   "requirementIds": [
+    "ASD_25",
+    "EMT_1AN",
+    "EXAMEN_ADMISSION"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heia_adm_archi"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r086",
+   "programmeId": "ba_heia_archi",
+   "credentialId": "cr_cfc",
+   "qualifier": null,
+   "access": "non_admis",
+   "requirementIds": [],
+   "note": "Maturité requise.",
+   "sourceIds": [
+    "cfc_archi"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r087",
+   "programmeId": "ba_heg_ee",
+   "credentialId": "cr_cfc_mp",
+   "qualifier": "mp_economie_services",
+   "access": "direct",
+   "requirementIds": [],
+   "note": "MP commerciale / économie et services, type économie.",
+   "sourceIds": [
+    "heg_adm"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r088",
+   "programmeId": "ba_heg_ee",
+   "credentialId": "cr_cfc_mp",
+   "qualifier": "cfc_liste_filiere",
+   "access": "direct",
+   "requirementIds": [],
+   "note": "Maturité + CFC du domaine.",
+   "sourceIds": [
+    "heg_adm"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r089",
+   "programmeId": "ba_heg_ee",
+   "credentialId": "cr_cfc_mp",
+   "qualifier": "cfc_hors_liste",
+   "access": "conditionnel",
+   "requirementIds": [
+    "PRATIQUE_ECO_1AN"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heg_adm"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r090",
+   "programmeId": "ba_heg_ee",
+   "credentialId": "cr_mat_gym",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "PRATIQUE_ECO_1AN"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heg_adm"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r091",
+   "programmeId": "ba_heg_ee",
+   "credentialId": "cr_ms_sante",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "PRATIQUE_ECO_1AN"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heg_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r092",
+   "programmeId": "ba_heg_ee",
+   "credentialId": "cr_ms_ts",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "PRATIQUE_ECO_1AN"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heg_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r093",
+   "programmeId": "ba_heg_ee",
+   "credentialId": "cr_ms_ped",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "PRATIQUE_ECO_1AN"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heg_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r094",
+   "programmeId": "ba_heg_ee",
+   "credentialId": "cr_ms_scexp",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "PRATIQUE_ECO_1AN"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heg_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r095",
+   "programmeId": "ba_heg_ee",
+   "credentialId": "cr_ecg_cfc",
+   "qualifier": "cfc_liste_filiere",
+   "access": "direct",
+   "requirementIds": [],
+   "note": "Équivalence MP selon HES-SO, à confirmer avec la HEG-FR.",
+   "sourceIds": [
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r096",
+   "programmeId": "ba_heg_ee",
+   "credentialId": "cr_es",
+   "qualifier": "es_domaine",
+   "access": "direct",
+   "requirementIds": [],
+   "note": "À confirmer avec la HEG-FR.",
+   "sourceIds": [
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r097",
+   "programmeId": "ba_heg_ee",
+   "credentialId": "cr_asd",
+   "qualifier": null,
+   "access": "sur_dossier",
+   "requirementIds": [
+    "ASD_25"
+   ],
+   "note": "Règle HES-SO générale, à confirmer avec la HEG-FR.",
+   "sourceIds": [
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r098",
+   "programmeId": "ba_heg_ee",
+   "credentialId": "cr_cfc",
+   "qualifier": null,
+   "access": "non_admis",
+   "requirementIds": [],
+   "note": "Un CFC sans maturité ne donne pas accès.",
+   "sourceIds": [
+    "heg_adm"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r099",
+   "programmeId": "ba_heds_si",
+   "credentialId": "cr_cfc_mp",
+   "qualifier": "cfc_sante_mp_sante_social",
+   "access": "direct",
+   "requirementIds": [],
+   "note": "Voie en emploi : priorité aux ASSC + MP santé-social.",
+   "sourceIds": [
+    "heds_si",
+    "heds_si_info"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r100",
+   "programmeId": "ba_heds_si",
+   "credentialId": "cr_ms_sante",
+   "qualifier": null,
+   "access": "direct",
+   "requirementIds": [],
+   "note": null,
+   "sourceIds": [
+    "heds_si",
+    "ecgf_mssa"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r101",
+   "programmeId": "ba_heds_si",
+   "credentialId": "cr_es",
+   "qualifier": "es_sante",
+   "access": "direct",
+   "requirementIds": [],
+   "note": "ES infirmier·ère : 90 ECTS reconnus.",
+   "sourceIds": [
+    "heds_si"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r102",
+   "programmeId": "ba_heds_si",
+   "credentialId": "cr_mc_sante",
+   "qualifier": null,
+   "access": "direct",
+   "requirementIds": [],
+   "note": "MC après maturité gymnasiale, MP ou MS d'un autre domaine.",
+   "sourceIds": [
+    "heds_mc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r103",
+   "programmeId": "ba_heds_si",
+   "credentialId": "cr_asd",
+   "qualifier": null,
+   "access": "sur_dossier",
+   "requirementIds": [
+    "ASD_25"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heds_si",
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r104",
+   "programmeId": "ba_heds_si",
+   "credentialId": "cr_cfc",
+   "qualifier": null,
+   "access": "non_admis",
+   "requirementIds": [],
+   "note": "Maturité requise.",
+   "sourceIds": [
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r105",
+   "programmeId": "ba_heds_osteo",
+   "credentialId": "cr_ms_sante",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "REGULATION"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heds_osteo"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r106",
+   "programmeId": "ba_heds_osteo",
+   "credentialId": "cr_mc_sante",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "REGULATION"
+   ],
+   "note": null,
+   "sourceIds": [
+    "heds_osteo",
+    "heds_mc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r107",
+   "programmeId": "ba_heds_osteo",
+   "credentialId": "cr_cfc_mp",
+   "qualifier": "cfc_sante_mp_sante_social",
+   "access": "conditionnel",
+   "requirementIds": [
+    "REGULATION"
+   ],
+   "note": "À confirmer avec la HEdS-FR.",
+   "sourceIds": [
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r108",
+   "programmeId": "ba_heds_osteo",
+   "credentialId": "cr_es",
+   "qualifier": "es_sante",
+   "access": "conditionnel",
+   "requirementIds": [
+    "REGULATION"
+   ],
+   "note": "À confirmer avec la HEdS-FR.",
+   "sourceIds": [
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r109",
+   "programmeId": "ba_heds_osteo",
+   "credentialId": "cr_asd",
+   "qualifier": null,
+   "access": "sur_dossier",
+   "requirementIds": [
+    "ASD_25",
+    "REGULATION"
+   ],
+   "note": null,
+   "sourceIds": [
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r110",
+   "programmeId": "ba_heds_osteo",
+   "credentialId": "cr_cfc",
+   "qualifier": null,
+   "access": "non_admis",
+   "requirementIds": [],
+   "note": "Maturité requise.",
+   "sourceIds": [
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r111",
+   "programmeId": "ba_hets_ts",
+   "credentialId": "cr_cfc_mp",
+   "qualifier": "cfc_ase",
+   "access": "direct",
+   "requirementIds": [
+    "REGULATION",
+    "B2_FR"
+   ],
+   "note": null,
+   "sourceIds": [
+    "hets_adm",
+    "hets_faq"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r112",
+   "programmeId": "ba_hets_ts",
+   "credentialId": "cr_cfc_mp",
+   "qualifier": "cfc_hors_liste",
+   "access": "conditionnel",
+   "requirementIds": [
+    "EXP_SOCIAL_20",
+    "REGULATION",
+    "B2_FR"
+   ],
+   "note": null,
+   "sourceIds": [
+    "hets_faq"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r113",
+   "programmeId": "ba_hets_ts",
+   "credentialId": "cr_ms_ts",
+   "qualifier": null,
+   "access": "direct",
+   "requirementIds": [
+    "REGULATION",
+    "B2_FR"
+   ],
+   "note": null,
+   "sourceIds": [
+    "hets_adm",
+    "ecgf_msts"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r114",
+   "programmeId": "ba_hets_ts",
+   "credentialId": "cr_es",
+   "qualifier": "es_social",
+   "access": "direct",
+   "requirementIds": [
+    "REGULATION",
+    "B2_FR"
+   ],
+   "note": "ES éducation sociale ou éducation de l'enfance : 90 ECTS d'équivalences.",
+   "sourceIds": [
+    "hets_adm"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r115",
+   "programmeId": "ba_hets_ts",
+   "credentialId": "cr_mat_gym",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EXP_40_DONT_20",
+    "REGULATION",
+    "B2_FR"
+   ],
+   "note": null,
+   "sourceIds": [
+    "hets_adm",
+    "hets_faq"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r116",
+   "programmeId": "ba_hets_ts",
+   "credentialId": "cr_ms_sante",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EXP_40_DONT_20",
+    "REGULATION",
+    "B2_FR"
+   ],
+   "note": null,
+   "sourceIds": [
+    "hets_adm",
+    "hets_faq"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r117",
+   "programmeId": "ba_hets_ts",
+   "credentialId": "cr_ms_ped",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EXP_40_DONT_20",
+    "REGULATION",
+    "B2_FR"
+   ],
+   "note": null,
+   "sourceIds": [
+    "hets_adm",
+    "hets_faq"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r118",
+   "programmeId": "ba_hets_ts",
+   "credentialId": "cr_ms_scexp",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EXP_40_DONT_20",
+    "REGULATION",
+    "B2_FR"
+   ],
+   "note": null,
+   "sourceIds": [
+    "hets_adm",
+    "hets_faq"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r119",
+   "programmeId": "ba_hets_ts",
+   "credentialId": "cr_ecg_cfc",
+   "qualifier": null,
+   "access": "conditionnel",
+   "requirementIds": [
+    "EXP_SOCIAL_20",
+    "REGULATION",
+    "B2_FR"
+   ],
+   "note": "Équivalence MP selon HES-SO.",
+   "sourceIds": [
+    "hesso_adm",
+    "hets_faq"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r120",
+   "programmeId": "ba_hets_ts",
+   "credentialId": "cr_asd",
+   "qualifier": null,
+   "access": "sur_dossier",
+   "requirementIds": [
+    "ASD_25",
+    "REGULATION",
+    "B2_FR"
+   ],
+   "note": "Via la procédure ASD Villari.",
+   "sourceIds": [
+    "hets_adm"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r121",
+   "programmeId": "ba_hets_ts",
+   "credentialId": "cr_cfc",
+   "qualifier": null,
+   "access": "non_admis",
+   "requirementIds": [],
+   "note": "Maturité requise (MP, MS ou gymnasiale).",
+   "sourceIds": [
+    "hesso_adm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r122",
+   "programmeId": "ma_mse",
+   "credentialId": "ba_heia_gc",
+   "qualifier": null,
+   "access": "sur_dossier",
+   "requirementIds": [
+    "SELECTION_DOSSIER"
+   ],
+   "note": "Filière d'apport.",
+   "sourceIds": [
+    "m_mse"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r123",
+   "programmeId": "ma_mse",
+   "credentialId": "ba_heia_ge",
+   "qualifier": null,
+   "access": "sur_dossier",
+   "requirementIds": [
+    "SELECTION_DOSSIER"
+   ],
+   "note": "Filière d'apport.",
+   "sourceIds": [
+    "m_mse"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r124",
+   "programmeId": "ma_mse",
+   "credentialId": "ba_heia_gm",
+   "qualifier": null,
+   "access": "sur_dossier",
+   "requirementIds": [
+    "SELECTION_DOSSIER"
+   ],
+   "note": "Filière d'apport.",
+   "sourceIds": [
+    "m_mse"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r125",
+   "programmeId": "ma_mse",
+   "credentialId": "ba_heia_isc",
+   "qualifier": null,
+   "access": "sur_dossier",
+   "requirementIds": [
+    "SELECTION_DOSSIER"
+   ],
+   "note": "Filière d'apport.",
+   "sourceIds": [
+    "m_mse"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r126",
+   "programmeId": "ma_mls",
+   "credentialId": "ba_heia_chimie",
+   "qualifier": null,
+   "access": "direct",
+   "requirementIds": [
+    "ANGLAIS_B2"
+   ],
+   "note": null,
+   "sourceIds": [
+    "m_mls"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r127",
+   "programmeId": "ma_jma",
+   "credentialId": "ba_heia_archi",
+   "qualifier": null,
+   "access": "direct",
+   "requirementIds": [],
+   "note": "Conditions non détaillées par la source.",
+   "sourceIds": [
+    "m_jma"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r128",
+   "programmeId": "ma_innokick",
+   "credentialId": "ba_heia_archi",
+   "qualifier": null,
+   "access": "sur_dossier",
+   "requirementIds": [
+    "SELECTION_DOSSIER"
+   ],
+   "note": "Ouvert aux titulaires d'un Bachelor de différents domaines ; à confirmer.",
+   "sourceIds": [
+    "m_innokick"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r129",
+   "programmeId": "ma_innokick",
+   "credentialId": "ba_heia_chimie",
+   "qualifier": null,
+   "access": "sur_dossier",
+   "requirementIds": [
+    "SELECTION_DOSSIER"
+   ],
+   "note": "Ouvert aux titulaires d'un Bachelor de différents domaines ; à confirmer.",
+   "sourceIds": [
+    "m_innokick"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r130",
+   "programmeId": "ma_innokick",
+   "credentialId": "ba_heia_gc",
+   "qualifier": null,
+   "access": "sur_dossier",
+   "requirementIds": [
+    "SELECTION_DOSSIER"
+   ],
+   "note": "Ouvert aux titulaires d'un Bachelor de différents domaines ; à confirmer.",
+   "sourceIds": [
+    "m_innokick"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r131",
+   "programmeId": "ma_innokick",
+   "credentialId": "ba_heia_ge",
+   "qualifier": null,
+   "access": "sur_dossier",
+   "requirementIds": [
+    "SELECTION_DOSSIER"
+   ],
+   "note": "Ouvert aux titulaires d'un Bachelor de différents domaines ; à confirmer.",
+   "sourceIds": [
+    "m_innokick"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r132",
+   "programmeId": "ma_innokick",
+   "credentialId": "ba_heia_gm",
+   "qualifier": null,
+   "access": "sur_dossier",
+   "requirementIds": [
+    "SELECTION_DOSSIER"
+   ],
+   "note": "Ouvert aux titulaires d'un Bachelor de différents domaines ; à confirmer.",
+   "sourceIds": [
+    "m_innokick"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r133",
+   "programmeId": "ma_innokick",
+   "credentialId": "ba_heia_isc",
+   "qualifier": null,
+   "access": "sur_dossier",
+   "requirementIds": [
+    "SELECTION_DOSSIER"
+   ],
+   "note": "Ouvert aux titulaires d'un Bachelor de différents domaines ; à confirmer.",
+   "sourceIds": [
+    "m_innokick"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r134",
+   "programmeId": "ma_innokick",
+   "credentialId": "ba_heg_ee",
+   "qualifier": null,
+   "access": "sur_dossier",
+   "requirementIds": [
+    "SELECTION_DOSSIER"
+   ],
+   "note": "Ouvert aux titulaires d'un Bachelor de différents domaines ; à confirmer.",
+   "sourceIds": [
+    "m_innokick"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r135",
+   "programmeId": "ma_innokick",
+   "credentialId": "ba_heds_si",
+   "qualifier": null,
+   "access": "sur_dossier",
+   "requirementIds": [
+    "SELECTION_DOSSIER"
+   ],
+   "note": "Ouvert aux titulaires d'un Bachelor de différents domaines ; à confirmer.",
+   "sourceIds": [
+    "m_innokick"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r136",
+   "programmeId": "ma_innokick",
+   "credentialId": "ba_heds_osteo",
+   "qualifier": null,
+   "access": "sur_dossier",
+   "requirementIds": [
+    "SELECTION_DOSSIER"
+   ],
+   "note": "Ouvert aux titulaires d'un Bachelor de différents domaines ; à confirmer.",
+   "sourceIds": [
+    "m_innokick"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r137",
+   "programmeId": "ma_innokick",
+   "credentialId": "ba_hets_ts",
+   "qualifier": null,
+   "access": "sur_dossier",
+   "requirementIds": [
+    "SELECTION_DOSSIER"
+   ],
+   "note": "Ouvert aux titulaires d'un Bachelor de différents domaines ; à confirmer.",
+   "sourceIds": [
+    "m_innokick"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r138",
+   "programmeId": "ma_heg_entre",
+   "credentialId": "ba_heg_ee",
+   "qualifier": null,
+   "access": "direct",
+   "requirementIds": [
+    "ANGLAIS_B2"
+   ],
+   "note": "À confirmer.",
+   "sourceIds": [
+    "heg_ma"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r139",
+   "programmeId": "ma_heds_osteo",
+   "credentialId": "ba_heds_osteo",
+   "qualifier": null,
+   "access": "direct",
+   "requirementIds": [],
+   "note": null,
+   "sourceIds": [
+    "heds_osteo_m"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r140",
+   "programmeId": "ma_mscsi",
+   "credentialId": "ba_heds_si",
+   "qualifier": null,
+   "access": "direct",
+   "requirementIds": [],
+   "note": "Conditions non détaillées par la source, à confirmer.",
+   "sourceIds": [
+    "m_mscsi"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "r141",
+   "programmeId": "ma_mats",
+   "credentialId": "ba_hets_ts",
+   "qualifier": null,
+   "access": "direct",
+   "requirementIds": [],
+   "note": "À confirmer.",
+   "sourceIds": [
+    "m_mats"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  }
+ ],
+ "occupations": [
+  {
+   "id": "oc_ba_heia_archi_01",
+   "label": "Architecte (collaborateur·trice, indépendant·e, associé·e)"
+  },
+  {
+   "id": "oc_ba_heia_archi_02",
+   "label": "Chef·fe de projet en bureau d'architecture"
+  },
+  {
+   "id": "oc_ba_heia_archi_03",
+   "label": "Responsable de la direction des travaux"
+  },
+  {
+   "id": "oc_ba_heia_archi_04",
+   "label": "Chef·fe d'équipe de dessinateurs·trices"
+  },
+  {
+   "id": "oc_ba_heia_archi_05",
+   "label": "Restauration du patrimoine bâti"
+  },
+  {
+   "id": "oc_ba_heia_archi_06",
+   "label": "Études de faisabilité, expertises immobilières, assurances"
+  },
+  {
+   "id": "oc_ba_heia_archi_07",
+   "label": "Acoustique et physique du bâtiment"
+  },
+  {
+   "id": "oc_ba_heia_archi_08",
+   "label": "Urbanisme et aménagement du territoire"
+  },
+  {
+   "id": "oc_ba_heia_archi_09",
+   "label": "Énergies renouvelables et construction durable"
+  },
+  {
+   "id": "oc_ba_heia_archi_10",
+   "label": "Architecte inscrit·e au Registre suisse REG A (avec le JMA)"
+  },
+  {
+   "id": "oc_ba_heia_archi_11",
+   "label": "Bureaux d'architecture et d'urbanisme, entreprises générales, services techniques publics, agences immobilières"
+  },
+  {
+   "id": "oc_ba_heia_archi_12",
+   "label": "Coordinateur·trice BIM"
+  },
+  {
+   "id": "oc_ba_heia_archi_13",
+   "label": "Représentant·e du maître d'ouvrage (collectivité, institution)"
+  },
+  {
+   "id": "oc_ba_heia_archi_14",
+   "label": "Conseiller·ère en rénovation énergétique"
+  },
+  {
+   "id": "oc_ba_heia_chimie_01",
+   "label": "Ingénieur·e en chimie"
+  },
+  {
+   "id": "oc_ba_heia_chimie_02",
+   "label": "Ingénieur·e en développement de produits"
+  },
+  {
+   "id": "oc_ba_heia_chimie_03",
+   "label": "Ingénieur·e de procédés et pilotage d'installations de production"
+  },
+  {
+   "id": "oc_ba_heia_chimie_04",
+   "label": "Responsable contrôle analytique et qualité"
+  },
+  {
+   "id": "oc_ba_heia_chimie_05",
+   "label": "Technico-commercial·e (vente, marketing technique)"
+  },
+  {
+   "id": "oc_ba_heia_chimie_06",
+   "label": "Collaborateur·trice de laboratoire cantonal ou fédéral"
+  },
+  {
+   "id": "oc_ba_heia_chimie_07",
+   "label": "Chef·fe de laboratoire, responsable de production, cadre"
+  },
+  {
+   "id": "oc_ba_heia_chimie_08",
+   "label": "Enseignant·e (écoles professionnelles)"
+  },
+  {
+   "id": "oc_ba_heia_chimie_09",
+   "label": "Développement chimique et production à haute responsabilité (MSc Life Sciences CDP)"
+  },
+  {
+   "id": "oc_ba_heia_chimie_10",
+   "label": "Chimie, pharma, biotech, agroalimentaire, matériaux, administrations"
+  },
+  {
+   "id": "oc_ba_heia_chimie_11",
+   "label": "Spécialiste affaires réglementaires"
+  },
+  {
+   "id": "oc_ba_heia_chimie_12",
+   "label": "Responsable santé, sécurité et environnement (HSE)"
+  },
+  {
+   "id": "oc_ba_heia_gc_01",
+   "label": "Ingénieur·e civil·e"
+  },
+  {
+   "id": "oc_ba_heia_gc_02",
+   "label": "Ingénieur·e de projet en bureau d'études (structures, géotechnique, hydraulique, transports)"
+  },
+  {
+   "id": "oc_ba_heia_gc_03",
+   "label": "Responsable de la direction et de la surveillance des travaux"
+  },
+  {
+   "id": "oc_ba_heia_gc_04",
+   "label": "Responsable des soumissions"
+  },
+  {
+   "id": "oc_ba_heia_gc_05",
+   "label": "Ingénieur·e dans un service technique public"
+  },
+  {
+   "id": "oc_ba_heia_gc_06",
+   "label": "Ingénieur·e essais et recherche sur les matériaux"
+  },
+  {
+   "id": "oc_ba_heia_gc_07",
+   "label": "Chef·fe de projet, associé·e de bureau, chef·fe de service, inscription REG"
+  },
+  {
+   "id": "oc_ba_heia_gc_08",
+   "label": "Responsable de projets d'envergure (MSE Civil engineering)"
+  },
+  {
+   "id": "oc_ba_heia_gc_09",
+   "label": "Bureaux d'ingénieurs, entreprises de construction, collectivités, industrie des matériaux, laboratoires d'essais"
+  },
+  {
+   "id": "oc_ba_heia_gc_10",
+   "label": "Conducteur·trice de travaux"
+  },
+  {
+   "id": "oc_ba_heia_gc_11",
+   "label": "Ingénieur·e mobilité ou gestion des eaux en collectivité"
+  },
+  {
+   "id": "oc_ba_heia_ge_01",
+   "label": "Ingénieur·e en génie électrique"
+  },
+  {
+   "id": "oc_ba_heia_ge_02",
+   "label": "Ingénieur·e de développement électronique embarquée et traitement des signaux"
+  },
+  {
+   "id": "oc_ba_heia_ge_03",
+   "label": "Ingénieur·e en systèmes énergétiques"
+  },
+  {
+   "id": "oc_ba_heia_ge_04",
+   "label": "Ingénieur·e de recherche et de mise en service"
+  },
+  {
+   "id": "oc_ba_heia_ge_05",
+   "label": "Chef·fe de groupe de laboratoire de recherche"
+  },
+  {
+   "id": "oc_ba_heia_ge_06",
+   "label": "Chef·fe de développement, responsable de production"
+  },
+  {
+   "id": "oc_ba_heia_ge_07",
+   "label": "Responsable de centre de calcul, cadre supérieur·e"
+  },
+  {
+   "id": "oc_ba_heia_ge_08",
+   "label": "Responsable de projets technologiques (MSE Electrical engineering, Energy and environment)"
+  },
+  {
+   "id": "oc_ba_heia_ge_09",
+   "label": "Électronique, énergie, télécommunications, transports, machines, technique du bâtiment, robotique, Industrie 4.0"
+  },
+  {
+   "id": "oc_ba_heia_ge_10",
+   "label": "Développeur·se firmware et systèmes embarqués"
+  },
+  {
+   "id": "oc_ba_heia_ge_11",
+   "label": "Ingénieur·e réseaux électriques chez un gestionnaire de réseau"
+  },
+  {
+   "id": "oc_ba_heia_ge_12",
+   "label": "Ingénieur·e photovoltaïque, stockage et mobilité électrique"
+  },
+  {
+   "id": "oc_ba_heia_gm_01",
+   "label": "Ingénieur·e en génie mécanique"
+  },
+  {
+   "id": "oc_ba_heia_gm_02",
+   "label": "Ingénieur·e R&D et construction de machines"
+  },
+  {
+   "id": "oc_ba_heia_gm_03",
+   "label": "Ingénieur·e simulation et prototypage"
+  },
+  {
+   "id": "oc_ba_heia_gm_04",
+   "label": "Responsable de production et qualité"
+  },
+  {
+   "id": "oc_ba_heia_gm_05",
+   "label": "Ingénieur·e conseil clientèle et formation"
+  },
+  {
+   "id": "oc_ba_heia_gm_06",
+   "label": "Intégration énergétique, plasturgie et structures légères, motorisation"
+  },
+  {
+   "id": "oc_ba_heia_gm_07",
+   "label": "Chef·fe d'équipe ou de département, directeur·trice technique"
+  },
+  {
+   "id": "oc_ba_heia_gm_08",
+   "label": "Formateur·trice, enseignant·e"
+  },
+  {
+   "id": "oc_ba_heia_gm_09",
+   "label": "Responsable de projets d'envergure (MSE Mechanical engineering)"
+  },
+  {
+   "id": "oc_ba_heia_gm_10",
+   "label": "Machines, mobilité, énergie, medtech, nanotechnologies, bâtiment"
+  },
+  {
+   "id": "oc_ba_heia_gm_11",
+   "label": "Ingénieur·e méthodes et industrialisation"
+  },
+  {
+   "id": "oc_ba_heia_gm_12",
+   "label": "Ingénieur·e technico-commercial·e"
+  },
+  {
+   "id": "oc_ba_heia_isc_01",
+   "label": "Ingénieur·e en informatique et systèmes de communication"
+  },
+  {
+   "id": "oc_ba_heia_isc_02",
+   "label": "Développeur·se logiciel"
+  },
+  {
+   "id": "oc_ba_heia_isc_03",
+   "label": "Architecte de solutions"
+  },
+  {
+   "id": "oc_ba_heia_isc_04",
+   "label": "Ingénieur·e système et réseau, administrateur·trice système"
+  },
+  {
+   "id": "oc_ba_heia_isc_05",
+   "label": "Consultant·e en sécurité informatique"
+  },
+  {
+   "id": "oc_ba_heia_isc_06",
+   "label": "Ingénieur·e de données (orientation Ingénierie des données)"
+  },
+  {
+   "id": "oc_ba_heia_isc_07",
+   "label": "Chef·fe de projet informatique"
+  },
+  {
+   "id": "oc_ba_heia_isc_08",
+   "label": "Fonctions de vente et marketing technique"
+  },
+  {
+   "id": "oc_ba_heia_isc_09",
+   "label": "Spécialiste data science, cybersécurité ou informatique (MSE CS, DS, ICS)"
+  },
+  {
+   "id": "oc_ba_heia_isc_10",
+   "label": "PME, start-up, industrie, finance, assurances, pharma, transports, santé, commerce"
+  },
+  {
+   "id": "oc_ba_heia_isc_11",
+   "label": "Ingénieur·e DevOps et cloud"
+  },
+  {
+   "id": "oc_ba_heia_isc_12",
+   "label": "Product owner"
+  },
+  {
+   "id": "oc_ba_heg_ee_01",
+   "label": "Économiste d'entreprise"
+  },
+  {
+   "id": "oc_ba_heg_ee_02",
+   "label": "Comptable, auditeur·trice, contrôleur·se de gestion"
+  },
+  {
+   "id": "oc_ba_heg_ee_03",
+   "label": "Credit manager, fiscaliste, expert·e fiscal·e"
+  },
+  {
+   "id": "oc_ba_heg_ee_04",
+   "label": "Responsable marketing et webmarketing, responsable de produit"
+  },
+  {
+   "id": "oc_ba_heg_ee_05",
+   "label": "Responsable des ventes"
+  },
+  {
+   "id": "oc_ba_heg_ee_06",
+   "label": "Chargé·e de communication, spécialiste relations publiques"
+  },
+  {
+   "id": "oc_ba_heg_ee_07",
+   "label": "Responsable du personnel, chargé·e de recrutement, responsable de la formation"
+  },
+  {
+   "id": "oc_ba_heg_ee_08",
+   "label": "Assistant·e de direction"
+  },
+  {
+   "id": "oc_ba_heg_ee_09",
+   "label": "Responsable logistique, achats, material manager"
+  },
+  {
+   "id": "oc_ba_heg_ee_10",
+   "label": "Gestionnaire de production, gestionnaire qualité"
+  },
+  {
+   "id": "oc_ba_heg_ee_11",
+   "label": "Analyste, chef·fe de projet, consultant·e en systèmes d'information"
+  },
+  {
+   "id": "oc_ba_heg_ee_12",
+   "label": "Administrateur·trice dans les services publics, chef·fe de service"
+  },
+  {
+   "id": "oc_ba_heg_ee_13",
+   "label": "Chef·fe comptable, fondé·e de pouvoir, réviseur·e, DRH, directeur·trice"
+  },
+  {
+   "id": "oc_ba_heg_ee_14",
+   "label": "Expert·e-comptable, expert·e fiscal·e diplômé·e (diplômes fédéraux)"
+  },
+  {
+   "id": "oc_ba_heg_ee_15",
+   "label": "Management général, direction, conduite du changement, création d'entreprise (MSc BA Entrepreneurship)"
+  },
+  {
+   "id": "oc_ba_heg_ee_16",
+   "label": "PME, multinationales, banques et assurances, culture, ONG, collectivités, Confédération"
+  },
+  {
+   "id": "oc_ba_heg_ee_17",
+   "label": "Responsable durabilité / RSE (orientation Management durable)"
+  },
+  {
+   "id": "oc_ba_heg_ee_18",
+   "label": "Chef·fe de projet transformation digitale (orientation Digital Business)"
+  },
+  {
+   "id": "oc_ba_heds_si_01",
+   "label": "Infirmier·ère diplômé·e HES"
+  },
+  {
+   "id": "oc_ba_heds_si_02",
+   "label": "Infirmier·ère en hôpital (soins aigus, chirurgie, médecine)"
+  },
+  {
+   "id": "oc_ba_heds_si_03",
+   "label": "Infirmier·ère en soins à domicile"
+  },
+  {
+   "id": "oc_ba_heds_si_04",
+   "label": "Infirmier·ère en EMS et foyers"
+  },
+  {
+   "id": "oc_ba_heds_si_05",
+   "label": "Infirmier·ère en santé mentale et psychiatrie"
+  },
+  {
+   "id": "oc_ba_heds_si_06",
+   "label": "Infirmier·ère en réadaptation et en soins palliatifs"
+  },
+  {
+   "id": "oc_ba_heds_si_07",
+   "label": "Infirmier·ère scolaire, en santé au travail, en prévention"
+  },
+  {
+   "id": "oc_ba_heds_si_08",
+   "label": "Infirmier·ère indépendant·e"
+  },
+  {
+   "id": "oc_ba_heds_si_09",
+   "label": "Expert·e en soins intensifs, anesthésie, urgence (EPD ES)"
+  },
+  {
+   "id": "oc_ba_heds_si_10",
+   "label": "CAS : allaitement, soins de réadaptation, psychogériatrie"
+  },
+  {
+   "id": "oc_ba_heds_si_11",
+   "label": "Infirmier·ère chef·fe d'unité (ICUS), chef·fe de service, directeur·trice des soins"
+  },
+  {
+   "id": "oc_ba_heds_si_12",
+   "label": "Praticien·ne formateur·trice, enseignant·e"
+  },
+  {
+   "id": "oc_ba_heds_si_13",
+   "label": "Infirmier·ère praticien·ne spécialisé·e (MScIPS), expert·e clinique, recherche (MScSI, PhD)"
+  },
+  {
+   "id": "oc_ba_heds_si_14",
+   "label": "Hôpitaux, cliniques, soins à domicile, EMS, centres ambulatoires, écoles, entreprises"
+  },
+  {
+   "id": "oc_ba_heds_si_15",
+   "label": "Infirmier·ère en action humanitaire"
+  },
+  {
+   "id": "oc_ba_heds_osteo_01",
+   "label": "Aucun titre professionnel au niveau Bachelor : le Master est requis pour pratiquer"
+  },
+  {
+   "id": "oc_ba_heds_osteo_02",
+   "label": "Poursuite en Master of Science HES-SO en Ostéopathie"
+  },
+  {
+   "id": "oc_ma_heds_osteo_01",
+   "label": "Ostéopathe (autorisation cantonale de pratiquer)"
+  },
+  {
+   "id": "oc_ma_heds_osteo_02",
+   "label": "Ostéopathe en pratique libérale (cabinet individuel ou collectif)"
+  },
+  {
+   "id": "oc_ma_heds_osteo_03",
+   "label": "Ostéopathe en centre de santé, hôpital, clinique de réadaptation, EMS"
+  },
+  {
+   "id": "oc_ma_heds_osteo_04",
+   "label": "Ostéopathe en club ou association sportive"
+  },
+  {
+   "id": "oc_ma_heds_osteo_05",
+   "label": "Enseignement, recherche, promotion de la santé"
+  },
+  {
+   "id": "oc_ba_hets_ts_01",
+   "label": "Éducateur·trice social·e"
+  },
+  {
+   "id": "oc_ba_hets_ts_02",
+   "label": "Assistant·e social·e"
+  },
+  {
+   "id": "oc_ba_hets_ts_03",
+   "label": "Animateur·trice socioculturel·le"
+  },
+  {
+   "id": "oc_ba_hets_ts_04",
+   "label": "Éducateur·trice en foyer, appartement protégé, centre de jour, atelier d'insertion"
+  },
+  {
+   "id": "oc_ba_hets_ts_05",
+   "label": "Éducateur·trice en action éducative en milieu ouvert (AEMO), centre fermé, centre thérapeutique"
+  },
+  {
+   "id": "oc_ba_hets_ts_06",
+   "label": "Assistant·e social·e en service social public ou privé, protection de l'enfance et de l'adulte"
+  },
+  {
+   "id": "oc_ba_hets_ts_07",
+   "label": "Assistant·e social·e en hôpital, en école, en entreprise"
+  },
+  {
+   "id": "oc_ba_hets_ts_08",
+   "label": "Curateur·trice professionnel·le, agent·e de probation"
+  },
+  {
+   "id": "oc_ba_hets_ts_09",
+   "label": "Animateur·trice en centre de loisirs, maison de quartier, EMS, commune"
+  },
+  {
+   "id": "oc_ba_hets_ts_10",
+   "label": "Praticien·ne formateur·trice, protection de l'enfance, insertion professionnelle, case management, gestion de dettes (CAS)"
+  },
+  {
+   "id": "oc_ba_hets_ts_11",
+   "label": "Médiation, addictions, supervision, politiques sociales (DAS)"
+  },
+  {
+   "id": "oc_ba_hets_ts_12",
+   "label": "Direction d'institutions éducatives, sociales et socio-sanitaires (DAS, MAS)"
+  },
+  {
+   "id": "oc_ba_hets_ts_13",
+   "label": "Responsable de projet ou programme, chargé·e d'évaluation, collaborateur·trice scientifique (MATS)"
+  },
+  {
+   "id": "oc_ba_hets_ts_14",
+   "label": "Services sociaux, institutions éducatives, hôpitaux, écoles, communes, associations, établissements pénitentiaires"
+  },
+  {
+   "id": "oc_ma_mse_01",
+   "label": "Ingénieur·e responsable de projets d'envergure"
+  },
+  {
+   "id": "oc_ma_mse_02",
+   "label": "Chef·fe de projet R&D, responsable technique"
+  },
+  {
+   "id": "oc_ma_mls_01",
+   "label": "Postes à haute responsabilité dans les sciences de la vie (entreprises, ONG, administrations)"
+  },
+  {
+   "id": "oc_ma_jma_01",
+   "label": "Architecte inscrit·e au Registre suisse des architectes A"
+  },
+  {
+   "id": "oc_ma_jma_02",
+   "label": "Recherche appliquée, enseignement"
+  },
+  {
+   "id": "oc_ma_innokick_01",
+   "label": "Chef·fe de projet ou de produit innovation"
+  },
+  {
+   "id": "oc_ma_innokick_02",
+   "label": "Manager UX, marketing ou communication"
+  },
+  {
+   "id": "oc_ma_innokick_03",
+   "label": "Responsable stratégie d'innovation, consultant·e transformation digitale"
+  },
+  {
+   "id": "oc_ma_innokick_04",
+   "label": "Service designer"
+  },
+  {
+   "id": "oc_ma_innokick_05",
+   "label": "Entrepreneur·e"
+  },
+  {
+   "id": "oc_ma_innokick_06",
+   "label": "Chef·fe de projet innovation santé / medtech ou innovation sociale et durable"
+  },
+  {
+   "id": "oc_ma_heg_entre_01",
+   "label": "Entrepreneur·e, fondateur·trice"
+  },
+  {
+   "id": "oc_ma_heg_entre_02",
+   "label": "Management général, direction d'unité"
+  },
+  {
+   "id": "oc_ma_heg_entre_03",
+   "label": "Responsable de la conduite du changement et du management stratégique"
+  },
+  {
+   "id": "oc_ma_mscsi_01",
+   "label": "Infirmier·ère expert·e (qualité et sécurité des soins)"
+  },
+  {
+   "id": "oc_ma_mscsi_02",
+   "label": "Fonctions dans les organisations du système de santé"
+  },
+  {
+   "id": "oc_ma_mscsi_03",
+   "label": "Enseignement des sciences infirmières, recherche académique"
+  },
+  {
+   "id": "oc_ma_mats_01",
+   "label": "Responsable de projet, de programme ou de secteur social"
+  },
+  {
+   "id": "oc_ma_mats_02",
+   "label": "Chargé·e d'évaluation, d'information ou de formation"
+  },
+  {
+   "id": "oc_ma_mats_03",
+   "label": "Collaborateur·trice scientifique, recherche, voie doctorale"
+  }
+ ],
+ "programmeOccupations": [
+  {
+   "programmeId": "ba_heia_archi",
+   "occupationId": "oc_ba_heia_archi_01",
+   "level": "metier",
+   "sourceIds": [
+    "o_archi"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_archi",
+   "occupationId": "oc_ba_heia_archi_02",
+   "level": "poste",
+   "sourceIds": [
+    "o_archi"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_archi",
+   "occupationId": "oc_ba_heia_archi_03",
+   "level": "poste",
+   "sourceIds": [
+    "o_archi"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_archi",
+   "occupationId": "oc_ba_heia_archi_04",
+   "level": "poste",
+   "sourceIds": [
+    "o_archi"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_archi",
+   "occupationId": "oc_ba_heia_archi_05",
+   "level": "specialisation",
+   "sourceIds": [
+    "o_archi"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_archi",
+   "occupationId": "oc_ba_heia_archi_06",
+   "level": "specialisation",
+   "sourceIds": [
+    "o_archi"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_archi",
+   "occupationId": "oc_ba_heia_archi_07",
+   "level": "specialisation",
+   "sourceIds": [
+    "o_archi"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_archi",
+   "occupationId": "oc_ba_heia_archi_08",
+   "level": "specialisation",
+   "sourceIds": [
+    "o_archi"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_archi",
+   "occupationId": "oc_ba_heia_archi_09",
+   "level": "specialisation",
+   "sourceIds": [
+    "o_archi"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_archi",
+   "occupationId": "oc_ba_heia_archi_10",
+   "level": "master",
+   "sourceIds": [
+    "m_jma"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_archi",
+   "occupationId": "oc_ba_heia_archi_11",
+   "level": "secteur",
+   "sourceIds": [
+    "o_archi"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_archi",
+   "occupationId": "oc_ba_heia_archi_12",
+   "level": "piste",
+   "sourceIds": [],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_archi",
+   "occupationId": "oc_ba_heia_archi_13",
+   "level": "piste",
+   "sourceIds": [],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_archi",
+   "occupationId": "oc_ba_heia_archi_14",
+   "level": "piste",
+   "sourceIds": [],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_chimie",
+   "occupationId": "oc_ba_heia_chimie_01",
+   "level": "metier",
+   "sourceIds": [
+    "o_chimie"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_chimie",
+   "occupationId": "oc_ba_heia_chimie_02",
+   "level": "poste",
+   "sourceIds": [
+    "o_chimie"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_chimie",
+   "occupationId": "oc_ba_heia_chimie_03",
+   "level": "poste",
+   "sourceIds": [
+    "o_chimie"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_chimie",
+   "occupationId": "oc_ba_heia_chimie_04",
+   "level": "poste",
+   "sourceIds": [
+    "o_chimie"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_chimie",
+   "occupationId": "oc_ba_heia_chimie_05",
+   "level": "poste",
+   "sourceIds": [
+    "o_chimie"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_chimie",
+   "occupationId": "oc_ba_heia_chimie_06",
+   "level": "poste",
+   "sourceIds": [
+    "o_chimie"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_chimie",
+   "occupationId": "oc_ba_heia_chimie_07",
+   "level": "evolution",
+   "sourceIds": [
+    "o_chimie"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_chimie",
+   "occupationId": "oc_ba_heia_chimie_08",
+   "level": "evolution",
+   "sourceIds": [
+    "o_chimie"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_chimie",
+   "occupationId": "oc_ba_heia_chimie_09",
+   "level": "master",
+   "sourceIds": [
+    "m_mls"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_chimie",
+   "occupationId": "oc_ba_heia_chimie_10",
+   "level": "secteur",
+   "sourceIds": [
+    "o_chimie"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_chimie",
+   "occupationId": "oc_ba_heia_chimie_11",
+   "level": "piste",
+   "sourceIds": [],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_chimie",
+   "occupationId": "oc_ba_heia_chimie_12",
+   "level": "piste",
+   "sourceIds": [],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gc",
+   "occupationId": "oc_ba_heia_gc_01",
+   "level": "metier",
+   "sourceIds": [
+    "o_gc"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gc",
+   "occupationId": "oc_ba_heia_gc_02",
+   "level": "poste",
+   "sourceIds": [
+    "o_gc"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gc",
+   "occupationId": "oc_ba_heia_gc_03",
+   "level": "poste",
+   "sourceIds": [
+    "o_gc"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gc",
+   "occupationId": "oc_ba_heia_gc_04",
+   "level": "poste",
+   "sourceIds": [
+    "o_gc"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gc",
+   "occupationId": "oc_ba_heia_gc_05",
+   "level": "poste",
+   "sourceIds": [
+    "o_gc"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gc",
+   "occupationId": "oc_ba_heia_gc_06",
+   "level": "poste",
+   "sourceIds": [
+    "o_gc"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gc",
+   "occupationId": "oc_ba_heia_gc_07",
+   "level": "evolution",
+   "sourceIds": [
+    "o_gc"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gc",
+   "occupationId": "oc_ba_heia_gc_08",
+   "level": "master",
+   "sourceIds": [
+    "m_mse"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gc",
+   "occupationId": "oc_ba_heia_gc_09",
+   "level": "secteur",
+   "sourceIds": [
+    "o_gc"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gc",
+   "occupationId": "oc_ba_heia_gc_10",
+   "level": "piste",
+   "sourceIds": [],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gc",
+   "occupationId": "oc_ba_heia_gc_11",
+   "level": "piste",
+   "sourceIds": [],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_ge",
+   "occupationId": "oc_ba_heia_ge_01",
+   "level": "metier",
+   "sourceIds": [
+    "o_ge"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_ge",
+   "occupationId": "oc_ba_heia_ge_02",
+   "level": "poste",
+   "sourceIds": [
+    "heia_ba"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_ge",
+   "occupationId": "oc_ba_heia_ge_03",
+   "level": "poste",
+   "sourceIds": [
+    "heia_ba"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_ge",
+   "occupationId": "oc_ba_heia_ge_04",
+   "level": "poste",
+   "sourceIds": [
+    "o_ge"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_ge",
+   "occupationId": "oc_ba_heia_ge_05",
+   "level": "evolution",
+   "sourceIds": [
+    "o_ge"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_ge",
+   "occupationId": "oc_ba_heia_ge_06",
+   "level": "evolution",
+   "sourceIds": [
+    "o_ge"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_ge",
+   "occupationId": "oc_ba_heia_ge_07",
+   "level": "evolution",
+   "sourceIds": [
+    "o_ge"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_ge",
+   "occupationId": "oc_ba_heia_ge_08",
+   "level": "master",
+   "sourceIds": [
+    "m_mse"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_ge",
+   "occupationId": "oc_ba_heia_ge_09",
+   "level": "secteur",
+   "sourceIds": [
+    "o_ge"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_ge",
+   "occupationId": "oc_ba_heia_ge_10",
+   "level": "piste",
+   "sourceIds": [],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_ge",
+   "occupationId": "oc_ba_heia_ge_11",
+   "level": "piste",
+   "sourceIds": [],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_ge",
+   "occupationId": "oc_ba_heia_ge_12",
+   "level": "piste",
+   "sourceIds": [],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gm",
+   "occupationId": "oc_ba_heia_gm_01",
+   "level": "metier",
+   "sourceIds": [
+    "o_gm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gm",
+   "occupationId": "oc_ba_heia_gm_02",
+   "level": "poste",
+   "sourceIds": [
+    "o_gm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gm",
+   "occupationId": "oc_ba_heia_gm_03",
+   "level": "poste",
+   "sourceIds": [
+    "o_gm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gm",
+   "occupationId": "oc_ba_heia_gm_04",
+   "level": "poste",
+   "sourceIds": [
+    "o_gm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gm",
+   "occupationId": "oc_ba_heia_gm_05",
+   "level": "poste",
+   "sourceIds": [
+    "o_gm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gm",
+   "occupationId": "oc_ba_heia_gm_06",
+   "level": "specialisation",
+   "sourceIds": [
+    "heia_ba"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gm",
+   "occupationId": "oc_ba_heia_gm_07",
+   "level": "evolution",
+   "sourceIds": [
+    "o_gm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gm",
+   "occupationId": "oc_ba_heia_gm_08",
+   "level": "evolution",
+   "sourceIds": [
+    "o_gm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gm",
+   "occupationId": "oc_ba_heia_gm_09",
+   "level": "master",
+   "sourceIds": [
+    "m_mse"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gm",
+   "occupationId": "oc_ba_heia_gm_10",
+   "level": "secteur",
+   "sourceIds": [
+    "o_gm"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gm",
+   "occupationId": "oc_ba_heia_gm_11",
+   "level": "piste",
+   "sourceIds": [],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gm",
+   "occupationId": "oc_ba_heia_gm_12",
+   "level": "piste",
+   "sourceIds": [],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_isc",
+   "occupationId": "oc_ba_heia_isc_01",
+   "level": "metier",
+   "sourceIds": [
+    "o_isc"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_isc",
+   "occupationId": "oc_ba_heia_isc_02",
+   "level": "poste",
+   "sourceIds": [
+    "o_isc"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_isc",
+   "occupationId": "oc_ba_heia_isc_03",
+   "level": "poste",
+   "sourceIds": [
+    "o_isc"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_isc",
+   "occupationId": "oc_ba_heia_isc_04",
+   "level": "poste",
+   "sourceIds": [
+    "o_isc"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_isc",
+   "occupationId": "oc_ba_heia_isc_05",
+   "level": "poste",
+   "sourceIds": [
+    "o_isc"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_isc",
+   "occupationId": "oc_ba_heia_isc_06",
+   "level": "poste",
+   "sourceIds": [
+    "heia_ba"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_isc",
+   "occupationId": "oc_ba_heia_isc_07",
+   "level": "poste",
+   "sourceIds": [
+    "o_isc"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_isc",
+   "occupationId": "oc_ba_heia_isc_08",
+   "level": "poste",
+   "sourceIds": [
+    "o_isc"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_isc",
+   "occupationId": "oc_ba_heia_isc_09",
+   "level": "master",
+   "sourceIds": [
+    "m_mse"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_isc",
+   "occupationId": "oc_ba_heia_isc_10",
+   "level": "secteur",
+   "sourceIds": [
+    "o_isc"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_isc",
+   "occupationId": "oc_ba_heia_isc_11",
+   "level": "piste",
+   "sourceIds": [],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_isc",
+   "occupationId": "oc_ba_heia_isc_12",
+   "level": "piste",
+   "sourceIds": [],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heg_ee",
+   "occupationId": "oc_ba_heg_ee_01",
+   "level": "metier",
+   "sourceIds": [
+    "o_eco"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heg_ee",
+   "occupationId": "oc_ba_heg_ee_02",
+   "level": "poste",
+   "sourceIds": [
+    "heg_ba"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heg_ee",
+   "occupationId": "oc_ba_heg_ee_03",
+   "level": "poste",
+   "sourceIds": [
+    "heg_ba"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heg_ee",
+   "occupationId": "oc_ba_heg_ee_04",
+   "level": "poste",
+   "sourceIds": [
+    "heg_ba"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heg_ee",
+   "occupationId": "oc_ba_heg_ee_05",
+   "level": "poste",
+   "sourceIds": [
+    "heg_ba"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heg_ee",
+   "occupationId": "oc_ba_heg_ee_06",
+   "level": "poste",
+   "sourceIds": [
+    "heg_ba"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heg_ee",
+   "occupationId": "oc_ba_heg_ee_07",
+   "level": "poste",
+   "sourceIds": [
+    "heg_ba"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heg_ee",
+   "occupationId": "oc_ba_heg_ee_08",
+   "level": "poste",
+   "sourceIds": [
+    "heg_ba"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heg_ee",
+   "occupationId": "oc_ba_heg_ee_09",
+   "level": "poste",
+   "sourceIds": [
+    "heg_ba"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heg_ee",
+   "occupationId": "oc_ba_heg_ee_10",
+   "level": "poste",
+   "sourceIds": [
+    "heg_ba"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heg_ee",
+   "occupationId": "oc_ba_heg_ee_11",
+   "level": "poste",
+   "sourceIds": [
+    "heg_ba"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heg_ee",
+   "occupationId": "oc_ba_heg_ee_12",
+   "level": "poste",
+   "sourceIds": [
+    "heg_ba"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heg_ee",
+   "occupationId": "oc_ba_heg_ee_13",
+   "level": "evolution",
+   "sourceIds": [
+    "o_eco"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heg_ee",
+   "occupationId": "oc_ba_heg_ee_14",
+   "level": "evolution",
+   "sourceIds": [
+    "o_eco"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heg_ee",
+   "occupationId": "oc_ba_heg_ee_15",
+   "level": "master",
+   "sourceIds": [
+    "heg_ma"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heg_ee",
+   "occupationId": "oc_ba_heg_ee_16",
+   "level": "secteur",
+   "sourceIds": [
+    "heg_ba"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heg_ee",
+   "occupationId": "oc_ba_heg_ee_17",
+   "level": "piste",
+   "sourceIds": [],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heg_ee",
+   "occupationId": "oc_ba_heg_ee_18",
+   "level": "piste",
+   "sourceIds": [],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heds_si",
+   "occupationId": "oc_ba_heds_si_01",
+   "level": "metier",
+   "sourceIds": [
+    "heds_si"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heds_si",
+   "occupationId": "oc_ba_heds_si_02",
+   "level": "poste",
+   "sourceIds": [
+    "heds_si"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heds_si",
+   "occupationId": "oc_ba_heds_si_03",
+   "level": "poste",
+   "sourceIds": [
+    "heds_si"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heds_si",
+   "occupationId": "oc_ba_heds_si_04",
+   "level": "poste",
+   "sourceIds": [
+    "heds_si"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heds_si",
+   "occupationId": "oc_ba_heds_si_05",
+   "level": "poste",
+   "sourceIds": [
+    "heds_si"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heds_si",
+   "occupationId": "oc_ba_heds_si_06",
+   "level": "poste",
+   "sourceIds": [
+    "heds_si"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heds_si",
+   "occupationId": "oc_ba_heds_si_07",
+   "level": "poste",
+   "sourceIds": [
+    "o_inf"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heds_si",
+   "occupationId": "oc_ba_heds_si_08",
+   "level": "poste",
+   "sourceIds": [
+    "heds_si"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heds_si",
+   "occupationId": "oc_ba_heds_si_09",
+   "level": "specialisation",
+   "sourceIds": [
+    "o_inf"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heds_si",
+   "occupationId": "oc_ba_heds_si_10",
+   "level": "specialisation",
+   "sourceIds": [
+    "heds_si"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heds_si",
+   "occupationId": "oc_ba_heds_si_11",
+   "level": "evolution",
+   "sourceIds": [
+    "o_inf"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heds_si",
+   "occupationId": "oc_ba_heds_si_12",
+   "level": "evolution",
+   "sourceIds": [
+    "o_inf"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heds_si",
+   "occupationId": "oc_ba_heds_si_13",
+   "level": "master",
+   "sourceIds": [
+    "heds_si"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heds_si",
+   "occupationId": "oc_ba_heds_si_14",
+   "level": "secteur",
+   "sourceIds": [
+    "heds_si"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heds_si",
+   "occupationId": "oc_ba_heds_si_15",
+   "level": "piste",
+   "sourceIds": [],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heds_osteo",
+   "occupationId": "oc_ba_heds_osteo_01",
+   "level": "metier",
+   "sourceIds": [
+    "heds_osteo"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heds_osteo",
+   "occupationId": "oc_ba_heds_osteo_02",
+   "level": "poste",
+   "sourceIds": [
+    "heds_osteo"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_heds_osteo",
+   "occupationId": "oc_ma_heds_osteo_01",
+   "level": "metier",
+   "sourceIds": [
+    "o_osteo"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_heds_osteo",
+   "occupationId": "oc_ma_heds_osteo_02",
+   "level": "poste",
+   "sourceIds": [
+    "heds_osteo_m"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_heds_osteo",
+   "occupationId": "oc_ma_heds_osteo_03",
+   "level": "poste",
+   "sourceIds": [
+    "heds_osteo"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_heds_osteo",
+   "occupationId": "oc_ma_heds_osteo_04",
+   "level": "poste",
+   "sourceIds": [
+    "heds_osteo"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_heds_osteo",
+   "occupationId": "oc_ma_heds_osteo_05",
+   "level": "evolution",
+   "sourceIds": [
+    "o_osteo"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_hets_ts",
+   "occupationId": "oc_ba_hets_ts_01",
+   "level": "metier",
+   "sourceIds": [
+    "o_es"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_hets_ts",
+   "occupationId": "oc_ba_hets_ts_02",
+   "level": "metier",
+   "sourceIds": [
+    "o_as"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_hets_ts",
+   "occupationId": "oc_ba_hets_ts_03",
+   "level": "metier",
+   "sourceIds": [
+    "o_asc"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_hets_ts",
+   "occupationId": "oc_ba_hets_ts_04",
+   "level": "poste",
+   "sourceIds": [
+    "hesso_ts"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_hets_ts",
+   "occupationId": "oc_ba_hets_ts_05",
+   "level": "poste",
+   "sourceIds": [
+    "hesso_ts"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_hets_ts",
+   "occupationId": "oc_ba_hets_ts_06",
+   "level": "poste",
+   "sourceIds": [
+    "hesso_ts"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_hets_ts",
+   "occupationId": "oc_ba_hets_ts_07",
+   "level": "poste",
+   "sourceIds": [
+    "hesso_ts"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_hets_ts",
+   "occupationId": "oc_ba_hets_ts_08",
+   "level": "poste",
+   "sourceIds": [
+    "o_as"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_hets_ts",
+   "occupationId": "oc_ba_hets_ts_09",
+   "level": "poste",
+   "sourceIds": [
+    "hesso_ts"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_hets_ts",
+   "occupationId": "oc_ba_hets_ts_10",
+   "level": "specialisation",
+   "sourceIds": [
+    "o_as"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_hets_ts",
+   "occupationId": "oc_ba_hets_ts_11",
+   "level": "specialisation",
+   "sourceIds": [
+    "o_as"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_hets_ts",
+   "occupationId": "oc_ba_hets_ts_12",
+   "level": "evolution",
+   "sourceIds": [
+    "o_as"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_hets_ts",
+   "occupationId": "oc_ba_hets_ts_13",
+   "level": "master",
+   "sourceIds": [
+    "m_mats"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_hets_ts",
+   "occupationId": "oc_ba_hets_ts_14",
+   "level": "secteur",
+   "sourceIds": [
+    "hesso_ts"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_mse",
+   "occupationId": "oc_ma_mse_01",
+   "level": "metier",
+   "sourceIds": [
+    "m_mse"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_mse",
+   "occupationId": "oc_ma_mse_02",
+   "level": "evolution",
+   "sourceIds": [
+    "m_mse"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_mls",
+   "occupationId": "oc_ma_mls_01",
+   "level": "metier",
+   "sourceIds": [
+    "m_mls"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_jma",
+   "occupationId": "oc_ma_jma_01",
+   "level": "metier",
+   "sourceIds": [
+    "m_jma"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_jma",
+   "occupationId": "oc_ma_jma_02",
+   "level": "evolution",
+   "sourceIds": [
+    "m_jma"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_innokick",
+   "occupationId": "oc_ma_innokick_01",
+   "level": "metier",
+   "sourceIds": [
+    "m_innokick"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_innokick",
+   "occupationId": "oc_ma_innokick_02",
+   "level": "poste",
+   "sourceIds": [
+    "m_innokick"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_innokick",
+   "occupationId": "oc_ma_innokick_03",
+   "level": "poste",
+   "sourceIds": [
+    "m_innokick"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_innokick",
+   "occupationId": "oc_ma_innokick_04",
+   "level": "poste",
+   "sourceIds": [
+    "m_innokick"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_innokick",
+   "occupationId": "oc_ma_innokick_05",
+   "level": "poste",
+   "sourceIds": [
+    "m_innokick"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_innokick",
+   "occupationId": "oc_ma_innokick_06",
+   "level": "poste",
+   "sourceIds": [
+    "m_innokick"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_heg_entre",
+   "occupationId": "oc_ma_heg_entre_01",
+   "level": "metier",
+   "sourceIds": [
+    "heg_ma"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_heg_entre",
+   "occupationId": "oc_ma_heg_entre_02",
+   "level": "poste",
+   "sourceIds": [
+    "heg_ma"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_heg_entre",
+   "occupationId": "oc_ma_heg_entre_03",
+   "level": "poste",
+   "sourceIds": [
+    "heg_ma"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_mscsi",
+   "occupationId": "oc_ma_mscsi_01",
+   "level": "metier",
+   "sourceIds": [
+    "m_mscsi"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_mscsi",
+   "occupationId": "oc_ma_mscsi_02",
+   "level": "poste",
+   "sourceIds": [
+    "m_mscsi"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_mscsi",
+   "occupationId": "oc_ma_mscsi_03",
+   "level": "poste",
+   "sourceIds": [
+    "m_mscsi"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_mats",
+   "occupationId": "oc_ma_mats_01",
+   "level": "metier",
+   "sourceIds": [
+    "m_mats"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_mats",
+   "occupationId": "oc_ma_mats_02",
+   "level": "poste",
+   "sourceIds": [
+    "m_mats"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_mats",
+   "occupationId": "oc_ma_mats_03",
+   "level": "poste",
+   "sourceIds": [
+    "m_mats"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  }
+ ],
+ "examplePaths": [
+  {
+   "id": "ex01",
+   "programmeId": "ba_heia_isc",
+   "label": "CFC informaticien·ne + MP à l'EMF",
+   "steps": [
+    "co_g",
+    "tr_emf",
+    "cr_cfc_mp"
+   ],
+   "minYearsBeforeEntry": 4,
+   "access": "direct",
+   "validationStatus": "to_review"
+  },
+  {
+   "id": "ex02",
+   "programmeId": "ba_heia_isc",
+   "label": "Gymnase puis PiBS",
+   "steps": [
+    "co_pg",
+    "tr_gym",
+    "cr_mat_gym"
+   ],
+   "minYearsBeforeEntry": 4,
+   "access": "conditionnel",
+   "validationStatus": "to_review"
+  },
+  {
+   "id": "ex03",
+   "programmeId": "ba_heia_ge",
+   "label": "CFC électronicien·ne puis MP2",
+   "steps": [
+    "co_eb",
+    "tr_cfc",
+    "cr_cfc",
+    "tr_mp2",
+    "cr_cfc_mp"
+   ],
+   "minYearsBeforeEntry": 5,
+   "access": "direct",
+   "validationStatus": "to_review"
+  },
+  {
+   "id": "ex04",
+   "programmeId": "ba_heia_gm",
+   "label": "CFC polymécanicien·ne avec MP1",
+   "steps": [
+    "co_g",
+    "tr_cfc_mp1",
+    "cr_cfc_mp"
+   ],
+   "minYearsBeforeEntry": 4,
+   "access": "direct",
+   "validationStatus": "to_review"
+  },
+  {
+   "id": "ex05",
+   "programmeId": "ba_heia_gc",
+   "label": "CFC dessinateur·trice génie civil avec MP1",
+   "steps": [
+    "co_g",
+    "tr_cfc_mp1",
+    "cr_cfc_mp"
+   ],
+   "minYearsBeforeEntry": 4,
+   "access": "direct",
+   "validationStatus": "to_review"
+  },
+  {
+   "id": "ex06",
+   "programmeId": "ba_heia_chimie",
+   "label": "CFC laborantin·e avec MP1",
+   "steps": [
+    "co_g",
+    "tr_cfc_mp1",
+    "cr_cfc_mp"
+   ],
+   "minYearsBeforeEntry": 3,
+   "access": "direct",
+   "validationStatus": "to_review"
+  },
+  {
+   "id": "ex07",
+   "programmeId": "ba_heia_chimie",
+   "label": "ECG puis MS sciences expérimentales (pilote)",
+   "steps": [
+    "co_g",
+    "tr_ecg",
+    "cr_ecg_sante",
+    "tr_ms_scexp",
+    "cr_ms_scexp"
+   ],
+   "minYearsBeforeEntry": 4,
+   "access": "direct",
+   "validationStatus": "to_review"
+  },
+  {
+   "id": "ex08",
+   "programmeId": "ba_heia_archi",
+   "label": "CFC dessinateur·trice architecture avec MP1",
+   "steps": [
+    "co_g",
+    "tr_cfc_mp1",
+    "cr_cfc_mp"
+   ],
+   "minYearsBeforeEntry": 4,
+   "access": "direct",
+   "validationStatus": "to_review"
+  },
+  {
+   "id": "ex09",
+   "programmeId": "ba_heia_archi",
+   "label": "Gymnase puis stage d'un an en bureau",
+   "steps": [
+    "co_pg",
+    "tr_gym",
+    "cr_mat_gym"
+   ],
+   "minYearsBeforeEntry": 5,
+   "access": "conditionnel",
+   "validationStatus": "to_review"
+  },
+  {
+   "id": "ex10",
+   "programmeId": "ba_heg_ee",
+   "label": "École de commerce",
+   "steps": [
+    "co_pg",
+    "tr_ec",
+    "cr_cfc_mp"
+   ],
+   "minYearsBeforeEntry": 4,
+   "access": "direct",
+   "validationStatus": "to_review"
+  },
+  {
+   "id": "ex11",
+   "programmeId": "ba_heg_ee",
+   "label": "CFC employé·e de commerce avec MP1",
+   "steps": [
+    "co_g",
+    "tr_cfc_mp1",
+    "cr_cfc_mp"
+   ],
+   "minYearsBeforeEntry": 3,
+   "access": "direct",
+   "validationStatus": "to_review"
+  },
+  {
+   "id": "ex12",
+   "programmeId": "ba_heg_ee",
+   "label": "Gymnase puis un an de pratique",
+   "steps": [
+    "co_pg",
+    "tr_gym",
+    "cr_mat_gym"
+   ],
+   "minYearsBeforeEntry": 5,
+   "access": "conditionnel",
+   "validationStatus": "to_review"
+  },
+  {
+   "id": "ex13",
+   "programmeId": "ba_heds_si",
+   "label": "CFC ASSC + MP santé-social à l'ESSG",
+   "steps": [
+    "co_g",
+    "tr_essg",
+    "cr_cfc_mp"
+   ],
+   "minYearsBeforeEntry": 3,
+   "access": "direct",
+   "validationStatus": "to_review"
+  },
+  {
+   "id": "ex14",
+   "programmeId": "ba_heds_si",
+   "label": "ECG santé puis MS santé",
+   "steps": [
+    "co_g",
+    "tr_ecg",
+    "cr_ecg_sante",
+    "tr_ms_sante",
+    "cr_ms_sante"
+   ],
+   "minYearsBeforeEntry": 4,
+   "access": "direct",
+   "validationStatus": "to_review"
+  },
+  {
+   "id": "ex15",
+   "programmeId": "ba_heds_si",
+   "label": "Gymnase puis modules complémentaires",
+   "steps": [
+    "co_pg",
+    "tr_gym",
+    "cr_mat_gym",
+    "tr_mc_sante",
+    "cr_mc_sante"
+   ],
+   "minYearsBeforeEntry": 5,
+   "access": "direct",
+   "validationStatus": "to_review"
+  },
+  {
+   "id": "ex16",
+   "programmeId": "ba_heds_osteo",
+   "label": "Gymnase, modules complémentaires puis régulation",
+   "steps": [
+    "co_pg",
+    "tr_gym",
+    "cr_mat_gym",
+    "tr_mc_sante",
+    "cr_mc_sante"
+   ],
+   "minYearsBeforeEntry": 5,
+   "access": "conditionnel",
+   "validationStatus": "to_review"
+  },
+  {
+   "id": "ex17",
+   "programmeId": "ba_hets_ts",
+   "label": "CFC ASE avec MP1 santé-social",
+   "steps": [
+    "co_g",
+    "tr_cfc_mp1",
+    "cr_cfc_mp"
+   ],
+   "minYearsBeforeEntry": 3,
+   "access": "direct",
+   "validationStatus": "to_review"
+  },
+  {
+   "id": "ex18",
+   "programmeId": "ba_hets_ts",
+   "label": "ECG travail social puis MSTS",
+   "steps": [
+    "co_g",
+    "tr_ecg",
+    "cr_ecg_ts",
+    "tr_ms_ts",
+    "cr_ms_ts"
+   ],
+   "minYearsBeforeEntry": 4,
+   "access": "direct",
+   "validationStatus": "to_review"
+  },
+  {
+   "id": "ex19",
+   "programmeId": "ba_hets_ts",
+   "label": "Gymnase puis 40 semaines d'expérience",
+   "steps": [
+    "co_pg",
+    "tr_gym",
+    "cr_mat_gym"
+   ],
+   "minYearsBeforeEntry": 5,
+   "access": "conditionnel",
+   "validationStatus": "to_review"
+  }
+ ]
+}

@@ -1,74 +1,156 @@
 import React from 'react';
-import { ArrowRight, BookOpen, Footprints, Signpost } from 'lucide-react';
+import { ArrowRight, DoorOpen, Layers, Map, Route, Signpost, Wrench } from 'lucide-react';
 import type { AppApi } from '../appApi';
 import { HeroLandscape } from '../components/Illustrations';
+import { hasExploration } from '../domain/notebook';
+import { useI18n } from '../i18n';
+
+/** Écran d'appel du mode stand : une seule action, lisible à trois mètres. */
+const Attract: React.FC<{ app: AppApi }> = ({ app }) => {
+  const { lang, setLang, t } = useI18n();
+  // Chaque visiteur repart d'un carnet vide, même si la tablette n'a pas encore été remise à zéro.
+  // La langue choisie sur cet écran est conservée.
+  const fresh = () => {
+    app.standReset();
+    setLang(lang);
+  };
+  const start = () => {
+    fresh();
+    app.startExpress();
+  };
+  const doors = () => {
+    fresh();
+    app.go('doors');
+  };
+  return (
+    <div className="attract">
+      <div className="attract-copy">
+        <span className="pill pill-sign">{t('stand.badge')}</span>
+        <h1 className="attract-title">{t('stand.title')}</h1>
+        <p className="attract-time">{t('stand.time')}</p>
+        <button type="button" className="btn btn-primary attract-cta" onClick={start}>
+          {t('stand.cta')} <ArrowRight size={28} aria-hidden="true" />
+        </button>
+        <p className="hero-meta">{t('stand.note')}</p>
+        <button type="button" className="btn btn-ghost" onClick={doors}>
+          <DoorOpen size={18} aria-hidden="true" /> {t('panel.doors')}
+        </button>
+      </div>
+      <div className="hero-art attract-art">
+        <HeroLandscape />
+      </div>
+    </div>
+  );
+};
 
 export const HomeScreen: React.FC<{ app: AppApi }> = ({ app }) => {
-  const resume = app.hasSavedData && !app.isDemo && app.notebook.feedbacks.length > 0;
+  const { t } = useI18n();
+  if (app.isStand) return <Attract app={app} />;
+  const resume = app.cardsEnabled && !app.isDemo && hasExploration(app.notebook);
   return (
     <div className="home">
       <section className="hero">
         <div className="hero-copy">
-          <p className="eyebrow">Essaie des idées · Explore plusieurs chemins · Découvre ta prochaine étape</p>
+          <p className="eyebrow">{t('home.eyebrow')}</p>
           <h1 className="hero-title">
             Et si<span className="hero-dots">…</span>
           </h1>
-          <p className="hero-lead">Plusieurs futurs sont possibles. Commence par en essayer un.</p>
-          <p className="hero-note">Tu n’as pas besoin de savoir aujourd’hui ce que tu feras toute ta vie.</p>
+          <p className="hero-lead">{app.cardsEnabled ? t('home.lead') : t('doors.lead')}</p>
+          {app.cardsEnabled && <p className="hero-note">{t('home.note')}</p>}
           <div className="action-row">
-            <button type="button" className="btn btn-primary btn-lg" onClick={() => app.go('character')}>
-              Commencer <ArrowRight size={20} aria-hidden="true" />
-            </button>
-            {resume && (
-              <button type="button" className="btn btn-secondary btn-lg" onClick={() => app.go('hub')}>
-                Reprendre mon exploration
+            {resume ? (
+              <button type="button" className="btn btn-primary btn-lg" onClick={() => app.go('panel')}>
+                <Signpost size={20} aria-hidden="true" /> {t('home.resume')}
+              </button>
+            ) : app.cardsEnabled ? (
+              <button type="button" className="btn btn-primary btn-lg" onClick={app.startExpress}>
+                {t('home.cta')} <span className="cta-time">· {t('home.cta.time')}</span> <ArrowRight size={20} aria-hidden="true" />
+              </button>
+            ) : (
+              <button type="button" className="btn btn-primary btn-lg" onClick={() => app.go('doors')}>
+                {t('home.doors.title')} <ArrowRight size={20} aria-hidden="true" />
               </button>
             )}
-            <button type="button" className="btn btn-ghost btn-lg" onClick={app.startDemo}>
-              Voir une démo
-            </button>
+            {app.cardsEnabled && (
+              <button type="button" className="btn btn-ghost btn-lg" onClick={app.startDemo}>
+                {t('home.demo')}
+              </button>
+            )}
           </div>
-          <p className="hero-meta">5 à 8 minutes · sans compte · rien n’est envoyé</p>
+          <p className="hero-meta">{t('home.meta')}</p>
         </div>
         <div className="hero-art">
           <HeroLandscape />
         </div>
       </section>
 
-      <section className="how" aria-labelledby="how-title">
-        <h2 id="how-title" className="section-title">Comment ça marche</h2>
-        <ol className="how-grid">
-          <li>
+      <section className="entries" aria-labelledby="entries-title">
+        <h2 id="entries-title" className="section-title">
+          {t('home.more.title')}
+        </h2>
+        <div className="entry-grid">
+          <button type="button" className="entry-card" onClick={() => app.go('doors')}>
             <span className="how-icon">
-              <Footprints size={22} aria-hidden="true" />
+              <DoorOpen size={22} aria-hidden="true" />
             </span>
-            <span className="how-step">1</span>
-            <h3>Tu pars de là où tu en es</h3>
-            <p>Ton personnage, ta situation et ce qui t’attire aujourd’hui. Rien n’est définitif.</p>
-          </li>
-          <li>
+            <strong>{t('home.doors.title')}</strong>
+            <span>{t('home.doors.text')}</span>
+            <ArrowRight className="entry-go" size={18} aria-hidden="true" />
+          </button>
+          <button type="button" className="entry-card" onClick={() => app.go('cfc')}>
             <span className="how-icon">
-              <Signpost size={22} aria-hidden="true" />
+              <Wrench size={22} aria-hidden="true" />
             </span>
-            <span className="how-step">2</span>
-            <h3>Tu essaies des missions</h3>
-            <p>Tu rejoins un projet, tu choisis un rôle et tu prends des décisions. Tu peux bifurquer à tout moment.</p>
-          </li>
-          <li>
+            <strong>{t('home.cfc.title')}</strong>
+            <span>{t('home.cfc.text')}</span>
+            <ArrowRight className="entry-go" size={18} aria-hidden="true" />
+          </button>
+          <button type="button" className="entry-card" onClick={app.openMissions}>
             <span className="how-icon">
-              <BookOpen size={22} aria-hidden="true" />
+              <Map size={22} aria-hidden="true" />
             </span>
-            <span className="how-step">3</span>
-            <h3>Tu repars avec des pistes</h3>
-            <p>Les chemins de formation qui y mènent et une prochaine expérience à vivre pour de vrai.</p>
-          </li>
-        </ol>
+            <strong>{t('home.missions.title')}</strong>
+            <span>{t('home.missions.text')}</span>
+            <ArrowRight className="entry-go" size={18} aria-hidden="true" />
+          </button>
+        </div>
       </section>
 
-      <p className="disclaimer-text home-disclaimer">
-        Prototype d’exploration autour des quatre hautes écoles de la HES-SO Fribourg (HEIA-FR, HEG-FR, HEdS-FR,
-        HETS-FR). Ce n’est ni un test d’orientation ni un outil d’admission.
-      </p>
+      {app.cardsEnabled && (
+        <section className="how" aria-labelledby="how-title">
+          <h2 id="how-title" className="section-title">
+            {t('home.how.title')}
+          </h2>
+          <ol className="how-grid">
+            <li>
+              <span className="how-icon">
+                <Layers size={22} aria-hidden="true" />
+              </span>
+              <span className="how-step">1</span>
+              <h3>{t('home.how.1.title')}</h3>
+              <p>{t('home.how.1.text')}</p>
+            </li>
+            <li>
+              <span className="how-icon">
+                <Signpost size={22} aria-hidden="true" />
+              </span>
+              <span className="how-step">2</span>
+              <h3>{t('home.how.2.title')}</h3>
+              <p>{t('home.how.2.text')}</p>
+            </li>
+            <li>
+              <span className="how-icon">
+                <Route size={22} aria-hidden="true" />
+              </span>
+              <span className="how-step">3</span>
+              <h3>{t('home.how.3.title')}</h3>
+              <p>{t('home.how.3.text')}</p>
+            </li>
+          </ol>
+        </section>
+      )}
+
+      <p className="disclaimer-text home-disclaimer">{t('home.disclaimer')}</p>
     </div>
   );
 };

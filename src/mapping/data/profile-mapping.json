@@ -1,0 +1,4819 @@
+{
+ "meta": {
+  "version": "0.1.0",
+  "generatedAt": "2026-11-22",
+  "scope": "Envies, intérêts, qualités et conditions de travail reliés aux AFP/CFC et aux Bachelors des HES fribourgeoises",
+  "disclaimer": "Aide à l'exploration, pas un test d'aptitude ni une recommandation d'orientation. Les fiches orientation.ch et les écoles font foi.",
+  "taxonomy": "Intérêts et qualités requises : libellés et identifiants du moteur de recherche orientation.ch (CSFO)."
+ },
+ "sources": [
+  {
+   "id": "bm_questionnaires",
+   "title": "orientation.ch, Questionnaires métiers (12 questions par profession)",
+   "url": "https://www.orientation.ch/fr/questionnaires-metiers",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "bm_explorateur",
+   "title": "orientation.ch, Explorateur des métiers (sélection par photos)",
+   "url": "https://www.orientation.ch/fr/explorateur-des-metiers",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "bm_explorateur_aide",
+   "title": "orientation.ch, Mode d'emploi de l'Explorateur des métiers",
+   "url": "https://www.orientation.ch/dyn/show/2604?lang=fr",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "bm_yousty",
+   "title": "Yousty, Orientation professionnelle (outil d'orientation)",
+   "url": "https://www.yousty.ch/fr-CH/choix-de-la-profession",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "bm_yousty_finder",
+   "title": "Yousty, Berufs-Finder (33 questions, échelle à 4 niveaux)",
+   "url": "https://www.yousty.ch/de-CH/bewerbung/berufswahl/berufs-finder",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "bm_yousty_match",
+   "title": "Yousty, It's a Match (outil d'orientation, check professionnel, matching)",
+   "url": "https://blog.yousty.ch/fr-ch/berufswahl/its-a-match-trouver-la-place-dapprentissage-souhait%C3%A9e-gr%C3%A2ce-%C3%A0-loutil-dorientation",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "or_taxonomie",
+   "title": "orientation.ch, Rechercher des professions (filtres Intérêts et Qualités requises)",
+   "url": "https://www.orientation.ch/fr/recherche/professions",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_aide_en_soins_et_accompagnement_afp",
+   "title": "orientation.ch, fiche Aide en soins et accompagnement AFP",
+   "url": "https://www.orientation.ch/fr/professions/aide-en-soins-et-accompagnement-afp",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_assistant_e_en_soins_et_sante_communautaire_cfc",
+   "title": "orientation.ch, fiche Assistant-e en soins et santé communautaire CFC",
+   "url": "https://www.orientation.ch/fr/professions/assistant-e-en-soins-et-sante-communautaire-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_assistant_e_socio_educatif_ve_cfc",
+   "title": "orientation.ch, fiche Assistant socio-éducatif CFC Assistante socio-éducative CFC",
+   "url": "https://www.orientation.ch/fr/professions/assistant-e-socio-educatif-ve-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_assistant_e_medical_e_cfc",
+   "title": "orientation.ch, fiche Assistante médicale CFC Assistant médical CFC",
+   "url": "https://www.orientation.ch/fr/professions/assistant-e-medical-e-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_assistant_e_en_pharmacie_cfc",
+   "title": "orientation.ch, fiche Assistant-e en pharmacie CFC",
+   "url": "https://www.orientation.ch/fr/professions/assistant-e-en-pharmacie-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_droguiste_cfc",
+   "title": "orientation.ch, fiche Droguiste CFC",
+   "url": "https://www.orientation.ch/fr/professions/droguiste-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_employe_e_de_commerce_cfc",
+   "title": "orientation.ch, fiche Employé-e de commerce CFC",
+   "url": "https://www.orientation.ch/fr/professions/employe-e-de-commerce-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_gestionnaire_du_commerce_de_detail_cfc",
+   "title": "orientation.ch, fiche Gestionnaire du commerce de détail CFC",
+   "url": "https://www.orientation.ch/fr/professions/gestionnaire-du-commerce-de-detail-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_developpeur_euse_de_business_numerique_cfc",
+   "title": "orientation.ch, fiche Développeur de business numérique CFC Développeuse de business numérique CFC",
+   "url": "https://www.orientation.ch/fr/professions/developpeur-euse-de-business-numerique-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_logisticien_ne_cfc",
+   "title": "orientation.ch, fiche Logisticienne CFC Logisticien CFC",
+   "url": "https://www.orientation.ch/fr/professions/logisticien-ne-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_mediamaticien_ne_cfc",
+   "title": "orientation.ch, fiche Médiamaticien-ne CFC",
+   "url": "https://www.orientation.ch/fr/professions/mediamaticien-ne-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_interactive_media_designer_cfc",
+   "title": "orientation.ch, fiche Interactive media designer CFC",
+   "url": "https://www.orientation.ch/fr/professions/interactive-media-designer-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_informaticien_ne_cfc",
+   "title": "orientation.ch, fiche Informaticien CFC Informaticienne CFC",
+   "url": "https://www.orientation.ch/fr/professions/informaticien-ne-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_electronicien_ne_cfc",
+   "title": "orientation.ch, fiche Électronicien-ne CFC",
+   "url": "https://www.orientation.ch/fr/professions/electronicien-ne-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_automaticien_ne_cfc",
+   "title": "orientation.ch, fiche Automaticien CFC Automaticienne CFC",
+   "url": "https://www.orientation.ch/fr/professions/automaticien-ne-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_polymecanicien_ne_cfc",
+   "title": "orientation.ch, fiche Polymécanicien-ne CFC",
+   "url": "https://www.orientation.ch/fr/professions/polymecanicien-ne-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_mecanicien_ne_de_production_cfc",
+   "title": "orientation.ch, fiche Mécanicien-ne de production CFC",
+   "url": "https://www.orientation.ch/fr/professions/mecanicien-ne-de-production-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_constructeur_trice_dappareils_industriels_cfc",
+   "title": "orientation.ch, fiche Constructrice d'appareils industriels CFC Constructeur d'appareils industriels CFC",
+   "url": "https://www.orientation.ch/fr/professions/constructeur-trice-dappareils-industriels-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_dessinateur_trice_constructeur_trice_industriel_le_cfc",
+   "title": "orientation.ch, fiche Dessinateur-constructeur industriel CFC Dessinatrice-constructrice industrielle CFC",
+   "url": "https://www.orientation.ch/fr/professions/dessinateur-trice-constructeur-trice-industriel-le-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_installateur_trice_electricien_ne_cfc",
+   "title": "orientation.ch, fiche Installatrice-électricienne CFC Installateur-électricien CFC",
+   "url": "https://www.orientation.ch/fr/professions/installateur-trice-electricien-ne-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_electricien_ne_de_montage_cfc",
+   "title": "orientation.ch, fiche Électricien-ne de montage CFC",
+   "url": "https://www.orientation.ch/fr/professions/electricien-ne-de-montage-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_planificateur_trice_electricien_ne_cfc",
+   "title": "orientation.ch, fiche Planificateur-électricien CFC Planificatrice-électricienne CFC",
+   "url": "https://www.orientation.ch/fr/professions/planificateur-trice-electricien-ne-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_laborantin_e_cfc",
+   "title": "orientation.ch, fiche Laborantin CFC Laborantine CFC",
+   "url": "https://www.orientation.ch/fr/professions/laborantin-e-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_technologue_en_production_chimique_et_pharmaceutique_cfc",
+   "title": "orientation.ch, fiche Technologue en production chimique et pharmaceutique CFC",
+   "url": "https://www.orientation.ch/fr/professions/technologue-en-production-chimique-et-pharmaceutique-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_dessinateur_trice_cfc",
+   "title": "orientation.ch, fiche Dessinateur-trice CFC",
+   "url": "https://www.orientation.ch/fr/professions/dessinateur-trice-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_geomaticien_ne_cfc",
+   "title": "orientation.ch, fiche Géomaticien-ne CFC",
+   "url": "https://www.orientation.ch/fr/professions/geomaticien-ne-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_macon_ne_cfc",
+   "title": "orientation.ch, fiche Maçon-ne CFC",
+   "url": "https://www.orientation.ch/fr/professions/macon-ne-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_constructeur_trice_de_routes_cfc",
+   "title": "orientation.ch, fiche Constructeur de routes CFC Constructrice de routes CFC",
+   "url": "https://www.orientation.ch/fr/professions/constructeur-trice-de-routes-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_charpentier_iere_cfc",
+   "title": "orientation.ch, fiche Charpentier-ière CFC",
+   "url": "https://www.orientation.ch/fr/professions/charpentier-iere-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_menuisier_iere_cfc",
+   "title": "orientation.ch, fiche Menuisière CFC Menuisier CFC",
+   "url": "https://www.orientation.ch/fr/professions/menuisier-iere-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_agent_e_dexploitation_cfc",
+   "title": "orientation.ch, fiche Agente d'exploitation CFC Agent d'exploitation CFC",
+   "url": "https://www.orientation.ch/fr/professions/agent-e-dexploitation-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_cuisinier_iere_cfc",
+   "title": "orientation.ch, fiche Cuisinier CFC Cuisinière CFC",
+   "url": "https://www.orientation.ch/fr/professions/cuisinier-iere-cfc",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_architecte",
+   "title": "orientation.ch, fiche Architecte",
+   "url": "https://www.orientation.ch/fr/professions/architecte",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_ingenieur_e_en_genie_civil",
+   "title": "orientation.ch, fiche Ingénieur-e en génie civil",
+   "url": "https://www.orientation.ch/fr/professions/ingenieur-e-en-genie-civil",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_ingenieur_e_en_genie_electrique",
+   "title": "orientation.ch, fiche Ingénieure en génie électrique Ingénieur en génie électrique",
+   "url": "https://www.orientation.ch/fr/professions/ingenieur-e-en-genie-electrique",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_ingenieur_e_en_genie_mecanique",
+   "title": "orientation.ch, fiche Ingénieur-e en génie mécanique",
+   "url": "https://www.orientation.ch/fr/professions/ingenieur-e-en-genie-mecanique",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_informaticien_ne",
+   "title": "orientation.ch, fiche Informaticienne Informaticien",
+   "url": "https://www.orientation.ch/fr/professions/informaticien-ne",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_economiste_dentreprise",
+   "title": "orientation.ch, fiche Économiste d'entreprise",
+   "url": "https://www.orientation.ch/fr/professions/economiste-dentreprise",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_infirmier_ere",
+   "title": "orientation.ch, fiche Infirmière Infirmier",
+   "url": "https://www.orientation.ch/fr/professions/infirmier-ere",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_osteopathe",
+   "title": "orientation.ch, fiche Ostéopathe",
+   "url": "https://www.orientation.ch/fr/professions/osteopathe",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_educateur_trice_social_e",
+   "title": "orientation.ch, fiche Educatrice sociale Educateur social",
+   "url": "https://www.orientation.ch/fr/professions/educateur-trice-social-e",
+   "consultedAt": "2026-11-22"
+  },
+  {
+   "id": "oq_assistant_e_social_e",
+   "title": "orientation.ch, fiche Assistante sociale Assistant social",
+   "url": "https://www.orientation.ch/fr/professions/assistant-e-social-e",
+   "consultedAt": "2026-11-22"
+  }
+ ],
+ "interests": [
+  {
+   "id": "in_travailler_seul_e_et_de_maniere_independ",
+   "label": "Travailler seul-e et de manière indépendante",
+   "orientationId": "3917",
+   "kind": "cadre",
+   "activityTags": [],
+   "riasec": "C",
+   "conditions": {
+    "social": -1
+   },
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_travailler_a_l_ordinateur",
+   "label": "Travailler à l'ordinateur",
+   "orientationId": "3918",
+   "kind": "matiere",
+   "activityTags": [
+    "analyser"
+   ],
+   "riasec": "C",
+   "conditions": {
+    "ordinateur": 1
+   },
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_aider_et_soigner_les_autres",
+   "label": "Aider et soigner les autres",
+   "orientationId": "3919",
+   "kind": "activite",
+   "activityTags": [
+    "soigner",
+    "accompagner"
+   ],
+   "riasec": "S",
+   "conditions": {},
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_conseiller",
+   "label": "Conseiller",
+   "orientationId": "3920",
+   "kind": "activite",
+   "activityTags": [
+    "ecouter",
+    "accompagner"
+   ],
+   "riasec": "S",
+   "conditions": {
+    "clientele": 1
+   },
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_travailler_a_l_exterieur",
+   "label": "Travailler à l'extérieur",
+   "orientationId": "3921",
+   "kind": "cadre",
+   "activityTags": [],
+   "riasec": "R",
+   "conditions": {
+    "lieu": 1
+   },
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_travailler_a_l_interieur",
+   "label": "Travailler à l'intérieur",
+   "orientationId": "3922",
+   "kind": "cadre",
+   "activityTags": [],
+   "riasec": null,
+   "conditions": {
+    "lieu": -1
+   },
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_experimenter_rechercher",
+   "label": "Expérimenter, rechercher",
+   "orientationId": "3923",
+   "kind": "activite",
+   "activityTags": [
+    "analyser"
+   ],
+   "riasec": "I",
+   "conditions": {},
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_conduire",
+   "label": "Conduire",
+   "orientationId": "3924",
+   "kind": "cadre",
+   "activityTags": [],
+   "riasec": "R",
+   "conditions": {},
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_diriger_et_assumer_des_responsabilites",
+   "label": "Diriger et assumer des responsabilités",
+   "orientationId": "3925",
+   "kind": "activite",
+   "activityTags": [
+    "coordonner"
+   ],
+   "riasec": "E",
+   "conditions": {},
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_travailler_avec_precision",
+   "label": "Travailler avec précision",
+   "orientationId": "3926",
+   "kind": "activite",
+   "activityTags": [
+    "construire",
+    "analyser"
+   ],
+   "riasec": "C",
+   "conditions": {
+    "methode": -1
+   },
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_travailler_le_bois",
+   "label": "Travailler le bois",
+   "orientationId": "3927",
+   "kind": "matiere",
+   "activityTags": [
+    "construire"
+   ],
+   "riasec": "R",
+   "conditions": {
+    "manuel": 1
+   },
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_travailler_en_equipe",
+   "label": "Travailler en équipe",
+   "orientationId": "3928",
+   "kind": "cadre",
+   "activityTags": [
+    "coordonner"
+   ],
+   "riasec": "S",
+   "conditions": {
+    "social": 1
+   },
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_informer_et_sensibiliser",
+   "label": "Informer et sensibiliser",
+   "orientationId": "3929",
+   "kind": "activite",
+   "activityTags": [
+    "accompagner",
+    "ecouter"
+   ],
+   "riasec": "S",
+   "conditions": {},
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_avoir_des_contacts_avec_d_autres_personn",
+   "label": "Avoir des contacts avec d'autres personnes",
+   "orientationId": "3930",
+   "kind": "activite",
+   "activityTags": [
+    "ecouter"
+   ],
+   "riasec": "S",
+   "conditions": {
+    "clientele": 1
+   },
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_avoir_une_activite_physique",
+   "label": "Avoir une activité physique",
+   "orientationId": "3931",
+   "kind": "cadre",
+   "activityTags": [],
+   "riasec": "R",
+   "conditions": {
+    "physique": 1
+   },
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_lire",
+   "label": "Lire",
+   "orientationId": "3932",
+   "kind": "activite",
+   "activityTags": [
+    "analyser"
+   ],
+   "riasec": "I",
+   "conditions": {},
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_travailler_le_metal",
+   "label": "Travailler le métal",
+   "orientationId": "3933",
+   "kind": "matiere",
+   "activityTags": [
+    "construire"
+   ],
+   "riasec": "R",
+   "conditions": {
+    "manuel": 1
+   },
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_travailler_avec_ses_mains",
+   "label": "Travailler avec ses mains",
+   "orientationId": "3934",
+   "kind": "activite",
+   "activityTags": [
+    "construire"
+   ],
+   "riasec": "R",
+   "conditions": {
+    "manuel": 1
+   },
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_travailler_avec_des_enfants",
+   "label": "Travailler avec des enfants",
+   "orientationId": "3935",
+   "kind": "matiere",
+   "activityTags": [
+    "accompagner"
+   ],
+   "riasec": "S",
+   "conditions": {},
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_travailler_avec_des_machines",
+   "label": "Travailler avec des machines",
+   "orientationId": "3936",
+   "kind": "matiere",
+   "activityTags": [
+    "construire"
+   ],
+   "riasec": "R",
+   "conditions": {},
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_travailler_avec_des_produits_alimentaire",
+   "label": "Travailler avec des produits alimentaires",
+   "orientationId": "3937",
+   "kind": "matiere",
+   "activityTags": [],
+   "riasec": "R",
+   "conditions": {
+    "manuel": 1
+   },
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_travailler_avec_des_plantes",
+   "label": "Travailler avec des plantes",
+   "orientationId": "3938",
+   "kind": "matiere",
+   "activityTags": [],
+   "riasec": "R",
+   "conditions": {},
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_travailler_le_tissu_le_cuir_le_papier",
+   "label": "Travailler le tissu, le cuir, le papier",
+   "orientationId": "3939",
+   "kind": "matiere",
+   "activityTags": [
+    "construire"
+   ],
+   "riasec": "R",
+   "conditions": {
+    "manuel": 1
+   },
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_s_occuper_des_animaux",
+   "label": "S'occuper des animaux",
+   "orientationId": "3940",
+   "kind": "matiere",
+   "activityTags": [
+    "soigner"
+   ],
+   "riasec": "R",
+   "conditions": {},
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_travailler_la_pierre_la_terre_le_verre",
+   "label": "Travailler la pierre, la terre, le verre",
+   "orientationId": "3941",
+   "kind": "matiere",
+   "activityTags": [
+    "construire"
+   ],
+   "riasec": "R",
+   "conditions": {
+    "manuel": 1
+   },
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_travailler_avec_des_chiffres",
+   "label": "Travailler avec des chiffres",
+   "orientationId": "3942",
+   "kind": "matiere",
+   "activityTags": [
+    "analyser",
+    "organiser"
+   ],
+   "riasec": "C",
+   "conditions": {},
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_se_deplacer_souvent",
+   "label": "Se déplacer souvent",
+   "orientationId": "3943",
+   "kind": "cadre",
+   "activityTags": [],
+   "riasec": null,
+   "conditions": {},
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_planifier_construire_dessin_technique",
+   "label": "Planifier, construire, dessin technique",
+   "orientationId": "3944",
+   "kind": "activite",
+   "activityTags": [
+    "concevoir",
+    "construire"
+   ],
+   "riasec": "R",
+   "conditions": {},
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_planifier_organiser",
+   "label": "Planifier, organiser",
+   "orientationId": "3945",
+   "kind": "activite",
+   "activityTags": [
+    "organiser",
+    "coordonner"
+   ],
+   "riasec": "C",
+   "conditions": {
+    "methode": -1
+   },
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_avoir_un_horaire_regulier",
+   "label": "Avoir un horaire régulier",
+   "orientationId": "3946",
+   "kind": "cadre",
+   "activityTags": [],
+   "riasec": "C",
+   "conditions": {
+    "methode": -1
+   },
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_ecrire",
+   "label": "Écrire",
+   "orientationId": "3947",
+   "kind": "activite",
+   "activityTags": [],
+   "riasec": "A",
+   "conditions": {},
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_travailler_avec_de_l_electricite_et_de_l",
+   "label": "Travailler avec de l'électricité et de l'électronique",
+   "orientationId": "3948",
+   "kind": "matiere",
+   "activityTags": [
+    "construire",
+    "concevoir"
+   ],
+   "riasec": "R",
+   "conditions": {},
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_chanter_danser_faire_de_la_musique",
+   "label": "Chanter, danser, faire de la musique",
+   "orientationId": "3949",
+   "kind": "activite",
+   "activityTags": [],
+   "riasec": "A",
+   "conditions": {
+    "methode": 1
+   },
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_utiliser_les_langues",
+   "label": "Utiliser les langues",
+   "orientationId": "3950",
+   "kind": "activite",
+   "activityTags": [
+    "ecouter"
+   ],
+   "riasec": "A",
+   "conditions": {},
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_realiser_des_taches_techniques",
+   "label": "Réaliser des tâches techniques",
+   "orientationId": "3951",
+   "kind": "activite",
+   "activityTags": [
+    "construire"
+   ],
+   "riasec": "R",
+   "conditions": {},
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_transmettre_des_connaissances",
+   "label": "Transmettre des connaissances",
+   "orientationId": "3952",
+   "kind": "activite",
+   "activityTags": [
+    "accompagner"
+   ],
+   "riasec": "S",
+   "conditions": {},
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "in_dessiner_decorer_creer",
+   "label": "Dessiner, décorer, créer",
+   "orientationId": "3953",
+   "kind": "activite",
+   "activityTags": [
+    "concevoir"
+   ],
+   "riasec": "A",
+   "conditions": {
+    "methode": 1
+   },
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  }
+ ],
+ "qualities": [
+  {
+   "id": "qa_capacite_d_abstraction",
+   "label": "Capacité d'abstraction",
+   "orientationId": "5268",
+   "kind": "qualite",
+   "family": "cognitive",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_capacite_d_analyse",
+   "label": "Capacité d'analyse",
+   "orientationId": "5269",
+   "kind": "qualite",
+   "family": "cognitive",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_perseverance",
+   "label": "Persévérance",
+   "orientationId": "5270",
+   "kind": "qualite",
+   "family": "engagement",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_gout_et_odorat_developpes",
+   "label": "Goût et odorat développés",
+   "orientationId": "5271",
+   "kind": "qualite",
+   "family": "manuelle_sensorielle",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_sens_tactile_developpe",
+   "label": "Sens tactile développé",
+   "orientationId": "5272",
+   "kind": "qualite",
+   "family": "manuelle_sensorielle",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_sens_du_rythme_et_aptitude_musicale",
+   "label": "Sens du rythme et aptitude musicale",
+   "orientationId": "5273",
+   "kind": "qualite",
+   "family": "manuelle_sensorielle",
+   "schoolSubjects": [
+    "musique"
+   ],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_sens_de_l_observation",
+   "label": "Sens de l'observation",
+   "orientationId": "5274",
+   "kind": "qualite",
+   "family": "cognitive",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_capacite_a_s_adapter_a_un_horaire_irregu",
+   "label": "Capacité à s'adapter à un horaire irrégulier ou de nuit",
+   "orientationId": "5275",
+   "kind": "contrainte",
+   "family": "contrainte",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_disponibilite",
+   "label": "Disponibilité",
+   "orientationId": "5276",
+   "kind": "qualite",
+   "family": "engagement",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_disposition_a_de_frequents_deplacements",
+   "label": "Disposition à de fréquents déplacements",
+   "orientationId": "5277",
+   "kind": "contrainte",
+   "family": "contrainte",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_disposition_a_sejourner_a_l_etranger",
+   "label": "Disposition à séjourner à l'étranger",
+   "orientationId": "5278",
+   "kind": "contrainte",
+   "family": "contrainte",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_capacite_a_supporter_la_vue_du_sang",
+   "label": "Capacité à supporter la vue du sang",
+   "orientationId": "5279",
+   "kind": "contrainte",
+   "family": "contrainte",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_discretion",
+   "label": "Discrétion",
+   "orientationId": "5280",
+   "kind": "qualite",
+   "family": "relationnelle",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_autorite",
+   "label": "Autorité",
+   "orientationId": "5281",
+   "kind": "qualite",
+   "family": "engagement",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_esprit_d_initiative",
+   "label": "Esprit d'initiative",
+   "orientationId": "5282",
+   "kind": "qualite",
+   "family": "engagement",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_debrouillardise",
+   "label": "Débrouillardise",
+   "orientationId": "5283",
+   "kind": "qualite",
+   "family": "engagement",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_empathie",
+   "label": "Empathie",
+   "orientationId": "5284",
+   "kind": "qualite",
+   "family": "relationnelle",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_equilibre_affectif_et_psychique",
+   "label": "Équilibre affectif et psychique",
+   "orientationId": "5285",
+   "kind": "qualite",
+   "family": "resistance",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_esprit_de_decision",
+   "label": "Esprit de décision",
+   "orientationId": "5286",
+   "kind": "qualite",
+   "family": "engagement",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_aptitude_a_diriger_et_gerer_une_equipe",
+   "label": "Aptitude à diriger et gérer une équipe",
+   "orientationId": "5287",
+   "kind": "qualite",
+   "family": "engagement",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_capacite_d_adaptation_a_l_evolution_tech",
+   "label": "Capacité d'adaptation à l'évolution technologique",
+   "orientationId": "5288",
+   "kind": "qualite",
+   "family": "cognitive",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_aptitude_pour_les_sciences_naturelles",
+   "label": "Aptitude pour les sciences naturelles",
+   "orientationId": "5289",
+   "kind": "qualite",
+   "family": "scolaire",
+   "schoolSubjects": [
+    "sciences"
+   ],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_facilite_pour_les_langues",
+   "label": "Facilité pour les langues",
+   "orientationId": "5290",
+   "kind": "qualite",
+   "family": "scolaire",
+   "schoolSubjects": [
+    "langues"
+   ],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_aisance_avec_les_chiffres",
+   "label": "Aisance avec les chiffres",
+   "orientationId": "5291",
+   "kind": "qualite",
+   "family": "scolaire",
+   "schoolSubjects": [
+    "mathematiques"
+   ],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_facilite_de_redaction",
+   "label": "Facilité de rédaction",
+   "orientationId": "5292",
+   "kind": "qualite",
+   "family": "scolaire",
+   "schoolSubjects": [
+    "francais"
+   ],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_sens_commercial",
+   "label": "Sens commercial",
+   "orientationId": "5293",
+   "kind": "qualite",
+   "family": "relationnelle",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_patience",
+   "label": "Patience",
+   "orientationId": "5294",
+   "kind": "qualite",
+   "family": "relationnelle",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_rigueur",
+   "label": "Rigueur",
+   "orientationId": "5295",
+   "kind": "qualite",
+   "family": "organisation",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_presentation_soignee",
+   "label": "Présentation soignée",
+   "orientationId": "5296",
+   "kind": "qualite",
+   "family": "relationnelle",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_impartialite",
+   "label": "Impartialité",
+   "orientationId": "5297",
+   "kind": "qualite",
+   "family": "relationnelle",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_bonne_memoire",
+   "label": "Bonne mémoire",
+   "orientationId": "5298",
+   "kind": "qualite",
+   "family": "cognitive",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_bonne_ouie",
+   "label": "Bonne ouïe",
+   "orientationId": "5299",
+   "kind": "qualite",
+   "family": "manuelle_sensorielle",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_bonne_acuite_visuelle",
+   "label": "Bonne acuité visuelle",
+   "orientationId": "5300",
+   "kind": "qualite",
+   "family": "manuelle_sensorielle",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_courtoisie_et_tact",
+   "label": "Courtoisie et tact",
+   "orientationId": "5301",
+   "kind": "qualite",
+   "family": "relationnelle",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_capacite_a_supporter_les_bruits",
+   "label": "Capacité à supporter les bruits",
+   "orientationId": "5302",
+   "kind": "contrainte",
+   "family": "contrainte",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_esprit_d_innovation",
+   "label": "Esprit d'innovation",
+   "orientationId": "5303",
+   "kind": "qualite",
+   "family": "creative",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_aucune_allergie_aux_produits_utilises",
+   "label": "Aucune allergie aux produits utilisés",
+   "orientationId": "5304",
+   "kind": "contrainte",
+   "family": "contrainte",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_perception_correcte_des_couleurs",
+   "label": "Perception correcte des couleurs",
+   "orientationId": "5305",
+   "kind": "contrainte",
+   "family": "contrainte",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_sens_de_la_communication",
+   "label": "Sens de la communication",
+   "orientationId": "5306",
+   "kind": "qualite",
+   "family": "relationnelle",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_facilite_de_contact",
+   "label": "Facilité de contact",
+   "orientationId": "5307",
+   "kind": "qualite",
+   "family": "relationnelle",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_capacite_de_concentration",
+   "label": "Capacité de concentration",
+   "orientationId": "5308",
+   "kind": "qualite",
+   "family": "cognitive",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_resistance_physique",
+   "label": "Résistance physique",
+   "orientationId": "5309",
+   "kind": "qualite",
+   "family": "resistance",
+   "schoolSubjects": [
+    "education_physique"
+   ],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_creativite",
+   "label": "Créativité",
+   "orientationId": "5310",
+   "kind": "qualite",
+   "family": "creative",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_sens_critique",
+   "label": "Sens critique",
+   "orientationId": "5311",
+   "kind": "qualite",
+   "family": "cognitive",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_sensibilite_artistique",
+   "label": "Sensibilité artistique",
+   "orientationId": "5312",
+   "kind": "qualite",
+   "family": "creative",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_habilete_manuelle",
+   "label": "Habileté manuelle",
+   "orientationId": "5313",
+   "kind": "qualite",
+   "family": "manuelle_sensorielle",
+   "schoolSubjects": [
+    "activites_creatrices"
+   ],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_facilite_d_expression_orale",
+   "label": "Facilité d'expression orale",
+   "orientationId": "5314",
+   "kind": "qualite",
+   "family": "relationnelle",
+   "schoolSubjects": [
+    "francais"
+   ],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_oreille_musicale",
+   "label": "Oreille musicale",
+   "orientationId": "5315",
+   "kind": "qualite",
+   "family": "manuelle_sensorielle",
+   "schoolSubjects": [
+    "musique"
+   ],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_curiosite",
+   "label": "Curiosité",
+   "orientationId": "5316",
+   "kind": "qualite",
+   "family": "cognitive",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_sens_de_l_orientation",
+   "label": "Sens de l'orientation",
+   "orientationId": "5317",
+   "kind": "qualite",
+   "family": "cognitive",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_aptitudes_pedagogiques",
+   "label": "Aptitudes pédagogiques",
+   "orientationId": "5318",
+   "kind": "qualite",
+   "family": "relationnelle",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_capacite_de_planification_et_d_organisat",
+   "label": "Capacité de planification et d'organisation",
+   "orientationId": "5319",
+   "kind": "qualite",
+   "family": "organisation",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_capacite_de_representation_spatiale",
+   "label": "Capacité de représentation spatiale",
+   "orientationId": "5320",
+   "kind": "qualite",
+   "family": "cognitive",
+   "schoolSubjects": [
+    "mathematiques",
+    "arts_visuels"
+   ],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_capacite_a_reagir_dans_l_urgence",
+   "label": "Capacité à réagir dans l'urgence",
+   "orientationId": "5321",
+   "kind": "qualite",
+   "family": "resistance",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_conscience_des_risques",
+   "label": "Conscience des risques",
+   "orientationId": "5322",
+   "kind": "qualite",
+   "family": "engagement",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_calme_et_sang_froid",
+   "label": "Calme et sang-froid",
+   "orientationId": "5323",
+   "kind": "qualite",
+   "family": "resistance",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_rapidite_d_execution",
+   "label": "Rapidité d'exécution",
+   "orientationId": "5324",
+   "kind": "qualite",
+   "family": "organisation",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_absence_de_vertige",
+   "label": "Absence de vertige",
+   "orientationId": "5325",
+   "kind": "contrainte",
+   "family": "contrainte",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_aptitude_a_travailler_de_facon_independa",
+   "label": "Aptitude à travailler de façon indépendante",
+   "orientationId": "5326",
+   "kind": "qualite",
+   "family": "organisation",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_sens_esthetique",
+   "label": "Sens esthétique",
+   "orientationId": "5327",
+   "kind": "qualite",
+   "family": "creative",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_sens_de_la_coordination_et_du_mouvement",
+   "label": "Sens de la coordination et du mouvement",
+   "orientationId": "5328",
+   "kind": "qualite",
+   "family": "manuelle_sensorielle",
+   "schoolSubjects": [
+    "education_physique"
+   ],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_sens_de_l_accueil",
+   "label": "Sens de l'accueil",
+   "orientationId": "5329",
+   "kind": "qualite",
+   "family": "relationnelle",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_sens_de_l_hygiene_et_de_la_proprete",
+   "label": "Sens de l'hygiène et de la propreté",
+   "orientationId": "5330",
+   "kind": "qualite",
+   "family": "organisation",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_esprit_de_synthese",
+   "label": "Esprit de synthèse",
+   "orientationId": "5331",
+   "kind": "qualite",
+   "family": "cognitive",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_precision_et_minutie",
+   "label": "Précision et minutie",
+   "orientationId": "5332",
+   "kind": "qualite",
+   "family": "organisation",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_resistance_au_stress",
+   "label": "Résistance au stress",
+   "orientationId": "5333",
+   "kind": "qualite",
+   "family": "resistance",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_esprit_methodique",
+   "label": "Esprit méthodique",
+   "orientationId": "5334",
+   "kind": "qualite",
+   "family": "organisation",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_aptitude_a_travailler_en_equipe",
+   "label": "Aptitude à travailler en équipe",
+   "orientationId": "5335",
+   "kind": "qualite",
+   "family": "relationnelle",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_sens_technique",
+   "label": "Sens technique",
+   "orientationId": "5336",
+   "kind": "qualite",
+   "family": "cognitive",
+   "schoolSubjects": [
+    "sciences",
+    "activites_creatrices"
+   ],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_resistance_aux_variations_de_temperature",
+   "label": "Résistance aux variations de température ou au mauvais temps",
+   "orientationId": "5337",
+   "kind": "contrainte",
+   "family": "contrainte",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_tolerance_et_respect_d_autrui",
+   "label": "Tolérance et respect d'autrui",
+   "orientationId": "5338",
+   "kind": "qualite",
+   "family": "relationnelle",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_capacite_a_supporter_les_mauvaises_odeur",
+   "label": "Capacité à supporter les mauvaises odeurs",
+   "orientationId": "5339",
+   "kind": "contrainte",
+   "family": "contrainte",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_sens_des_responsabilites",
+   "label": "Sens des responsabilités",
+   "orientationId": "5340",
+   "kind": "qualite",
+   "family": "engagement",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_aptitude_a_negocier",
+   "label": "Aptitude à négocier",
+   "orientationId": "5341",
+   "kind": "qualite",
+   "family": "relationnelle",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_capacite_a_mettre_en_confiance_autrui",
+   "label": "Capacité à mettre en confiance autrui",
+   "orientationId": "5342",
+   "kind": "qualite",
+   "family": "relationnelle",
+   "schoolSubjects": [],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  },
+  {
+   "id": "qa_facilite_pour_le_dessin",
+   "label": "Facilité pour le dessin",
+   "orientationId": "5343",
+   "kind": "qualite",
+   "family": "creative",
+   "schoolSubjects": [
+    "arts_visuels"
+   ],
+   "sourceIds": [
+    "or_taxonomie"
+   ],
+   "mappingStatus": "demo"
+  }
+ ],
+ "qualityFamilies": [
+  {
+   "id": "cognitive",
+   "label": "Comprendre et raisonner"
+  },
+  {
+   "id": "relationnelle",
+   "label": "Être avec les autres"
+  },
+  {
+   "id": "organisation",
+   "label": "S'organiser et être précis"
+  },
+  {
+   "id": "engagement",
+   "label": "S'engager et décider"
+  },
+  {
+   "id": "creative",
+   "label": "Créer"
+  },
+  {
+   "id": "manuelle_sensorielle",
+   "label": "Habileté et sens"
+  },
+  {
+   "id": "resistance",
+   "label": "Tenir sous pression"
+  },
+  {
+   "id": "scolaire",
+   "label": "Appuis scolaires"
+  },
+  {
+   "id": "contrainte",
+   "label": "Conditions à connaître"
+  }
+ ],
+ "schoolSubjects": [
+  {
+   "id": "mathematiques",
+   "label": "Mathématiques"
+  },
+  {
+   "id": "sciences",
+   "label": "Sciences de la nature"
+  },
+  {
+   "id": "francais",
+   "label": "Français"
+  },
+  {
+   "id": "langues",
+   "label": "Langues étrangères"
+  },
+  {
+   "id": "arts_visuels",
+   "label": "Arts visuels"
+  },
+  {
+   "id": "activites_creatrices",
+   "label": "Activités créatrices et techniques"
+  },
+  {
+   "id": "musique",
+   "label": "Musique"
+  },
+  {
+   "id": "education_physique",
+   "label": "Éducation physique"
+  }
+ ],
+ "conditions": [
+  {
+   "id": "lieu",
+   "label": "Lieu de travail",
+   "min": "à l'intérieur",
+   "max": "à l'extérieur",
+   "sourceIds": [
+    "bm_yousty"
+   ]
+  },
+  {
+   "id": "social",
+   "label": "Travail",
+   "min": "seul·e",
+   "max": "en équipe",
+   "sourceIds": [
+    "bm_yousty"
+   ]
+  },
+  {
+   "id": "physique",
+   "label": "Effort physique",
+   "min": "rare",
+   "max": "quotidien",
+   "sourceIds": [
+    "bm_yousty"
+   ]
+  },
+  {
+   "id": "methode",
+   "label": "Façon de travailler",
+   "min": "selon un plan",
+   "max": "de manière créative",
+   "sourceIds": [
+    "bm_yousty"
+   ]
+  },
+  {
+   "id": "clientele",
+   "label": "Contact avec des clients ou des patients",
+   "min": "rare",
+   "max": "quotidien",
+   "sourceIds": [
+    "bm_yousty"
+   ]
+  },
+  {
+   "id": "ordinateur",
+   "label": "Ordinateur",
+   "min": "rare",
+   "max": "quotidien",
+   "sourceIds": [
+    "bm_yousty"
+   ]
+  },
+  {
+   "id": "manuel",
+   "label": "Travail manuel",
+   "min": "rare",
+   "max": "quotidien",
+   "sourceIds": [
+    "bm_yousty"
+   ]
+  }
+ ],
+ "profiles": [
+  {
+   "id": "pr_asa",
+   "level": "afp",
+   "label": "Aide en soins et accompagnement AFP",
+   "orientationSlug": "aide-en-soins-et-accompagnement-afp",
+   "interests": [
+    "in_aider_et_soigner_les_autres",
+    "in_avoir_des_contacts_avec_d_autres_personn",
+    "in_travailler_en_equipe",
+    "in_travailler_avec_precision",
+    "in_informer_et_sensibiliser"
+   ],
+   "qualities": [
+    "qa_empathie",
+    "qa_sens_de_l_hygiene_et_de_la_proprete",
+    "qa_courtoisie_et_tact",
+    "qa_aptitude_a_travailler_en_equipe",
+    "qa_discretion",
+    "qa_equilibre_affectif_et_psychique"
+   ],
+   "constraints": [
+    "qa_capacite_a_supporter_la_vue_du_sang",
+    "qa_capacite_a_s_adapter_a_un_horaire_irregu"
+   ],
+   "conditions": {
+    "methode": -1,
+    "social": 1,
+    "clientele": 1
+   },
+   "activityTags": [
+    "accompagner",
+    "ecouter",
+    "analyser",
+    "construire",
+    "coordonner",
+    "soigner"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_aide_en_soins_et_accompagnement_afp"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_assc",
+   "level": "cfc",
+   "label": "Assistant·e en soins et santé communautaire CFC",
+   "orientationSlug": "assistant-e-en-soins-et-sante-communautaire-cfc",
+   "interests": [
+    "in_aider_et_soigner_les_autres",
+    "in_avoir_des_contacts_avec_d_autres_personn",
+    "in_travailler_en_equipe",
+    "in_travailler_avec_precision",
+    "in_planifier_organiser",
+    "in_informer_et_sensibiliser"
+   ],
+   "qualities": [
+    "qa_empathie",
+    "qa_sens_de_l_hygiene_et_de_la_proprete",
+    "qa_courtoisie_et_tact",
+    "qa_aptitude_a_travailler_en_equipe",
+    "qa_discretion",
+    "qa_equilibre_affectif_et_psychique"
+   ],
+   "constraints": [
+    "qa_capacite_a_supporter_la_vue_du_sang",
+    "qa_capacite_a_s_adapter_a_un_horaire_irregu"
+   ],
+   "conditions": {
+    "methode": -1,
+    "social": 1,
+    "clientele": 1
+   },
+   "activityTags": [
+    "accompagner",
+    "coordonner",
+    "ecouter",
+    "analyser",
+    "construire",
+    "organiser",
+    "soigner"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heds_si"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_assistant_e_en_soins_et_sante_communautaire_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_ase",
+   "level": "cfc",
+   "label": "Assistant·e socio-éducatif·ve CFC",
+   "orientationSlug": "assistant-e-socio-educatif-ve-cfc",
+   "interests": [
+    "in_aider_et_soigner_les_autres",
+    "in_avoir_des_contacts_avec_d_autres_personn",
+    "in_planifier_organiser",
+    "in_travailler_en_equipe",
+    "in_diriger_et_assumer_des_responsabilites"
+   ],
+   "qualities": [
+    "qa_capacite_a_mettre_en_confiance_autrui",
+    "qa_empathie",
+    "qa_tolerance_et_respect_d_autrui",
+    "qa_aptitudes_pedagogiques",
+    "qa_equilibre_affectif_et_psychique",
+    "qa_calme_et_sang_froid",
+    "qa_aptitude_a_travailler_en_equipe"
+   ],
+   "constraints": [
+    "qa_capacite_a_s_adapter_a_un_horaire_irregu"
+   ],
+   "conditions": {
+    "social": 1,
+    "clientele": 1,
+    "methode": -1
+   },
+   "activityTags": [
+    "coordonner",
+    "accompagner",
+    "ecouter",
+    "organiser",
+    "soigner"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_hets_ts"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_assistant_e_socio_educatif_ve_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_assistant_medical",
+   "level": "cfc",
+   "label": "Assistant·e médical·e CFC",
+   "orientationSlug": "assistant-e-medical-e-cfc",
+   "interests": [
+    "in_aider_et_soigner_les_autres",
+    "in_planifier_organiser",
+    "in_travailler_en_equipe",
+    "in_travailler_avec_precision",
+    "in_travailler_a_l_ordinateur"
+   ],
+   "qualities": [
+    "qa_sens_de_l_hygiene_et_de_la_proprete",
+    "qa_calme_et_sang_froid",
+    "qa_empathie",
+    "qa_courtoisie_et_tact",
+    "qa_discretion",
+    "qa_sens_de_l_accueil",
+    "qa_sens_des_responsabilites"
+   ],
+   "constraints": [
+    "qa_capacite_a_supporter_la_vue_du_sang"
+   ],
+   "conditions": {
+    "ordinateur": 1,
+    "methode": -1,
+    "social": 1
+   },
+   "activityTags": [
+    "analyser",
+    "coordonner",
+    "accompagner",
+    "construire",
+    "organiser",
+    "soigner"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heg_ee"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_assistant_e_medical_e_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_assistant_pharmacie",
+   "level": "cfc",
+   "label": "Assistant·e en pharmacie CFC",
+   "orientationSlug": "assistant-e-en-pharmacie-cfc",
+   "interests": [
+    "in_aider_et_soigner_les_autres",
+    "in_avoir_des_contacts_avec_d_autres_personn",
+    "in_travailler_avec_precision",
+    "in_travailler_en_equipe",
+    "in_travailler_avec_des_machines"
+   ],
+   "qualities": [
+    "qa_empathie",
+    "qa_sens_de_l_hygiene_et_de_la_proprete",
+    "qa_bonne_memoire",
+    "qa_discretion",
+    "qa_courtoisie_et_tact",
+    "qa_aptitude_a_travailler_en_equipe",
+    "qa_presentation_soignee",
+    "qa_sens_commercial"
+   ],
+   "constraints": [],
+   "conditions": {
+    "methode": -1,
+    "social": 1,
+    "clientele": 1
+   },
+   "activityTags": [
+    "construire",
+    "accompagner",
+    "analyser",
+    "coordonner",
+    "ecouter",
+    "soigner"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heg_ee"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_assistant_e_en_pharmacie_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_droguiste",
+   "level": "cfc",
+   "label": "Droguiste CFC",
+   "orientationSlug": "droguiste-cfc",
+   "interests": [
+    "in_travailler_avec_precision",
+    "in_transmettre_des_connaissances",
+    "in_avoir_des_contacts_avec_d_autres_personn"
+   ],
+   "qualities": [
+    "qa_aisance_avec_les_chiffres",
+    "qa_bonne_memoire",
+    "qa_courtoisie_et_tact",
+    "qa_esprit_methodique",
+    "qa_habilete_manuelle",
+    "qa_sens_de_l_hygiene_et_de_la_proprete",
+    "qa_presentation_soignee",
+    "qa_sens_commercial"
+   ],
+   "constraints": [],
+   "conditions": {
+    "methode": -1,
+    "clientele": 1
+   },
+   "activityTags": [
+    "accompagner",
+    "analyser",
+    "construire",
+    "ecouter"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heg_ee",
+    "ba_heia_chimie"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_droguiste_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_employe_commerce",
+   "level": "cfc",
+   "label": "Employé·e de commerce CFC",
+   "orientationSlug": "employe-e-de-commerce-cfc",
+   "interests": [
+    "in_travailler_avec_des_chiffres",
+    "in_utiliser_les_langues",
+    "in_travailler_a_l_interieur",
+    "in_travailler_en_equipe",
+    "in_conseiller",
+    "in_travailler_a_l_ordinateur"
+   ],
+   "qualities": [
+    "qa_aisance_avec_les_chiffres",
+    "qa_facilite_de_contact",
+    "qa_sens_de_l_accueil",
+    "qa_aptitude_a_travailler_en_equipe",
+    "qa_bonne_memoire",
+    "qa_disponibilite",
+    "qa_esprit_methodique",
+    "qa_facilite_pour_les_langues",
+    "qa_facilite_de_redaction"
+   ],
+   "constraints": [],
+   "conditions": {
+    "ordinateur": 1,
+    "clientele": 1,
+    "lieu": -1,
+    "social": 1
+   },
+   "activityTags": [
+    "analyser",
+    "ecouter",
+    "accompagner",
+    "coordonner",
+    "organiser"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heg_ee"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_employe_e_de_commerce_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_gestionnaire_detail",
+   "level": "cfc",
+   "label": "Gestionnaire du commerce de détail CFC",
+   "orientationSlug": "gestionnaire-du-commerce-de-detail-cfc",
+   "interests": [
+    "in_avoir_des_contacts_avec_d_autres_personn",
+    "in_conseiller",
+    "in_travailler_avec_des_chiffres",
+    "in_travailler_a_l_interieur",
+    "in_utiliser_les_langues"
+   ],
+   "qualities": [
+    "qa_aptitude_a_travailler_en_equipe",
+    "qa_facilite_de_contact",
+    "qa_sens_de_l_hygiene_et_de_la_proprete",
+    "qa_facilite_d_expression_orale",
+    "qa_presentation_soignee",
+    "qa_resistance_au_stress",
+    "qa_sens_commercial",
+    "qa_bonne_memoire"
+   ],
+   "constraints": [],
+   "conditions": {
+    "clientele": 1,
+    "lieu": -1
+   },
+   "activityTags": [
+    "ecouter",
+    "accompagner",
+    "analyser",
+    "organiser"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heg_ee"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_gestionnaire_du_commerce_de_detail_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_dev_business",
+   "level": "cfc",
+   "label": "Développeur·se de business numérique CFC",
+   "orientationSlug": "developpeur-euse-de-business-numerique-cfc",
+   "interests": [
+    "in_travailler_a_l_ordinateur",
+    "in_planifier_organiser",
+    "in_diriger_et_assumer_des_responsabilites",
+    "in_realiser_des_taches_techniques",
+    "in_travailler_en_equipe"
+   ],
+   "qualities": [
+    "qa_sens_technique",
+    "qa_capacite_d_analyse",
+    "qa_capacite_d_adaptation_a_l_evolution_tech",
+    "qa_esprit_methodique",
+    "qa_aptitude_a_travailler_en_equipe",
+    "qa_facilite_de_contact",
+    "qa_sens_de_la_communication"
+   ],
+   "constraints": [],
+   "conditions": {
+    "ordinateur": 1,
+    "social": 1,
+    "methode": -1
+   },
+   "activityTags": [
+    "coordonner",
+    "analyser",
+    "construire",
+    "organiser"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heg_ee",
+    "ba_heia_isc"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_developpeur_euse_de_business_numerique_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_logisticien",
+   "level": "cfc",
+   "label": "Logisticien·ne CFC",
+   "orientationSlug": "logisticien-ne-cfc",
+   "interests": [
+    "in_avoir_une_activite_physique",
+    "in_se_deplacer_souvent",
+    "in_realiser_des_taches_techniques",
+    "in_avoir_des_contacts_avec_d_autres_personn",
+    "in_conseiller",
+    "in_travailler_avec_des_machines"
+   ],
+   "qualities": [
+    "qa_esprit_methodique",
+    "qa_aptitude_a_travailler_en_equipe",
+    "qa_aptitude_a_travailler_de_facon_independa",
+    "qa_debrouillardise",
+    "qa_bonne_acuite_visuelle",
+    "qa_bonne_memoire",
+    "qa_resistance_physique"
+   ],
+   "constraints": [],
+   "conditions": {
+    "clientele": 1,
+    "physique": 1
+   },
+   "activityTags": [
+    "construire",
+    "ecouter",
+    "accompagner"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heg_ee",
+    "ba_heia_isc"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_logisticien_ne_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_mediamaticien",
+   "level": "cfc",
+   "label": "Médiamaticien·ne CFC",
+   "orientationSlug": "mediamaticien-ne-cfc",
+   "interests": [
+    "in_travailler_a_l_ordinateur",
+    "in_dessiner_decorer_creer",
+    "in_realiser_des_taches_techniques",
+    "in_conseiller",
+    "in_diriger_et_assumer_des_responsabilites"
+   ],
+   "qualities": [
+    "qa_capacite_d_adaptation_a_l_evolution_tech",
+    "qa_sens_de_la_communication",
+    "qa_esprit_methodique",
+    "qa_capacite_d_analyse",
+    "qa_creativite",
+    "qa_aptitude_a_travailler_en_equipe",
+    "qa_sens_technique"
+   ],
+   "constraints": [],
+   "conditions": {
+    "ordinateur": 1,
+    "clientele": 1,
+    "methode": 1
+   },
+   "activityTags": [
+    "accompagner",
+    "analyser",
+    "concevoir",
+    "construire",
+    "coordonner",
+    "ecouter"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heg_ee",
+    "ba_heia_ge",
+    "ba_heia_isc"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_mediamaticien_ne_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_imd",
+   "level": "cfc",
+   "label": "Interactive media designer CFC",
+   "orientationSlug": "interactive-media-designer-cfc",
+   "interests": [
+    "in_dessiner_decorer_creer",
+    "in_travailler_en_equipe",
+    "in_travailler_a_l_ordinateur"
+   ],
+   "qualities": [
+    "qa_creativite",
+    "qa_sens_de_la_communication",
+    "qa_sensibilite_artistique",
+    "qa_sens_technique",
+    "qa_capacite_d_adaptation_a_l_evolution_tech",
+    "qa_aptitude_a_travailler_en_equipe",
+    "qa_capacite_de_representation_spatiale",
+    "qa_capacite_de_planification_et_d_organisat"
+   ],
+   "constraints": [],
+   "conditions": {
+    "ordinateur": 1,
+    "social": 1,
+    "methode": 1
+   },
+   "activityTags": [
+    "analyser",
+    "concevoir",
+    "coordonner"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heia_ge",
+    "ba_heia_isc"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_interactive_media_designer_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_informaticien_cfc",
+   "level": "cfc",
+   "label": "Informaticien·ne CFC",
+   "orientationSlug": "informaticien-ne-cfc",
+   "interests": [
+    "in_travailler_a_l_ordinateur",
+    "in_travailler_avec_des_chiffres",
+    "in_realiser_des_taches_techniques",
+    "in_travailler_avec_de_l_electricite_et_de_l",
+    "in_travailler_a_l_interieur"
+   ],
+   "qualities": [
+    "qa_sens_technique",
+    "qa_capacite_d_adaptation_a_l_evolution_tech",
+    "qa_esprit_methodique",
+    "qa_capacite_d_analyse",
+    "qa_precision_et_minutie",
+    "qa_facilite_de_contact",
+    "qa_aptitude_a_travailler_en_equipe",
+    "qa_creativite"
+   ],
+   "constraints": [],
+   "conditions": {
+    "ordinateur": 1,
+    "lieu": -1
+   },
+   "activityTags": [
+    "analyser",
+    "construire",
+    "concevoir",
+    "organiser"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heia_ge",
+    "ba_heia_isc"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_informaticien_ne_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_electronicien",
+   "level": "cfc",
+   "label": "Électronicien·ne CFC",
+   "orientationSlug": "electronicien-ne-cfc",
+   "interests": [
+    "in_travailler_avec_de_l_electricite_et_de_l",
+    "in_travailler_a_l_ordinateur",
+    "in_travailler_avec_des_chiffres",
+    "in_planifier_construire_dessin_technique",
+    "in_experimenter_rechercher"
+   ],
+   "qualities": [
+    "qa_sens_technique",
+    "qa_capacite_d_adaptation_a_l_evolution_tech",
+    "qa_habilete_manuelle",
+    "qa_aisance_avec_les_chiffres",
+    "qa_esprit_methodique",
+    "qa_precision_et_minutie",
+    "qa_aptitude_a_travailler_en_equipe"
+   ],
+   "constraints": [],
+   "conditions": {
+    "ordinateur": 1
+   },
+   "activityTags": [
+    "analyser",
+    "concevoir",
+    "construire",
+    "organiser"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heia_ge",
+    "ba_heia_gm",
+    "ba_heia_isc"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_electronicien_ne_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_automaticien",
+   "level": "cfc",
+   "label": "Automaticien·ne CFC",
+   "orientationSlug": "automaticien-ne-cfc",
+   "interests": [
+    "in_realiser_des_taches_techniques",
+    "in_travailler_avec_precision",
+    "in_travailler_avec_des_chiffres",
+    "in_travailler_avec_de_l_electricite_et_de_l",
+    "in_travailler_a_l_ordinateur"
+   ],
+   "qualities": [
+    "qa_capacite_d_adaptation_a_l_evolution_tech",
+    "qa_sens_technique",
+    "qa_aisance_avec_les_chiffres",
+    "qa_esprit_methodique",
+    "qa_aptitude_a_travailler_en_equipe",
+    "qa_habilete_manuelle",
+    "qa_capacite_de_representation_spatiale"
+   ],
+   "constraints": [],
+   "conditions": {
+    "ordinateur": 1,
+    "methode": -1
+   },
+   "activityTags": [
+    "analyser",
+    "construire",
+    "concevoir",
+    "organiser"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heia_ge",
+    "ba_heia_gm",
+    "ba_heia_isc"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_automaticien_ne_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_polymecanicien",
+   "level": "cfc",
+   "label": "Polymécanicien·ne CFC",
+   "orientationSlug": "polymecanicien-ne-cfc",
+   "interests": [
+    "in_travailler_avec_des_machines",
+    "in_travailler_le_metal",
+    "in_realiser_des_taches_techniques",
+    "in_travailler_avec_ses_mains"
+   ],
+   "qualities": [
+    "qa_habilete_manuelle",
+    "qa_sens_technique",
+    "qa_esprit_methodique",
+    "qa_capacite_de_representation_spatiale",
+    "qa_precision_et_minutie",
+    "qa_aptitude_a_travailler_en_equipe"
+   ],
+   "constraints": [
+    "qa_capacite_a_supporter_les_bruits"
+   ],
+   "conditions": {
+    "manuel": 1
+   },
+   "activityTags": [
+    "construire"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heia_ge",
+    "ba_heia_gm",
+    "ba_heia_isc"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_polymecanicien_ne_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_mecanicien_production",
+   "level": "cfc",
+   "label": "Mécanicien·ne de production CFC",
+   "orientationSlug": "mecanicien-ne-de-production-cfc",
+   "interests": [
+    "in_travailler_avec_des_machines",
+    "in_travailler_le_metal",
+    "in_realiser_des_taches_techniques",
+    "in_travailler_avec_ses_mains"
+   ],
+   "qualities": [
+    "qa_habilete_manuelle",
+    "qa_sens_technique",
+    "qa_esprit_methodique",
+    "qa_capacite_de_representation_spatiale",
+    "qa_precision_et_minutie",
+    "qa_resistance_physique",
+    "qa_aptitude_a_travailler_en_equipe"
+   ],
+   "constraints": [
+    "qa_capacite_a_supporter_les_bruits"
+   ],
+   "conditions": {
+    "manuel": 1
+   },
+   "activityTags": [
+    "construire"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heia_ge",
+    "ba_heia_gm",
+    "ba_heia_isc"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_mecanicien_ne_de_production_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_constructeur_appareils",
+   "level": "cfc",
+   "label": "Constructeur·trice d'appareils industriels CFC",
+   "orientationSlug": "constructeur-trice-dappareils-industriels-cfc",
+   "interests": [
+    "in_travailler_le_metal",
+    "in_travailler_avec_des_machines",
+    "in_travailler_avec_ses_mains",
+    "in_realiser_des_taches_techniques",
+    "in_avoir_une_activite_physique"
+   ],
+   "qualities": [
+    "qa_habilete_manuelle",
+    "qa_resistance_physique",
+    "qa_sens_technique",
+    "qa_capacite_de_representation_spatiale",
+    "qa_precision_et_minutie",
+    "qa_aptitude_a_travailler_en_equipe"
+   ],
+   "constraints": [
+    "qa_capacite_a_supporter_les_bruits",
+    "qa_aucune_allergie_aux_produits_utilises"
+   ],
+   "conditions": {
+    "physique": 1,
+    "manuel": 1
+   },
+   "activityTags": [
+    "construire"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heia_ge",
+    "ba_heia_gm"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_constructeur_trice_dappareils_industriels_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_dessinateur_industriel",
+   "level": "cfc",
+   "label": "Dessinateur·trice-constructeur·trice industriel·le CFC",
+   "orientationSlug": "dessinateur-trice-constructeur-trice-industriel-le-cfc",
+   "interests": [
+    "in_planifier_construire_dessin_technique",
+    "in_travailler_a_l_ordinateur",
+    "in_travailler_avec_des_chiffres",
+    "in_realiser_des_taches_techniques",
+    "in_travailler_avec_precision"
+   ],
+   "qualities": [
+    "qa_facilite_pour_le_dessin",
+    "qa_capacite_de_representation_spatiale",
+    "qa_aisance_avec_les_chiffres",
+    "qa_sens_technique",
+    "qa_precision_et_minutie",
+    "qa_esprit_methodique",
+    "qa_capacite_de_concentration",
+    "qa_aptitude_a_travailler_en_equipe"
+   ],
+   "constraints": [],
+   "conditions": {
+    "ordinateur": 1,
+    "methode": -1
+   },
+   "activityTags": [
+    "analyser",
+    "construire",
+    "concevoir",
+    "organiser"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heia_gc",
+    "ba_heia_gm",
+    "ba_heia_isc"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_dessinateur_trice_constructeur_trice_industriel_le_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_installateur_electricien",
+   "level": "cfc",
+   "label": "Installateur·trice-électricien·ne CFC",
+   "orientationSlug": "installateur-trice-electricien-ne-cfc",
+   "interests": [
+    "in_travailler_avec_de_l_electricite_et_de_l",
+    "in_travailler_avec_ses_mains",
+    "in_travailler_avec_precision"
+   ],
+   "qualities": [
+    "qa_habilete_manuelle",
+    "qa_sens_technique",
+    "qa_capacite_de_representation_spatiale",
+    "qa_capacite_d_abstraction",
+    "qa_esprit_methodique",
+    "qa_aptitude_a_travailler_en_equipe"
+   ],
+   "constraints": [
+    "qa_perception_correcte_des_couleurs",
+    "qa_disposition_a_de_frequents_deplacements"
+   ],
+   "conditions": {
+    "methode": -1,
+    "manuel": 1
+   },
+   "activityTags": [
+    "construire",
+    "analyser",
+    "concevoir"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heia_gc",
+    "ba_heia_ge",
+    "ba_heia_gm",
+    "ba_heia_isc"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_installateur_trice_electricien_ne_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_electricien_montage",
+   "level": "cfc",
+   "label": "Électricien·ne de montage CFC",
+   "orientationSlug": "electricien-ne-de-montage-cfc",
+   "interests": [
+    "in_travailler_avec_de_l_electricite_et_de_l",
+    "in_travailler_avec_ses_mains",
+    "in_travailler_avec_precision"
+   ],
+   "qualities": [
+    "qa_habilete_manuelle",
+    "qa_sens_technique",
+    "qa_capacite_de_representation_spatiale",
+    "qa_esprit_methodique",
+    "qa_aptitude_a_travailler_en_equipe",
+    "qa_resistance_physique"
+   ],
+   "constraints": [
+    "qa_perception_correcte_des_couleurs",
+    "qa_disposition_a_de_frequents_deplacements"
+   ],
+   "conditions": {
+    "methode": -1,
+    "manuel": 1
+   },
+   "activityTags": [
+    "construire",
+    "analyser",
+    "concevoir"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heia_gc",
+    "ba_heia_ge",
+    "ba_heia_gm",
+    "ba_heia_isc"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_electricien_ne_de_montage_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_planificateur_electricien",
+   "level": "cfc",
+   "label": "Planificateur·trice-électricien·ne CFC",
+   "orientationSlug": "planificateur-trice-electricien-ne-cfc",
+   "interests": [
+    "in_planifier_construire_dessin_technique",
+    "in_travailler_avec_de_l_electricite_et_de_l",
+    "in_travailler_avec_des_chiffres",
+    "in_realiser_des_taches_techniques"
+   ],
+   "qualities": [
+    "qa_capacite_de_representation_spatiale",
+    "qa_capacite_d_abstraction",
+    "qa_aisance_avec_les_chiffres",
+    "qa_precision_et_minutie",
+    "qa_facilite_pour_le_dessin",
+    "qa_capacite_de_planification_et_d_organisat",
+    "qa_sens_de_la_communication"
+   ],
+   "constraints": [
+    "qa_perception_correcte_des_couleurs"
+   ],
+   "conditions": {},
+   "activityTags": [
+    "construire",
+    "concevoir",
+    "analyser",
+    "organiser"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heia_gc",
+    "ba_heia_ge",
+    "ba_heia_gm",
+    "ba_heia_isc"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_planificateur_trice_electricien_ne_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_laborantin",
+   "level": "cfc",
+   "label": "Laborantin·e CFC",
+   "orientationSlug": "laborantin-e-cfc",
+   "interests": [
+    "in_experimenter_rechercher",
+    "in_travailler_avec_precision",
+    "in_realiser_des_taches_techniques",
+    "in_travailler_a_l_interieur"
+   ],
+   "qualities": [
+    "qa_aptitude_pour_les_sciences_naturelles",
+    "qa_precision_et_minutie",
+    "qa_esprit_methodique",
+    "qa_sens_de_l_hygiene_et_de_la_proprete",
+    "qa_rigueur",
+    "qa_capacite_de_concentration",
+    "qa_esprit_de_synthese",
+    "qa_perseverance"
+   ],
+   "constraints": [],
+   "conditions": {
+    "lieu": -1,
+    "methode": -1
+   },
+   "activityTags": [
+    "analyser",
+    "construire"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heia_chimie",
+    "ba_heia_gm",
+    "ba_heia_isc"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_laborantin_e_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_technologue_chimie",
+   "level": "cfc",
+   "label": "Technologue en production chimique et pharmaceutique CFC",
+   "orientationSlug": "technologue-en-production-chimique-et-pharmaceutique-cfc",
+   "interests": [
+    "in_travailler_avec_precision",
+    "in_realiser_des_taches_techniques",
+    "in_travailler_avec_des_machines",
+    "in_experimenter_rechercher",
+    "in_planifier_organiser"
+   ],
+   "qualities": [
+    "qa_aptitude_a_travailler_en_equipe",
+    "qa_esprit_methodique",
+    "qa_precision_et_minutie",
+    "qa_sens_de_l_observation",
+    "qa_curiosite",
+    "qa_habilete_manuelle",
+    "qa_perseverance",
+    "qa_resistance_physique"
+   ],
+   "constraints": [
+    "qa_capacite_a_s_adapter_a_un_horaire_irregu"
+   ],
+   "conditions": {
+    "methode": -1
+   },
+   "activityTags": [
+    "construire",
+    "analyser",
+    "coordonner",
+    "organiser"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heia_chimie",
+    "ba_heia_gm",
+    "ba_heia_isc"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_technologue_en_production_chimique_et_pharmaceutique_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_dessinateur",
+   "level": "cfc",
+   "label": "Dessinateur·trice CFC",
+   "orientationSlug": "dessinateur-trice-cfc",
+   "interests": [
+    "in_planifier_construire_dessin_technique",
+    "in_travailler_a_l_ordinateur",
+    "in_realiser_des_taches_techniques",
+    "in_travailler_avec_des_chiffres"
+   ],
+   "qualities": [
+    "qa_capacite_de_representation_spatiale",
+    "qa_facilite_pour_le_dessin",
+    "qa_precision_et_minutie",
+    "qa_capacite_d_abstraction",
+    "qa_capacite_de_planification_et_d_organisat",
+    "qa_sens_technique",
+    "qa_sens_esthetique",
+    "qa_sens_de_la_communication"
+   ],
+   "constraints": [],
+   "conditions": {
+    "ordinateur": 1
+   },
+   "activityTags": [
+    "analyser",
+    "construire",
+    "concevoir",
+    "organiser"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heia_archi",
+    "ba_heia_gc",
+    "ba_heia_isc"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_dessinateur_trice_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_geomaticien",
+   "level": "cfc",
+   "label": "Géomaticien·ne CFC",
+   "orientationSlug": "geomaticien-ne-cfc",
+   "interests": [
+    "in_travailler_avec_precision",
+    "in_travailler_avec_des_chiffres",
+    "in_planifier_construire_dessin_technique",
+    "in_travailler_a_l_ordinateur",
+    "in_travailler_a_l_exterieur"
+   ],
+   "qualities": [
+    "qa_capacite_de_representation_spatiale",
+    "qa_aisance_avec_les_chiffres",
+    "qa_capacite_d_abstraction",
+    "qa_esprit_de_synthese",
+    "qa_precision_et_minutie",
+    "qa_facilite_pour_le_dessin",
+    "qa_sens_technique",
+    "qa_sens_de_la_communication"
+   ],
+   "constraints": [],
+   "conditions": {
+    "ordinateur": 1,
+    "lieu": 1,
+    "methode": -1
+   },
+   "activityTags": [
+    "analyser",
+    "construire",
+    "concevoir",
+    "organiser"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heia_archi",
+    "ba_heia_gc",
+    "ba_heia_isc"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_geomaticien_ne_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_macon",
+   "level": "cfc",
+   "label": "Maçon·ne CFC",
+   "orientationSlug": "macon-ne-cfc",
+   "interests": [
+    "in_travailler_avec_ses_mains",
+    "in_travailler_a_l_exterieur",
+    "in_avoir_une_activite_physique",
+    "in_travailler_la_pierre_la_terre_le_verre",
+    "in_travailler_en_equipe"
+   ],
+   "qualities": [
+    "qa_habilete_manuelle",
+    "qa_resistance_physique",
+    "qa_capacite_de_representation_spatiale",
+    "qa_aptitude_a_travailler_en_equipe"
+   ],
+   "constraints": [
+    "qa_absence_de_vertige",
+    "qa_resistance_aux_variations_de_temperature",
+    "qa_disposition_a_de_frequents_deplacements"
+   ],
+   "conditions": {
+    "lieu": 1,
+    "social": 1,
+    "physique": 1,
+    "manuel": 1
+   },
+   "activityTags": [
+    "construire",
+    "coordonner"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heia_gc"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_macon_ne_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_constructeur_routes",
+   "level": "cfc",
+   "label": "Constructeur·trice de routes CFC",
+   "orientationSlug": "constructeur-trice-de-routes-cfc",
+   "interests": [
+    "in_travailler_a_l_exterieur",
+    "in_travailler_avec_des_machines",
+    "in_avoir_une_activite_physique",
+    "in_se_deplacer_souvent"
+   ],
+   "qualities": [
+    "qa_resistance_physique",
+    "qa_habilete_manuelle",
+    "qa_rigueur",
+    "qa_capacite_de_representation_spatiale",
+    "qa_aptitude_a_travailler_en_equipe",
+    "qa_perseverance"
+   ],
+   "constraints": [
+    "qa_resistance_aux_variations_de_temperature",
+    "qa_capacite_a_supporter_les_bruits"
+   ],
+   "conditions": {
+    "lieu": 1,
+    "physique": 1
+   },
+   "activityTags": [
+    "construire"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heia_gc"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_constructeur_trice_de_routes_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_charpentier",
+   "level": "cfc",
+   "label": "Charpentier·ère CFC",
+   "orientationSlug": "charpentier-iere-cfc",
+   "interests": [
+    "in_travailler_le_bois",
+    "in_planifier_construire_dessin_technique",
+    "in_avoir_une_activite_physique",
+    "in_travailler_en_equipe",
+    "in_travailler_avec_des_machines"
+   ],
+   "qualities": [
+    "qa_habilete_manuelle",
+    "qa_capacite_de_representation_spatiale",
+    "qa_aisance_avec_les_chiffres",
+    "qa_resistance_physique",
+    "qa_aptitude_a_travailler_en_equipe"
+   ],
+   "constraints": [
+    "qa_resistance_aux_variations_de_temperature",
+    "qa_absence_de_vertige"
+   ],
+   "conditions": {
+    "manuel": 1,
+    "social": 1,
+    "physique": 1
+   },
+   "activityTags": [
+    "construire",
+    "concevoir",
+    "coordonner"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heia_gc"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_charpentier_iere_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_menuisier",
+   "level": "cfc",
+   "label": "Menuisier·ère CFC",
+   "orientationSlug": "menuisier-iere-cfc",
+   "interests": [
+    "in_travailler_le_bois",
+    "in_travailler_avec_ses_mains",
+    "in_travailler_avec_precision",
+    "in_planifier_construire_dessin_technique",
+    "in_avoir_une_activite_physique"
+   ],
+   "qualities": [
+    "qa_habilete_manuelle",
+    "qa_capacite_de_representation_spatiale",
+    "qa_precision_et_minutie",
+    "qa_aisance_avec_les_chiffres",
+    "qa_facilite_pour_le_dessin",
+    "qa_aptitude_a_travailler_en_equipe",
+    "qa_resistance_physique"
+   ],
+   "constraints": [
+    "qa_capacite_a_supporter_les_bruits"
+   ],
+   "conditions": {
+    "methode": -1,
+    "manuel": 1,
+    "physique": 1
+   },
+   "activityTags": [
+    "construire",
+    "analyser",
+    "concevoir"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [
+    "ba_heia_gc",
+    "ba_heia_gm"
+   ],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_menuisier_iere_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_agent_exploitation",
+   "level": "cfc",
+   "label": "Agent·e d'exploitation CFC",
+   "orientationSlug": "agent-e-dexploitation-cfc",
+   "interests": [
+    "in_avoir_une_activite_physique",
+    "in_travailler_a_l_exterieur",
+    "in_planifier_organiser",
+    "in_travailler_avec_des_machines",
+    "in_travailler_avec_ses_mains"
+   ],
+   "qualities": [
+    "qa_habilete_manuelle",
+    "qa_sens_technique",
+    "qa_resistance_physique",
+    "qa_aptitude_a_travailler_de_facon_independa",
+    "qa_debrouillardise",
+    "qa_sens_de_l_hygiene_et_de_la_proprete",
+    "qa_disponibilite",
+    "qa_facilite_de_contact"
+   ],
+   "constraints": [],
+   "conditions": {
+    "lieu": 1,
+    "physique": 1,
+    "manuel": 1,
+    "methode": -1
+   },
+   "activityTags": [
+    "construire",
+    "coordonner",
+    "organiser"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_agent_e_dexploitation_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_cuisinier",
+   "level": "cfc",
+   "label": "Cuisinier·ère CFC",
+   "orientationSlug": "cuisinier-iere-cfc",
+   "interests": [
+    "in_travailler_avec_des_produits_alimentaire",
+    "in_travailler_avec_ses_mains",
+    "in_experimenter_rechercher",
+    "in_planifier_organiser"
+   ],
+   "qualities": [
+    "qa_gout_et_odorat_developpes",
+    "qa_resistance_au_stress",
+    "qa_sens_de_l_hygiene_et_de_la_proprete",
+    "qa_aptitude_a_travailler_en_equipe",
+    "qa_habilete_manuelle",
+    "qa_rapidite_d_execution",
+    "qa_resistance_physique"
+   ],
+   "constraints": [
+    "qa_capacite_a_s_adapter_a_un_horaire_irregu"
+   ],
+   "conditions": {
+    "manuel": 1,
+    "methode": -1
+   },
+   "activityTags": [
+    "analyser",
+    "construire",
+    "coordonner",
+    "organiser"
+   ],
+   "programmeIds": [],
+   "directAccessProgrammeIds": [],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_cuisinier_iere_cfc"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_architecte",
+   "level": "hes",
+   "label": "Architecte",
+   "orientationSlug": "architecte",
+   "interests": [
+    "in_travailler_a_l_ordinateur",
+    "in_planifier_construire_dessin_technique",
+    "in_dessiner_decorer_creer"
+   ],
+   "qualities": [
+    "qa_capacite_d_analyse",
+    "qa_creativite",
+    "qa_capacite_de_representation_spatiale",
+    "qa_sens_esthetique",
+    "qa_sens_technique",
+    "qa_aptitude_a_negocier"
+   ],
+   "constraints": [],
+   "conditions": {
+    "ordinateur": 1,
+    "methode": 1
+   },
+   "activityTags": [
+    "concevoir",
+    "analyser",
+    "construire"
+   ],
+   "programmeIds": [
+    "ba_heia_archi"
+   ],
+   "directAccessProgrammeIds": [],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_architecte"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_ing_gc",
+   "level": "hes",
+   "label": "Ingénieur·e en génie civil",
+   "orientationSlug": "ingenieur-e-en-genie-civil",
+   "interests": [
+    "in_travailler_avec_precision",
+    "in_travailler_avec_des_chiffres",
+    "in_se_deplacer_souvent",
+    "in_planifier_construire_dessin_technique",
+    "in_realiser_des_taches_techniques"
+   ],
+   "qualities": [
+    "qa_capacite_d_abstraction",
+    "qa_capacite_d_analyse",
+    "qa_capacite_de_planification_et_d_organisat",
+    "qa_precision_et_minutie",
+    "qa_sens_technique",
+    "qa_sens_des_responsabilites"
+   ],
+   "constraints": [
+    "qa_disposition_a_de_frequents_deplacements"
+   ],
+   "conditions": {
+    "methode": -1
+   },
+   "activityTags": [
+    "construire",
+    "analyser",
+    "concevoir",
+    "organiser"
+   ],
+   "programmeIds": [
+    "ba_heia_gc"
+   ],
+   "directAccessProgrammeIds": [],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_ingenieur_e_en_genie_civil"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_ing_ge",
+   "level": "hes",
+   "label": "Ingénieur·e en génie électrique",
+   "orientationSlug": "ingenieur-e-en-genie-electrique",
+   "interests": [
+    "in_diriger_et_assumer_des_responsabilites",
+    "in_travailler_avec_de_l_electricite_et_de_l",
+    "in_realiser_des_taches_techniques"
+   ],
+   "qualities": [
+    "qa_capacite_d_analyse",
+    "qa_aptitude_a_diriger_et_gerer_une_equipe",
+    "qa_capacite_d_adaptation_a_l_evolution_tech",
+    "qa_esprit_d_innovation",
+    "qa_esprit_methodique",
+    "qa_aptitude_a_travailler_en_equipe",
+    "qa_sens_technique"
+   ],
+   "constraints": [],
+   "conditions": {},
+   "activityTags": [
+    "construire",
+    "concevoir",
+    "coordonner"
+   ],
+   "programmeIds": [
+    "ba_heia_ge"
+   ],
+   "directAccessProgrammeIds": [],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_ingenieur_e_en_genie_electrique"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_ing_gm",
+   "level": "hes",
+   "label": "Ingénieur·e en génie mécanique",
+   "orientationSlug": "ingenieur-e-en-genie-mecanique",
+   "interests": [
+    "in_experimenter_rechercher",
+    "in_travailler_avec_des_machines",
+    "in_planifier_construire_dessin_technique",
+    "in_realiser_des_taches_techniques"
+   ],
+   "qualities": [
+    "qa_capacite_d_analyse",
+    "qa_capacite_de_planification_et_d_organisat",
+    "qa_precision_et_minutie",
+    "qa_sens_technique"
+   ],
+   "constraints": [],
+   "conditions": {},
+   "activityTags": [
+    "construire",
+    "analyser",
+    "concevoir"
+   ],
+   "programmeIds": [
+    "ba_heia_gm"
+   ],
+   "directAccessProgrammeIds": [],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_ingenieur_e_en_genie_mecanique"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_informaticien_hes",
+   "level": "hes",
+   "label": "Informaticien·ne (haute école)",
+   "orientationSlug": "informaticien-ne",
+   "interests": [
+    "in_travailler_a_l_ordinateur",
+    "in_planifier_organiser"
+   ],
+   "qualities": [
+    "qa_capacite_d_abstraction",
+    "qa_capacite_d_analyse",
+    "qa_capacite_d_adaptation_a_l_evolution_tech",
+    "qa_esprit_d_innovation",
+    "qa_capacite_de_planification_et_d_organisat",
+    "qa_esprit_methodique"
+   ],
+   "constraints": [],
+   "conditions": {
+    "ordinateur": 1,
+    "methode": -1
+   },
+   "activityTags": [
+    "analyser",
+    "coordonner",
+    "organiser"
+   ],
+   "programmeIds": [
+    "ba_heia_isc"
+   ],
+   "directAccessProgrammeIds": [],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": "Fiche orientation.ch « Informaticien·ne » (niveau haute école, sans distinction HES/université), utilisée faute de fiche ISC. À valider par la filière ISC.",
+   "sourceIds": [
+    "oq_informaticien_ne"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_economiste",
+   "level": "hes",
+   "label": "Économiste d'entreprise",
+   "orientationSlug": "economiste-dentreprise",
+   "interests": [
+    "in_diriger_et_assumer_des_responsabilites",
+    "in_travailler_avec_des_chiffres",
+    "in_planifier_organiser",
+    "in_utiliser_les_langues"
+   ],
+   "qualities": [
+    "qa_capacite_d_analyse",
+    "qa_esprit_de_decision",
+    "qa_aptitude_a_diriger_et_gerer_une_equipe",
+    "qa_facilite_pour_les_langues",
+    "qa_aisance_avec_les_chiffres",
+    "qa_sens_de_la_communication",
+    "qa_capacite_de_planification_et_d_organisat",
+    "qa_aptitude_a_negocier"
+   ],
+   "constraints": [],
+   "conditions": {
+    "methode": -1
+   },
+   "activityTags": [
+    "coordonner",
+    "organiser",
+    "analyser",
+    "ecouter"
+   ],
+   "programmeIds": [
+    "ba_heg_ee"
+   ],
+   "directAccessProgrammeIds": [],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": "Fiche « Économiste d'entreprise » (HES).",
+   "sourceIds": [
+    "oq_economiste_dentreprise"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_infirmier",
+   "level": "hes",
+   "label": "Infirmier·ère",
+   "orientationSlug": "infirmier-ere",
+   "interests": [
+    "in_aider_et_soigner_les_autres",
+    "in_avoir_des_contacts_avec_d_autres_personn",
+    "in_travailler_avec_ses_mains"
+   ],
+   "qualities": [
+    "qa_perseverance",
+    "qa_empathie",
+    "qa_facilite_de_contact",
+    "qa_capacite_a_reagir_dans_l_urgence",
+    "qa_sens_de_l_hygiene_et_de_la_proprete",
+    "qa_resistance_au_stress"
+   ],
+   "constraints": [
+    "qa_capacite_a_s_adapter_a_un_horaire_irregu",
+    "qa_capacite_a_supporter_la_vue_du_sang"
+   ],
+   "conditions": {
+    "clientele": 1,
+    "manuel": 1
+   },
+   "activityTags": [
+    "accompagner",
+    "construire",
+    "ecouter",
+    "soigner"
+   ],
+   "programmeIds": [
+    "ba_heds_si"
+   ],
+   "directAccessProgrammeIds": [],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_infirmier_ere"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_osteopathe",
+   "level": "hes",
+   "label": "Ostéopathe",
+   "orientationSlug": "osteopathe",
+   "interests": [
+    "in_aider_et_soigner_les_autres",
+    "in_avoir_des_contacts_avec_d_autres_personn",
+    "in_travailler_avec_ses_mains"
+   ],
+   "qualities": [
+    "qa_capacite_d_analyse",
+    "qa_sens_tactile_developpe",
+    "qa_sens_de_l_observation",
+    "qa_empathie",
+    "qa_sens_de_la_communication",
+    "qa_facilite_de_contact",
+    "qa_habilete_manuelle",
+    "qa_esprit_de_synthese"
+   ],
+   "constraints": [],
+   "conditions": {
+    "clientele": 1,
+    "manuel": 1
+   },
+   "activityTags": [
+    "accompagner",
+    "construire",
+    "ecouter",
+    "soigner"
+   ],
+   "programmeIds": [
+    "ba_heds_osteo"
+   ],
+   "directAccessProgrammeIds": [],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_osteopathe"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_educateur",
+   "level": "hes",
+   "label": "Éducateur·trice social·e",
+   "orientationSlug": "educateur-trice-social-e",
+   "interests": [
+    "in_aider_et_soigner_les_autres",
+    "in_avoir_des_contacts_avec_d_autres_personn",
+    "in_travailler_avec_des_enfants"
+   ],
+   "qualities": [
+    "qa_empathie",
+    "qa_facilite_de_contact",
+    "qa_aptitudes_pedagogiques",
+    "qa_calme_et_sang_froid",
+    "qa_tolerance_et_respect_d_autrui"
+   ],
+   "constraints": [
+    "qa_capacite_a_s_adapter_a_un_horaire_irregu"
+   ],
+   "conditions": {
+    "clientele": 1
+   },
+   "activityTags": [
+    "accompagner",
+    "ecouter",
+    "soigner"
+   ],
+   "programmeIds": [
+    "ba_hets_ts"
+   ],
+   "directAccessProgrammeIds": [],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_educateur_trice_social_e"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_assistant_social",
+   "level": "hes",
+   "label": "Assistant·e social·e",
+   "orientationSlug": "assistant-e-social-e",
+   "interests": [
+    "in_aider_et_soigner_les_autres",
+    "in_avoir_des_contacts_avec_d_autres_personn"
+   ],
+   "qualities": [
+    "qa_empathie",
+    "qa_patience",
+    "qa_calme_et_sang_froid",
+    "qa_resistance_au_stress",
+    "qa_tolerance_et_respect_d_autrui"
+   ],
+   "constraints": [
+    "qa_capacite_a_s_adapter_a_un_horaire_irregu"
+   ],
+   "conditions": {
+    "clientele": 1
+   },
+   "activityTags": [
+    "accompagner",
+    "ecouter",
+    "soigner"
+   ],
+   "programmeIds": [
+    "ba_hets_ts"
+   ],
+   "directAccessProgrammeIds": [],
+   "basis": "Relevé de la section « Qualités requises et intérêts » de la fiche orientation.ch.",
+   "note": null,
+   "sourceIds": [
+    "oq_assistant_e_social_e"
+   ],
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_ing_chimie",
+   "level": "hes",
+   "label": "Ingénieur·e en chimie (profil dérivé)",
+   "orientationSlug": null,
+   "interests": [
+    "in_experimenter_rechercher",
+    "in_travailler_avec_precision",
+    "in_realiser_des_taches_techniques",
+    "in_travailler_avec_des_chiffres"
+   ],
+   "qualities": [
+    "qa_aptitude_pour_les_sciences_naturelles",
+    "qa_capacite_d_analyse",
+    "qa_rigueur",
+    "qa_esprit_methodique",
+    "qa_precision_et_minutie",
+    "qa_sens_des_responsabilites",
+    "qa_capacite_d_adaptation_a_l_evolution_tech"
+   ],
+   "constraints": [],
+   "conditions": {
+    "methode": -1
+   },
+   "activityTags": [
+    "analyser",
+    "construire",
+    "organiser"
+   ],
+   "programmeIds": [
+    "ba_heia_chimie"
+   ],
+   "directAccessProgrammeIds": [],
+   "basis": "Dérivé des fiches Laborantin CFC et Technologue en production chimique et pharmaceutique CFC, et des tâches de la fiche Ingénieur HES en chimie (o_chimie). À valider par la filière Chimie.",
+   "note": null,
+   "sourceIds": [
+    "o_chimie",
+    "oq_laborantin_e_cfc",
+    "oq_technologue_en_production_chimique_et_pharmaceutique_cfc"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "id": "pr_animateur",
+   "level": "hes",
+   "label": "Animateur·trice socioculturel·le (profil dérivé)",
+   "orientationSlug": null,
+   "interests": [
+    "in_aider_et_soigner_les_autres",
+    "in_avoir_des_contacts_avec_d_autres_personn",
+    "in_planifier_organiser",
+    "in_informer_et_sensibiliser",
+    "in_travailler_en_equipe"
+   ],
+   "qualities": [
+    "qa_empathie",
+    "qa_facilite_de_contact",
+    "qa_sens_de_la_communication",
+    "qa_capacite_de_planification_et_d_organisat",
+    "qa_esprit_d_initiative",
+    "qa_tolerance_et_respect_d_autrui"
+   ],
+   "constraints": [],
+   "conditions": {
+    "social": 1,
+    "clientele": 1,
+    "methode": -1
+   },
+   "activityTags": [
+    "accompagner",
+    "coordonner",
+    "ecouter",
+    "organiser",
+    "soigner"
+   ],
+   "programmeIds": [
+    "ba_hets_ts"
+   ],
+   "directAccessProgrammeIds": [],
+   "basis": "Dérivé des fiches Éducateur social et Assistant social et des activités de la fiche Animateur socioculturel HES (o_asc). À valider par la HETS-FR.",
+   "note": null,
+   "sourceIds": [
+    "o_asc",
+    "oq_educateur_trice_social_e",
+    "oq_assistant_e_social_e"
+   ],
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  }
+ ],
+ "programmeProfiles": [
+  {
+   "programmeId": "ba_heia_archi",
+   "profileIds": [
+    "pr_architecte"
+   ],
+   "interests": {
+    "in_travailler_a_l_ordinateur": 1.0,
+    "in_planifier_construire_dessin_technique": 1.0,
+    "in_dessiner_decorer_creer": 1.0
+   },
+   "qualities": {
+    "qa_capacite_d_analyse": 1.0,
+    "qa_creativite": 1.0,
+    "qa_capacite_de_representation_spatiale": 1.0,
+    "qa_sens_esthetique": 1.0,
+    "qa_sens_technique": 1.0,
+    "qa_aptitude_a_negocier": 1.0
+   },
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_chimie",
+   "profileIds": [
+    "pr_ing_chimie"
+   ],
+   "interests": {
+    "in_experimenter_rechercher": 1.0,
+    "in_travailler_avec_precision": 1.0,
+    "in_realiser_des_taches_techniques": 1.0,
+    "in_travailler_avec_des_chiffres": 1.0
+   },
+   "qualities": {
+    "qa_aptitude_pour_les_sciences_naturelles": 1.0,
+    "qa_capacite_d_analyse": 1.0,
+    "qa_rigueur": 1.0,
+    "qa_esprit_methodique": 1.0,
+    "qa_precision_et_minutie": 1.0,
+    "qa_sens_des_responsabilites": 1.0,
+    "qa_capacite_d_adaptation_a_l_evolution_tech": 1.0
+   },
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gc",
+   "profileIds": [
+    "pr_ing_gc"
+   ],
+   "interests": {
+    "in_travailler_avec_precision": 1.0,
+    "in_travailler_avec_des_chiffres": 1.0,
+    "in_se_deplacer_souvent": 1.0,
+    "in_planifier_construire_dessin_technique": 1.0,
+    "in_realiser_des_taches_techniques": 1.0
+   },
+   "qualities": {
+    "qa_capacite_d_abstraction": 1.0,
+    "qa_capacite_d_analyse": 1.0,
+    "qa_capacite_de_planification_et_d_organisat": 1.0,
+    "qa_precision_et_minutie": 1.0,
+    "qa_sens_technique": 1.0,
+    "qa_sens_des_responsabilites": 1.0
+   },
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_ge",
+   "profileIds": [
+    "pr_ing_ge"
+   ],
+   "interests": {
+    "in_diriger_et_assumer_des_responsabilites": 1.0,
+    "in_travailler_avec_de_l_electricite_et_de_l": 1.0,
+    "in_realiser_des_taches_techniques": 1.0
+   },
+   "qualities": {
+    "qa_capacite_d_analyse": 1.0,
+    "qa_aptitude_a_diriger_et_gerer_une_equipe": 1.0,
+    "qa_capacite_d_adaptation_a_l_evolution_tech": 1.0,
+    "qa_esprit_d_innovation": 1.0,
+    "qa_esprit_methodique": 1.0,
+    "qa_aptitude_a_travailler_en_equipe": 1.0,
+    "qa_sens_technique": 1.0
+   },
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_gm",
+   "profileIds": [
+    "pr_ing_gm"
+   ],
+   "interests": {
+    "in_experimenter_rechercher": 1.0,
+    "in_travailler_avec_des_machines": 1.0,
+    "in_planifier_construire_dessin_technique": 1.0,
+    "in_realiser_des_taches_techniques": 1.0
+   },
+   "qualities": {
+    "qa_capacite_d_analyse": 1.0,
+    "qa_capacite_de_planification_et_d_organisat": 1.0,
+    "qa_precision_et_minutie": 1.0,
+    "qa_sens_technique": 1.0
+   },
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heia_isc",
+   "profileIds": [
+    "pr_informaticien_hes"
+   ],
+   "interests": {
+    "in_travailler_a_l_ordinateur": 1.0,
+    "in_planifier_organiser": 1.0
+   },
+   "qualities": {
+    "qa_capacite_d_abstraction": 1.0,
+    "qa_capacite_d_analyse": 1.0,
+    "qa_capacite_d_adaptation_a_l_evolution_tech": 1.0,
+    "qa_esprit_d_innovation": 1.0,
+    "qa_capacite_de_planification_et_d_organisat": 1.0,
+    "qa_esprit_methodique": 1.0
+   },
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heg_ee",
+   "profileIds": [
+    "pr_economiste"
+   ],
+   "interests": {
+    "in_diriger_et_assumer_des_responsabilites": 1.0,
+    "in_travailler_avec_des_chiffres": 1.0,
+    "in_planifier_organiser": 1.0,
+    "in_utiliser_les_langues": 1.0
+   },
+   "qualities": {
+    "qa_capacite_d_analyse": 1.0,
+    "qa_esprit_de_decision": 1.0,
+    "qa_aptitude_a_diriger_et_gerer_une_equipe": 1.0,
+    "qa_facilite_pour_les_langues": 1.0,
+    "qa_aisance_avec_les_chiffres": 1.0,
+    "qa_sens_de_la_communication": 1.0,
+    "qa_capacite_de_planification_et_d_organisat": 1.0,
+    "qa_aptitude_a_negocier": 1.0
+   },
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heds_si",
+   "profileIds": [
+    "pr_infirmier"
+   ],
+   "interests": {
+    "in_aider_et_soigner_les_autres": 1.0,
+    "in_avoir_des_contacts_avec_d_autres_personn": 1.0,
+    "in_travailler_avec_ses_mains": 1.0
+   },
+   "qualities": {
+    "qa_perseverance": 1.0,
+    "qa_empathie": 1.0,
+    "qa_facilite_de_contact": 1.0,
+    "qa_capacite_a_reagir_dans_l_urgence": 1.0,
+    "qa_sens_de_l_hygiene_et_de_la_proprete": 1.0,
+    "qa_resistance_au_stress": 1.0
+   },
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_heds_osteo",
+   "profileIds": [
+    "pr_osteopathe"
+   ],
+   "interests": {
+    "in_aider_et_soigner_les_autres": 1.0,
+    "in_avoir_des_contacts_avec_d_autres_personn": 1.0,
+    "in_travailler_avec_ses_mains": 1.0
+   },
+   "qualities": {
+    "qa_capacite_d_analyse": 1.0,
+    "qa_sens_tactile_developpe": 1.0,
+    "qa_sens_de_l_observation": 1.0,
+    "qa_empathie": 1.0,
+    "qa_sens_de_la_communication": 1.0,
+    "qa_facilite_de_contact": 1.0,
+    "qa_habilete_manuelle": 1.0,
+    "qa_esprit_de_synthese": 1.0
+   },
+   "validationStatus": "validated",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ba_hets_ts",
+   "profileIds": [
+    "pr_educateur",
+    "pr_assistant_social",
+    "pr_animateur"
+   ],
+   "interests": {
+    "in_aider_et_soigner_les_autres": 1.0,
+    "in_avoir_des_contacts_avec_d_autres_personn": 1.0,
+    "in_travailler_avec_des_enfants": 0.33,
+    "in_planifier_organiser": 0.33,
+    "in_informer_et_sensibiliser": 0.33,
+    "in_travailler_en_equipe": 0.33
+   },
+   "qualities": {
+    "qa_empathie": 1.0,
+    "qa_tolerance_et_respect_d_autrui": 1.0,
+    "qa_facilite_de_contact": 0.67,
+    "qa_calme_et_sang_froid": 0.67,
+    "qa_aptitudes_pedagogiques": 0.33,
+    "qa_patience": 0.33,
+    "qa_resistance_au_stress": 0.33,
+    "qa_sens_de_la_communication": 0.33,
+    "qa_capacite_de_planification_et_d_organisat": 0.33,
+    "qa_esprit_d_initiative": 0.33
+   },
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_mse",
+   "inheritsFrom": [
+    "ba_heia_gc",
+    "ba_heia_ge",
+    "ba_heia_gm",
+    "ba_heia_isc"
+   ],
+   "profileIds": [],
+   "interests": {},
+   "qualities": {},
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_mls",
+   "inheritsFrom": [
+    "ba_heia_chimie"
+   ],
+   "profileIds": [],
+   "interests": {},
+   "qualities": {},
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_jma",
+   "inheritsFrom": [
+    "ba_heia_archi"
+   ],
+   "profileIds": [],
+   "interests": {},
+   "qualities": {},
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_innokick",
+   "inheritsFrom": [
+    "ba_heia_chimie",
+    "ba_heia_gc",
+    "ba_heia_ge",
+    "ba_heia_gm",
+    "ba_heia_isc",
+    "ba_heg_ee"
+   ],
+   "profileIds": [],
+   "interests": {},
+   "qualities": {},
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_heg_entre",
+   "inheritsFrom": [
+    "ba_heg_ee"
+   ],
+   "profileIds": [],
+   "interests": {},
+   "qualities": {},
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_heds_osteo",
+   "inheritsFrom": [
+    "ba_heds_osteo"
+   ],
+   "profileIds": [],
+   "interests": {},
+   "qualities": {},
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_mscsi",
+   "inheritsFrom": [
+    "ba_heds_si"
+   ],
+   "profileIds": [],
+   "interests": {},
+   "qualities": {},
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  },
+  {
+   "programmeId": "ma_mats",
+   "inheritsFrom": [
+    "ba_hets_ts"
+   ],
+   "profileIds": [],
+   "interests": {},
+   "qualities": {},
+   "validationStatus": "to_review",
+   "reviewedAt": "2026-11-22"
+  }
+ ],
+ "questionnaire": {
+  "scale": [
+   {
+    "value": 0,
+    "label": "Pas du tout"
+   },
+   {
+    "value": 1,
+    "label": "Plutôt non"
+   },
+   {
+    "value": 2,
+    "label": "Plutôt oui"
+   },
+   {
+    "value": 3,
+    "label": "Tout à fait"
+   }
+  ],
+  "prompt": "Est-ce que tu aimerais…",
+  "sourceIds": [
+   "bm_yousty_finder"
+  ],
+  "validationStatus": "demo",
+  "items": [
+   {
+    "id": "q01",
+    "text": "Démonter un objet pour comprendre comment il fonctionne.",
+    "interests": {
+     "in_realiser_des_taches_techniques": 1,
+     "in_travailler_avec_des_machines": 0.5
+    },
+    "conditions": {}
+   },
+   {
+    "id": "q02",
+    "text": "Fabriquer quelque chose de concret avec tes mains (bois, métal, maquette).",
+    "interests": {
+     "in_travailler_avec_ses_mains": 1,
+     "in_travailler_le_bois": 0.5,
+     "in_travailler_le_metal": 0.5
+    },
+    "conditions": {
+     "manuel": 1
+    }
+   },
+   {
+    "id": "q03",
+    "text": "Dessiner un plan, une pièce ou un aménagement en respectant des mesures.",
+    "interests": {
+     "in_planifier_construire_dessin_technique": 1,
+     "in_travailler_avec_precision": 0.5
+    },
+    "conditions": {}
+   },
+   {
+    "id": "q04",
+    "text": "Brancher, réparer ou programmer un appareil électronique.",
+    "interests": {
+     "in_travailler_avec_de_l_electricite_et_de_l": 1,
+     "in_realiser_des_taches_techniques": 0.5
+    },
+    "conditions": {}
+   },
+   {
+    "id": "q05",
+    "text": "Écrire un petit programme, créer un site ou automatiser une tâche à l'ordinateur.",
+    "interests": {
+     "in_travailler_a_l_ordinateur": 1,
+     "in_planifier_organiser": 0.3
+    },
+    "conditions": {
+     "ordinateur": 1
+    }
+   },
+   {
+    "id": "q06",
+    "text": "Faire une expérience, mesurer et noter les résultats avec soin.",
+    "interests": {
+     "in_experimenter_rechercher": 1,
+     "in_travailler_avec_precision": 0.5
+    },
+    "conditions": {}
+   },
+   {
+    "id": "q07",
+    "text": "Résoudre un problème de maths ou de logique qui résiste.",
+    "interests": {
+     "in_travailler_avec_des_chiffres": 1,
+     "in_experimenter_rechercher": 0.3
+    },
+    "conditions": {}
+   },
+   {
+    "id": "q08",
+    "text": "Inventer un objet, une affiche ou une ambiance qui ne ressemble à rien d'existant.",
+    "interests": {
+     "in_dessiner_decorer_creer": 1
+    },
+    "conditions": {
+     "methode": 1
+    }
+   },
+   {
+    "id": "q09",
+    "text": "Organiser une sortie de classe : budget, horaires, inscriptions.",
+    "interests": {
+     "in_planifier_organiser": 1,
+     "in_travailler_avec_des_chiffres": 0.3
+    },
+    "conditions": {
+     "methode": -1
+    }
+   },
+   {
+    "id": "q10",
+    "text": "Prendre la tête d'un groupe et décider quand il faut trancher.",
+    "interests": {
+     "in_diriger_et_assumer_des_responsabilites": 1
+    },
+    "conditions": {}
+   },
+   {
+    "id": "q11",
+    "text": "Convaincre quelqu'un, vendre une idée ou un produit.",
+    "interests": {
+     "in_conseiller": 1,
+     "in_avoir_des_contacts_avec_d_autres_personn": 0.5
+    },
+    "conditions": {
+     "clientele": 1
+    }
+   },
+   {
+    "id": "q12",
+    "text": "Écouter un·e ami·e qui va mal et l'aider à trouver une solution.",
+    "interests": {
+     "in_aider_et_soigner_les_autres": 1,
+     "in_conseiller": 0.5
+    },
+    "conditions": {}
+   },
+   {
+    "id": "q13",
+    "text": "T'occuper de quelqu'un de malade, blessé ou âgé.",
+    "interests": {
+     "in_aider_et_soigner_les_autres": 1
+    },
+    "conditions": {}
+   },
+   {
+    "id": "q14",
+    "text": "Expliquer quelque chose à des plus jeunes et les voir progresser.",
+    "interests": {
+     "in_transmettre_des_connaissances": 1,
+     "in_travailler_avec_des_enfants": 1
+    },
+    "conditions": {}
+   },
+   {
+    "id": "q15",
+    "text": "Animer une activité ou un projet pour un groupe ou un quartier.",
+    "interests": {
+     "in_informer_et_sensibiliser": 1,
+     "in_travailler_en_equipe": 0.5,
+     "in_planifier_organiser": 0.5
+    },
+    "conditions": {}
+   },
+   {
+    "id": "q16",
+    "text": "Parler plusieurs langues, échanger avec des personnes d'ailleurs.",
+    "interests": {
+     "in_utiliser_les_langues": 1,
+     "in_avoir_des_contacts_avec_d_autres_personn": 0.3
+    },
+    "conditions": {}
+   },
+   {
+    "id": "q17",
+    "text": "Lire ou écrire des textes, résumer une information compliquée.",
+    "interests": {
+     "in_lire": 1,
+     "in_ecrire": 1
+    },
+    "conditions": {}
+   },
+   {
+    "id": "q18",
+    "text": "Comprendre comment fonctionne le corps humain.",
+    "interests": {
+     "in_aider_et_soigner_les_autres": 0.5,
+     "in_experimenter_rechercher": 0.5
+    },
+    "conditions": {}
+   },
+   {
+    "id": "q19",
+    "text": "Travailler dehors, quel que soit le temps.",
+    "interests": {
+     "in_travailler_a_l_exterieur": 1,
+     "in_travailler_a_l_interieur": -1
+    },
+    "conditions": {
+     "lieu": 1
+    }
+   },
+   {
+    "id": "q20",
+    "text": "Bouger, porter, être physiquement actif·ve pendant la journée.",
+    "interests": {
+     "in_avoir_une_activite_physique": 1
+    },
+    "conditions": {
+     "physique": 1
+    }
+   },
+   {
+    "id": "q21",
+    "text": "Avancer seul·e sur un travail, à ton rythme.",
+    "interests": {
+     "in_travailler_seul_e_et_de_maniere_independ": 1
+    },
+    "conditions": {
+     "social": -1
+    }
+   },
+   {
+    "id": "q22",
+    "text": "Faire partie d'une équipe où chacun a son rôle.",
+    "interests": {
+     "in_travailler_en_equipe": 1
+    },
+    "conditions": {
+     "social": 1
+    }
+   },
+   {
+    "id": "q23",
+    "text": "Suivre une marche à suivre précise et vérifier que tout est juste.",
+    "interests": {
+     "in_travailler_avec_precision": 1,
+     "in_avoir_un_horaire_regulier": 0.3
+    },
+    "conditions": {
+     "methode": -1
+    }
+   },
+   {
+    "id": "q24",
+    "text": "Gérer des chiffres, des stocks ou des commandes.",
+    "interests": {
+     "in_travailler_avec_des_chiffres": 1,
+     "in_planifier_organiser": 0.5
+    },
+    "conditions": {}
+   },
+   {
+    "id": "q25",
+    "text": "Être en contact avec des clients, des patients ou du public chaque jour.",
+    "interests": {
+     "in_avoir_des_contacts_avec_d_autres_personn": 1
+    },
+    "conditions": {
+     "clientele": 1
+    }
+   },
+   {
+    "id": "q26",
+    "text": "Bâtir ou rénover quelque chose de grand : maison, route, pont.",
+    "interests": {
+     "in_planifier_construire_dessin_technique": 0.5,
+     "in_travailler_a_l_exterieur": 0.5,
+     "in_travailler_la_pierre_la_terre_le_verre": 0.5
+    },
+    "conditions": {
+     "lieu": 1
+    }
+   },
+   {
+    "id": "q27",
+    "text": "Piloter ou régler une machine, une installation automatisée.",
+    "interests": {
+     "in_travailler_avec_des_machines": 1,
+     "in_realiser_des_taches_techniques": 0.5
+    },
+    "conditions": {}
+   },
+   {
+    "id": "q28",
+    "text": "Prendre soin d'animaux ou de plantes.",
+    "interests": {
+     "in_s_occuper_des_animaux": 1,
+     "in_travailler_avec_des_plantes": 1
+    },
+    "conditions": {}
+   },
+   {
+    "id": "q29",
+    "text": "Préparer à manger pour d'autres, inventer une recette.",
+    "interests": {
+     "in_travailler_avec_des_produits_alimentaire": 1,
+     "in_travailler_avec_ses_mains": 0.3
+    },
+    "conditions": {
+     "manuel": 1
+    }
+   },
+   {
+    "id": "q30",
+    "text": "Changer souvent de lieu : chantiers, clients, sites différents.",
+    "interests": {
+     "in_se_deplacer_souvent": 1
+    },
+    "conditions": {}
+   }
+  ],
+  "qualityItems": [
+   {
+    "id": "s01",
+    "text": "Je comprends vite comment les choses fonctionnent.",
+    "qualities": [
+     "qa_sens_technique",
+     "qa_capacite_d_analyse"
+    ]
+   },
+   {
+    "id": "s02",
+    "text": "Je vois dans ma tête un objet sous tous ses angles.",
+    "qualities": [
+     "qa_capacite_de_representation_spatiale"
+    ]
+   },
+   {
+    "id": "s03",
+    "text": "Je suis précis·e, je vérifie mon travail.",
+    "qualities": [
+     "qa_precision_et_minutie",
+     "qa_rigueur"
+    ]
+   },
+   {
+    "id": "s04",
+    "text": "Je m'organise bien, je planifie à l'avance.",
+    "qualities": [
+     "qa_capacite_de_planification_et_d_organisat",
+     "qa_esprit_methodique"
+    ]
+   },
+   {
+    "id": "s05",
+    "text": "Je sens ce que les autres ressentent.",
+    "qualities": [
+     "qa_empathie"
+    ]
+   },
+   {
+    "id": "s06",
+    "text": "Je vais facilement vers des personnes que je ne connais pas.",
+    "qualities": [
+     "qa_facilite_de_contact",
+     "qa_sens_de_la_communication"
+    ]
+   },
+   {
+    "id": "s07",
+    "text": "Je reste calme quand ça devient urgent.",
+    "qualities": [
+     "qa_calme_et_sang_froid",
+     "qa_resistance_au_stress",
+     "qa_capacite_a_reagir_dans_l_urgence"
+    ]
+   },
+   {
+    "id": "s08",
+    "text": "J'ai souvent des idées originales.",
+    "qualities": [
+     "qa_creativite",
+     "qa_esprit_d_innovation"
+    ]
+   },
+   {
+    "id": "s09",
+    "text": "Je suis habile de mes mains.",
+    "qualities": [
+     "qa_habilete_manuelle"
+    ]
+   },
+   {
+    "id": "s10",
+    "text": "Je ne lâche pas un problème avant de l'avoir résolu.",
+    "qualities": [
+     "qa_perseverance"
+    ]
+   },
+   {
+    "id": "s11",
+    "text": "Je prends des initiatives et des responsabilités.",
+    "qualities": [
+     "qa_esprit_d_initiative",
+     "qa_sens_des_responsabilites",
+     "qa_esprit_de_decision"
+    ]
+   },
+   {
+    "id": "s12",
+    "text": "Je suis endurant·e physiquement.",
+    "qualities": [
+     "qa_resistance_physique"
+    ]
+   },
+   {
+    "id": "s13",
+    "text": "Je travaille bien en équipe.",
+    "qualities": [
+     "qa_aptitude_a_travailler_en_equipe"
+    ]
+   },
+   {
+    "id": "s14",
+    "text": "Je suis à l'aise en maths.",
+    "qualities": [
+     "qa_aisance_avec_les_chiffres"
+    ]
+   },
+   {
+    "id": "s15",
+    "text": "J'aime et je réussis les sciences.",
+    "qualities": [
+     "qa_aptitude_pour_les_sciences_naturelles"
+    ]
+   },
+   {
+    "id": "s16",
+    "text": "J'apprends facilement les langues.",
+    "qualities": [
+     "qa_facilite_pour_les_langues"
+    ]
+   },
+   {
+    "id": "s17",
+    "text": "J'écris facilement des textes clairs.",
+    "qualities": [
+     "qa_facilite_de_redaction"
+    ]
+   },
+   {
+    "id": "s18",
+    "text": "Je suis patient·e et à l'écoute.",
+    "qualities": [
+     "qa_patience",
+     "qa_tolerance_et_respect_d_autrui"
+    ]
+   },
+   {
+    "id": "s19",
+    "text": "Je suis soigneux·se, l'ordre et l'hygiène comptent pour moi.",
+    "qualities": [
+     "qa_sens_de_l_hygiene_et_de_la_proprete",
+     "qa_presentation_soignee"
+    ]
+   },
+   {
+    "id": "s20",
+    "text": "J'aime découvrir les nouvelles technologies et m'y adapte vite.",
+    "qualities": [
+     "qa_capacite_d_adaptation_a_l_evolution_tech",
+     "qa_curiosite"
+    ]
+   },
+   {
+    "id": "s21",
+    "text": "Je raisonne facilement sur des idées abstraites et je sais résumer.",
+    "qualities": [
+     "qa_capacite_d_abstraction",
+     "qa_esprit_de_synthese"
+    ]
+   },
+   {
+    "id": "s22",
+    "text": "Je suis poli·e, discret·ète et accueillant·e.",
+    "qualities": [
+     "qa_courtoisie_et_tact",
+     "qa_discretion",
+     "qa_sens_de_l_accueil"
+    ]
+   },
+   {
+    "id": "s23",
+    "text": "Je retiens facilement ce que j'apprends.",
+    "qualities": [
+     "qa_bonne_memoire"
+    ]
+   },
+   {
+    "id": "s24",
+    "text": "Je dessine bien et j'ai le sens des formes et des couleurs.",
+    "qualities": [
+     "qa_facilite_pour_le_dessin",
+     "qa_sens_esthetique"
+    ]
+   },
+   {
+    "id": "s25",
+    "text": "J'aime négocier et convaincre.",
+    "qualities": [
+     "qa_sens_commercial",
+     "qa_aptitude_a_negocier"
+    ]
+   }
+  ]
+ },
+ "tagToInterests": {
+  "analyser": {
+   "in_travailler_a_l_ordinateur": 1.0,
+   "in_experimenter_rechercher": 1.0,
+   "in_travailler_avec_precision": 0.5,
+   "in_lire": 1.0,
+   "in_travailler_avec_des_chiffres": 0.5
+  },
+  "soigner": {
+   "in_aider_et_soigner_les_autres": 0.5,
+   "in_s_occuper_des_animaux": 1.0
+  },
+  "accompagner": {
+   "in_aider_et_soigner_les_autres": 0.5,
+   "in_conseiller": 0.5,
+   "in_informer_et_sensibiliser": 0.5,
+   "in_travailler_avec_des_enfants": 1.0,
+   "in_transmettre_des_connaissances": 1.0
+  },
+  "ecouter": {
+   "in_conseiller": 0.5,
+   "in_informer_et_sensibiliser": 0.5,
+   "in_avoir_des_contacts_avec_d_autres_personn": 1.0,
+   "in_utiliser_les_langues": 1.0
+  },
+  "coordonner": {
+   "in_diriger_et_assumer_des_responsabilites": 1.0,
+   "in_travailler_en_equipe": 1.0,
+   "in_planifier_organiser": 0.5
+  },
+  "construire": {
+   "in_travailler_avec_precision": 0.5,
+   "in_travailler_le_bois": 1.0,
+   "in_travailler_le_metal": 1.0,
+   "in_travailler_avec_ses_mains": 1.0,
+   "in_travailler_avec_des_machines": 1.0,
+   "in_travailler_le_tissu_le_cuir_le_papier": 1.0,
+   "in_travailler_la_pierre_la_terre_le_verre": 1.0,
+   "in_planifier_construire_dessin_technique": 0.5,
+   "in_travailler_avec_de_l_electricite_et_de_l": 0.5,
+   "in_realiser_des_taches_techniques": 1.0
+  },
+  "organiser": {
+   "in_travailler_avec_des_chiffres": 0.5,
+   "in_planifier_organiser": 0.5
+  },
+  "concevoir": {
+   "in_planifier_construire_dessin_technique": 0.5,
+   "in_travailler_avec_de_l_electricite_et_de_l": 0.5,
+   "in_dessiner_decorer_creer": 1.0
+  }
+ }
+}

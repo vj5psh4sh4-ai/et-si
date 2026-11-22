@@ -39,6 +39,10 @@ export interface PlayerProfile {
   selectedObjective: string | null;
   ideaText: string;
   ideaAngle: string | null;
+  /** Année du CO (9H à 11H), demandée pour afficher une date de rentrée au plus tôt. */
+  schoolYear: 9 | 10 | 11 | null;
+  /** Type de classe, facultatif, demandé seulement dans « Toutes les portes ». */
+  classType: 'eb' | 'g' | 'pg' | null;
 }
 
 export type MicroActivityType =
@@ -103,34 +107,30 @@ export interface ActivityFeedback {
   timestamp: string;
 }
 
-export interface PathwayNode {
-  id: string;
-  stepLabel: string;
-  title: string;
-  detail: string;
-  validationStatus: ValidationStatus;
-  sourceUrl: string | null;
-  reviewedAt: string | null;
-}
+/** Réponse à une carte : 0 = non, 1 = peut-être, 2 = oui. */
+export type CardChoice = 0 | 1 | 2;
 
-export interface ExplorationTrack {
-  id: string;
-  title: string;
-  school: 'HEIA-FR' | 'HEG-FR' | 'HEdS-FR' | 'HETS-FR';
-  summary: string;
-  skills: string[];
-  tags: ActivityTag[];
-  nextExperience: string;
-  validationStatus: ValidationStatus;
-  sourceUrl: string | null;
-  reviewedAt: string | null;
-}
-
+/**
+ * Carnet, schéma 2 (v0.3.1). Il garde des réponses et des choix, jamais des résultats :
+ * le panneau est recalculé à chaque ouverture avec le référentiel du moment.
+ */
 export interface SavedNotebook {
+  schema: 2;
   profile: PlayerProfile;
   feedbacks: ActivityFeedback[];
-  savedTrackIds: string[];
+  /** Réponses aux cartes « Est-ce que tu aimerais… » (identifiant de carte -> réponse). */
+  answers: Record<string, CardChoice>;
+  /** Réponses aux cartes « Mes forces ». */
+  qualityAnswers: Record<string, CardChoice>;
+  /** Filières gardées par la personne. */
+  savedProgrammeIds: string[];
+  /** Métiers CFC gardés (clé de regroupement). */
+  savedCfc: string[];
+  /** Voie choisie avec la bascule « Et si » ('auto' : le chemin le plus court). */
+  variant: string;
   questionsToCheck: string[];
   nextAction: string;
+  /** Version du référentiel utilisée lors de la dernière sauvegarde. */
+  mappingVersion: string;
   updatedAt: string;
 }

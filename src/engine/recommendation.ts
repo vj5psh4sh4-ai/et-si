@@ -1,19 +1,6 @@
 import { DISCOVERY_CARDS, IDEA_ANGLES, MISSIONS, OBJECTIVE_OPTIONS } from '../data/missions';
-import { EXPLORATION_TRACKS } from '../data/tracks';
-import {
-  ActivityFeedback,
-  ActivityTag,
-  ExplorationTrack,
-  Mission,
-  PlayerProfile,
-  SavedNotebook,
-} from '../types';
-
-export interface ProposedTrack {
-  track: ExplorationTrack;
-  reasons: string[];
-  isManualSave: boolean;
-}
+import type { ActivityTag, Mission, PlayerProfile, SavedNotebook } from '../types';
+import { DEFAULT_PROFILE, freshNotebook } from '../domain/notebook';
 
 export function getInitialPreferredTags(profile: PlayerProfile): ActivityTag[] {
   const tags: ActivityTag[] = [];
@@ -47,70 +34,25 @@ export function getOrderedMissions(profile: PlayerProfile): Mission[] {
 }
 
 /**
- * Moteur déterministe et explicable :
- * seules les activités appréciées ("refaire" ou "en_vrai") ou sauvegardées manuellement
- * génèrent des pistes (maximum 3).
+ * Carnet fictif d'« Alex », élève de 10H : douze cartes répondues et deux rôles essayés en mission.
+ * Le panneau de la démo est calculé comme pour un vrai visiteur, à partir de ces réponses.
  */
-export function computeProposedTracks(
-  feedbacks: ActivityFeedback[],
-  savedTrackIds: string[]
-): ProposedTrack[] {
-  const positiveFeedbacks = feedbacks.filter(
-    (f) => f.feedback === 'refaire' || f.feedback === 'en_vrai'
-  );
-
-  const trackMap = new Map<string, { reasons: string[]; count: number; isManualSave: boolean }>();
-
-  for (const fb of positiveFeedbacks) {
-    const reason = `Tu retrouves cette piste parce que tu as aimé « ${fb.activityLabel} » dans « ${fb.missionTitle} ».`;
-    const existing = trackMap.get(fb.trackId);
-    if (existing) {
-      if (!existing.reasons.includes(reason)) existing.reasons.push(reason);
-      existing.count += 1;
-    } else {
-      trackMap.set(fb.trackId, { reasons: [reason], count: 1, isManualSave: false });
-    }
-  }
-
-  for (const trackId of savedTrackIds) {
-    const existing = trackMap.get(trackId);
-    if (existing) {
-      existing.isManualSave = true;
-    } else {
-      trackMap.set(trackId, {
-        reasons: ['Tu as choisi de sauvegarder cette piste manuellement dans ton exploration.'],
-        count: 0,
-        isManualSave: true,
-      });
-    }
-  }
-
-  const results: ProposedTrack[] = [];
-  for (const [trackId, meta] of trackMap.entries()) {
-    const track = EXPLORATION_TRACKS.find((t) => t.id === trackId);
-    if (track) {
-      results.push({ track, reasons: meta.reasons, isManualSave: meta.isManualSave });
-    }
-  }
-
-  results.sort((a, b) => b.reasons.length - a.reasons.length);
-  return results.slice(0, 3);
-}
-
-export function createDemoNotebook(): SavedNotebook {
+export function createDemoNotebook(questions: string[] = [], nextAction = ''): SavedNotebook {
+  const now = new Date().toISOString();
   return {
-    profile: {
-      avatarId: 'boussole',
-      color: '#2563eb',
-      nickname: 'Alex (Démo)',
-      situation: 'co',
-      reflection: 'hesite',
-      entryMode: 'decouvre',
-      selectedDiscoveryCards: ['lieux', 'collectif'],
-      selectedObjective: null,
-      ideaText: '',
-      ideaAngle: null,
-    },
+    ...freshNotebook(
+      {
+        ...DEFAULT_PROFILE,
+        nickname: 'Alex',
+        situation: 'co',
+        schoolYear: 10,
+        reflection: 'hesite',
+        entryMode: 'decouvre',
+        selectedDiscoveryCards: ['lieux', 'collectif'],
+      },
+      questions,
+    ),
+    answers: { q05: 2, q04: 2, q03: 1, q07: 2, q16: 0, q02: 2, q12: 1, q15: 1, q08: 1, q10: 0, q01: 2, q06: 1 },
     feedbacks: [
       {
         missionId: 'lieu-se-retrouver',
@@ -120,9 +62,8 @@ export function createDemoNotebook(): SavedNotebook {
         tags: ['ecouter', 'accompagner'],
         trackId: 'hets',
         feedback: 'en_vrai',
-        consequenceShown:
-          'Tu as privilégié l’écoute des personnes qui utiliseront le lieu. Ton équipe comprend mieux leurs attentes.',
-        timestamp: new Date().toISOString(),
+        consequenceShown: 'Tu as privilégié l’écoute des personnes qui utiliseront le lieu. Ton équipe comprend mieux leurs attentes.',
+        timestamp: now,
       },
       {
         missionId: 'lieu-se-retrouver',
@@ -132,17 +73,10 @@ export function createDemoNotebook(): SavedNotebook {
         tags: ['concevoir', 'construire'],
         trackId: 'heia',
         feedback: 'refaire',
-        consequenceShown:
-          'Ton classement met l’accent sur la polyvalence des usages.',
-        timestamp: new Date().toISOString(),
+        consequenceShown: 'Ton classement met l’accent sur la polyvalence des usages.',
+        timestamp: now,
       },
     ],
-    savedTrackIds: ['hets', 'heia'],
-    questionsToCheck: [
-      'Quelles sont les conditions d’admission exactes selon mon parcours au secondaire II ?',
-      'Quand ont lieu les prochaines séances d’information ou portes ouvertes ?',
-    ],
-    nextAction: 'Parler d’une piste avec un·e proche ou un·e enseignant·e',
-    updatedAt: new Date().toISOString(),
+    nextAction,
   };
 }

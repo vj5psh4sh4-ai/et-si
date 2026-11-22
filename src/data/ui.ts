@@ -1,6 +1,6 @@
-import type { ActivityTag, FeedbackValue, SituationId } from '../types';
+import type { ActivityTag, FeedbackValue } from '../types';
 
-/** Couleurs des quatre familles de pistes (utilisées seulement à l’étape « chemins »). */
+/** Couleurs des quatre écoles, utilisées sur les lames, les portes et les fiches. */
 export const TRACK_COLORS: Record<string, { main: string; soft: string; ink: string }> = {
   heia: { main: '#2f5fd0', soft: '#e3ebfb', ink: '#1c3c8c' },
   heg: { main: '#d9701c', soft: '#fbecdc', ink: '#8a430a' },
@@ -31,15 +31,6 @@ export const FEEDBACK_SHORT: Record<FeedbackValue, string> = {
   en_vrai: 'À découvrir en vrai',
   autre_chose: 'Autre chose pour l’instant',
   ne_sais_pas: 'Je ne sais pas encore',
-};
-
-export const SITUATION_SHORT: Record<SituationId, string> = {
-  co: 'CO',
-  apprentissage: 'Apprentissage',
-  college: 'Collège',
-  ecg: 'ECG',
-  autre: 'Autre',
-  non_precise: 'Non précisée',
 };
 
 export const ENTRY_GATES = [
